@@ -1,0 +1,67 @@
+version: '3.7'
+
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.17.0
+    container_name: ai4hf-monitoring-elasticsearch
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+      - cluster.name=docker-cluster
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    mem_limit: 1g
+    ports:
+      - "9200:9200"
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+    networks:
+      - ai4hf-monitoring
+    healthcheck:
+      test: ["CMD-SHELL", "curl -s http://localhost:9200 || exit 1"]
+      interval: 2s
+      timeout: 1s
+      retries: 10
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.17.0
+    container_name: ai4hf-monitoring-logstash
+    environment:
+      LS_JAVA_OPTS: "-Xms512m -Xmx512m"
+    ports:
+      #- "5044:5044" # Beats input
+      #- "9600:9600" # Monitoring API
+      - "5000:5000"
+    volumes:
+      - ./logstash/pipeline:/usr/share/logstash/pipeline
+    networks:
+      - ai4hf-monitoring
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.17.0
+    container_name: ai4hf-monitoring-kibana
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    volumes:
+      - ./kibana/export.ndjson:/usr/share/kibana/export.ndjson
+    networks:
+      - ai4hf-monitoring
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+
+volumes:
+  esdata:
+
+networks:
+  ai4hf-monitoring:
+    name: ai4hf-monitoring
+    driver: bridge
