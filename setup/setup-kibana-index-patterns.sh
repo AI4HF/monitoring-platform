@@ -24,3 +24,12 @@ curl -X POST "http://kibana:5601/api/saved_objects/index-pattern" -H 'Content-Ty
     "timeFieldName": "timestamp"
   }
 }'
+
+# Setup Kibana index patterns for evaluation-measures
+curl -X POST "http://kibana:5601/api/saved_objects/index-pattern" -H 'Content-Type: application/json' -H 'kbn-xsrf: true' -d'
+{
+  "attributes": {
+    "title": "evaluation-measures-*",
+    "timeFieldName": "timestamp"
+  }
+}'
