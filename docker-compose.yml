@@ -51,7 +51,7 @@ services:
     ports:
       - "5601:5601"
     volumes:
-      - ./kibana/export.ndjson:/usr/share/kibana/export.ndjson
+      - ./kibana/export-yeni.ndjson:/usr/share/kibana/export-yeni.ndjson
     networks:
       - ai4hf-monitoring
     depends_on:
