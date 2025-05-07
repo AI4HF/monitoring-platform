@@ -70,8 +70,8 @@ curl -X PUT "http://elasticsearch:9200/_index_template/evaluation_measures_templ
       "properties": {
         "event_type": { "type": "keyword" },
         "evaluation_measure_id": { "type": "keyword" },
-        "model_id": { "type": "keyword" },
-        "model_name": { "type": "keyword" },
+        "experiment_id": { "type": "keyword" },
+        "experiment_name": { "type": "keyword" },
         "name": { "type": "keyword" },
         "value": {"type": "float"},
         "round_number": {"type": "integer"},
