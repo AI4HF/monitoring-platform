@@ -12,7 +12,7 @@
   <a href="https://github.com/AI4HF/monitoring-platform">
     <img src="https://img.shields.io/github/license/AI4HF/monitoring-platform" alt="License">
   </a>
-  <a href="https://img.shields.io/github/license/DataTools4Heart/releases">
+  <a href="https://img.shields.io/github/license/AI4HF/releases">
     <img src="https://img.shields.io/github/v/release/AI4HF/monitoring-platform" alt="Releases">
   </a>
 </p>
