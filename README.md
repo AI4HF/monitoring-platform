@@ -1,7 +1,49 @@
-## Setup AI4HF Monitoring Platform
-1. Run ai4hf-monitoring-random-data-generator/index.js to generate synthetic data.
-2. Move the generated data from the output folder to the setup/data folder which is under the Docker folder of the AI4HF Monitoring Platform
-3. Run start.bat to create Docker containers
-4. Make sure Kibana is up and running
-5. Execute the "setup-data.sh" under the setup folder.
-6. Navigate to http://localhost:5601 and then to the Dashboards menu to display the created dashboard.
+# AI4HF Monitoring Platform
+
+<div align="center" style="background-color: white">
+  <a href="https://www.ai4hf.com/">
+    <img height="60px" src="assets/ai4hf_logo.svg" alt="AI4HF Project"/>
+  </a>
+</div>
+
+<br/>
+
+<p align="center">
+  <a href="https://github.com/DataTools4Heart/common-data-model">
+    <img src="https://img.shields.io/github/license/DataTools4Heart/common-data-model" alt="License">
+  </a>
+  <a href="https://img.shields.io/github/license/DataTools4Heart/releases">
+    <img src="https://img.shields.io/github/v/release/DataTools4Heart/common-data-model" alt="Releases">
+  </a>
+</p>
+
+<br/>
+
+This repository contains the development environment for the [AI4HF](https://www.ai4hf.com/) Monitoring Platform, built on the Elastic Stack 
+(Elasticsearch, Logstash, and Kibana). It includes necessary resources and configurations to run the platform locally 
+using Docker. The configuration includes pre-built dashboards, Logstash pipelines, and synthetic data to simulate real 
+system logs and metrics.
+
+### Getting Started
+To run the monitoring platform, you need to have Docker and Docker Compose installed on your machine. 
+````
+docker-compose up -d
+````
+
+After a few moments, you should be able to access:
+
+* Elasticsearch: http://localhost:9200
+* Kibana: http://localhost:5601
+
+
+### Configuration
+
+To load synthetic logs and metrics into Elasticsearch, as well as dashboards and visualizations into Kibana, 
+run the following command from the `setup` folder:
+
+````
+./setup-data.sh
+````
+
+The process may take a few minutes depending on your system performance. Once the data is loaded, you can view the 
+dashboards in Kibana.
