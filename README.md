@@ -9,11 +9,11 @@
 <br/>
 
 <p align="center">
-  <a href="https://github.com/DataTools4Heart/common-data-model">
-    <img src="https://img.shields.io/github/license/DataTools4Heart/common-data-model" alt="License">
+  <a href="https://github.com/AI4HF/monitoring-platform">
+    <img src="https://img.shields.io/github/license/AI4HF/monitoring-platform" alt="License">
   </a>
   <a href="https://img.shields.io/github/license/DataTools4Heart/releases">
-    <img src="https://img.shields.io/github/v/release/DataTools4Heart/common-data-model" alt="Releases">
+    <img src="https://img.shields.io/github/v/release/AI4HF/monitoring-platform" alt="Releases">
   </a>
 </p>
 
