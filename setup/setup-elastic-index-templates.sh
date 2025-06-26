@@ -60,3 +60,24 @@ curl -X PUT "http://elasticsearch:9200/_index_template/predictions_template" -H 
     }
   }
 }'
+
+# Setup Elasticsearch index templates for evaluation measures
+curl -X PUT "http://elasticsearch:9200/_index_template/evaluation_measures_template" -H 'Content-Type: application/json' -d'
+{
+  "index_patterns": ["evaluation-measures-*"],
+  "template": {
+    "mappings": {
+      "properties": {
+        "event_type": { "type": "keyword" },
+        "evaluation_measure_id": { "type": "keyword" },
+        "experiment_id": { "type": "keyword" },
+        "experiment_name": { "type": "keyword" },
+        "name": { "type": "keyword" },
+        "value": {"type": "float"},
+        "round": {"type": "integer"},
+        "dataType": { "type": "text" },
+        "timestamp": { "type": "date" }
+      }
+    }
+  }
+}'
