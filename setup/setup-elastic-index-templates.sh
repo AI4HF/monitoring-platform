@@ -1,7 +1,7 @@
 # Run: docker exec -i ai4hf-monitoring-elasticsearch bash < setup-elastic-index-templates.sh
 
 # Setup Elasticsearch index templates for users
-curl -X PUT "http://elasticsearch:9200/_index_template/users_template" -H 'Content-Type: application/json' -d'
+curl -X PUT -u elastic:2sgQdH0KrHa5c2lS0LGg "http://elasticsearch:9200/_index_template/users_template" -H 'Content-Type: application/json' -d'
 {
   "index_patterns": ["users-*"],
   "template": {
@@ -16,7 +16,7 @@ curl -X PUT "http://elasticsearch:9200/_index_template/users_template" -H 'Conte
 }'
 
 # Setup Elasticsearch index templates for AI models
-curl -X PUT "http://elasticsearch:9200/_index_template/models_template" -H 'Content-Type: application/json' -d'
+curl -X PUT -u elastic:2sgQdH0KrHa5c2lS0LGg "http://elasticsearch:9200/_index_template/models_template" -H 'Content-Type: application/json' -d'
 {
   "index_patterns": ["models-*"],
   "template": {
@@ -35,7 +35,7 @@ curl -X PUT "http://elasticsearch:9200/_index_template/models_template" -H 'Cont
 }'
 
 # Setup Elasticsearch index templates for predictions
-curl -X PUT "http://elasticsearch:9200/_index_template/predictions_template" -H 'Content-Type: application/json' -d'
+curl -X PUT -u elastic:2sgQdH0KrHa5c2lS0LGg "http://elasticsearch:9200/_index_template/predictions_template" -H 'Content-Type: application/json' -d'
 {
   "index_patterns": ["predictions-*"],
   "template": {
@@ -62,7 +62,7 @@ curl -X PUT "http://elasticsearch:9200/_index_template/predictions_template" -H 
 }'
 
 # Setup Elasticsearch index templates for evaluation measures
-curl -X PUT "http://elasticsearch:9200/_index_template/evaluation_measures_template" -H 'Content-Type: application/json' -d'
+curl -X PUT -u elastic:2sgQdH0KrHa5c2lS0LGg "http://elasticsearch:9200/_index_template/evaluation_measures_template" -H 'Content-Type: application/json' -d'
 {
   "index_patterns": ["evaluation-measures-*"],
   "template": {

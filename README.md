@@ -48,7 +48,7 @@ track system metrics over time. These visualizations help clinicians and data sc
 ### Getting Started
 To run the monitoring platform, you need to have Docker and Docker Compose installed on your machine. 
 ````
-docker-compose up -d
+sh start.sh
 ````
 
 After a few moments, you should be able to access:

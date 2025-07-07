@@ -1,0 +1,5 @@
+logstash_writer:
+  cluster: [ "monitor" , "manage_index_templates", "manage"]
+  indices:
+    - names: [ "logstash-*", "users-*", "models-*", "predictions-*", "quality-checks-*", "evaluation-measures-*", "unsorted_logs-*", ".kibana*" ]
+      privileges: [ "read", "write", "create", "create_index", "manage", "view_index_metadata" ]

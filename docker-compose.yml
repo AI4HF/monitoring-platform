@@ -5,10 +5,11 @@ services:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.17.0
     container_name: ai4hf-monitoring-elasticsearch
     environment:
-      - xpack.security.enabled=false
+      - xpack.security.enabled=true
       - discovery.type=single-node
       - cluster.name=docker-cluster
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - ELASTIC_PASSWORD=2sgQdH0KrHa5c2lS0LGg
     ulimits:
       memlock:
         soft: -1
@@ -18,10 +19,11 @@ services:
       - "9200:9200"
     volumes:
       - esdata:/usr/share/elasticsearch/data
+      - ./logstash/roles.yml:/usr/share/elasticsearch/config/roles.yml
     networks:
       - ai4hf-monitoring
     healthcheck:
-      test: ["CMD-SHELL", "curl -s http://localhost:9200 || exit 1"]
+      test: ["CMD-SHELL", "curl -s -u elastic:2sgQdH0KrHa5c2lS0LGg http://localhost:9200 | grep -q '\"number\"' || exit 1"]
       interval: 2s
       timeout: 5s
       retries: 10
@@ -31,12 +33,15 @@ services:
     container_name: ai4hf-monitoring-logstash
     environment:
       LS_JAVA_OPTS: "-Xms512m -Xmx512m"
+      LOGSTASH_USER: logstash_internal
+      LOGSTASH_PASSWORD: 2sgQdH0KrHa5c2lS0LGg
     ports:
       #- "5044:5044" # Beats input
       #- "9600:9600" # Monitoring API
       - "5000:5000"
     volumes:
       - ./logstash/pipeline:/usr/share/logstash/pipeline
+      - ./logstash/logstash.yml:/usr/share/logstash/config/logstash.yml
     networks:
       - ai4hf-monitoring
     depends_on:
@@ -48,6 +53,7 @@ services:
     container_name: ai4hf-monitoring-kibana
     environment:
       ELASTICSEARCH_URL: http://elasticsearch:9200
+      ELASTICSEARCH_SERVICEACCOUNTTOKEN: ${KIBANA_TOKEN}
     ports:
       - "5601:5601"
     volumes:
