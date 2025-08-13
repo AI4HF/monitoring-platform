@@ -3,7 +3,8 @@
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "f9ae625f-75d2-4bf6-a698-6c44590a6497",
+    "dataset_id": "ded9f606-a49f-47e0-ad4a-4672f3c80616",
+    "dataset_name": "Dataset 1",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -12,28 +13,30 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-21T17:36:46.487Z"
+    "@timestamp": "2025-07-24T16:49:14.948Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "f9ae625f-75d2-4bf6-a698-6c44590a6497",
+    "dataset_id": "ded9f606-a49f-47e0-ad4a-4672f3c80616",
+    "dataset_name": "Dataset 1",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
       "category": "conformance"
     },
     "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-21T17:36:46.487Z"
+    "value": 98,
+    "passed": false,
+    "@timestamp": "2025-07-24T16:49:14.948Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "f9ae625f-75d2-4bf6-a698-6c44590a6497",
+    "dataset_id": "ded9f606-a49f-47e0-ad4a-4672f3c80616",
+    "dataset_name": "Dataset 1",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -42,28 +45,30 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-21T17:36:46.487Z"
+    "@timestamp": "2025-07-24T16:49:14.948Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "f9ae625f-75d2-4bf6-a698-6c44590a6497",
+    "dataset_id": "ded9f606-a49f-47e0-ad4a-4672f3c80616",
+    "dataset_name": "Dataset 1",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
       "category": "completeness"
     },
     "low": 2,
-    "value": 0,
-    "passed": false,
-    "@timestamp": "2025-05-21T17:36:46.487Z"
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-24T16:49:14.948Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "f9ae625f-75d2-4bf6-a698-6c44590a6497",
+    "dataset_id": "ded9f606-a49f-47e0-ad4a-4672f3c80616",
+    "dataset_name": "Dataset 1",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -72,43 +77,46 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-05-21T17:36:46.487Z"
+    "@timestamp": "2025-07-24T16:49:14.948Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "f9ae625f-75d2-4bf6-a698-6c44590a6497",
+    "dataset_id": "ded9f606-a49f-47e0-ad4a-4672f3c80616",
+    "dataset_name": "Dataset 1",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "low": 18,
-    "value": 28,
+    "value": 22,
     "passed": true,
-    "@timestamp": "2025-05-21T17:36:46.487Z"
+    "@timestamp": "2025-07-24T16:49:14.948Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "f9ae625f-75d2-4bf6-a698-6c44590a6497",
+    "dataset_id": "ded9f606-a49f-47e0-ad4a-4672f3c80616",
+    "dataset_name": "Dataset 1",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "high": 30,
-    "value": 18,
+    "value": 24,
     "passed": true,
-    "@timestamp": "2025-05-21T17:36:46.487Z"
+    "@timestamp": "2025-07-24T16:49:14.948Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "f9ae625f-75d2-4bf6-a698-6c44590a6497",
+    "dataset_id": "ded9f606-a49f-47e0-ad4a-4672f3c80616",
+    "dataset_name": "Dataset 1",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -116,136 +124,16 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     },
     "low": 45,
     "high": 55,
-    "value": 58,
+    "value": 56,
     "passed": false,
-    "@timestamp": "2025-05-21T17:36:46.487Z"
+    "@timestamp": "2025-07-24T16:49:14.948Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "9a5b07a8-6eaa-4a93-8439-80e72f307ead",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 97,
-    "passed": false,
-    "@timestamp": "2025-04-28T06:16:42.558Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "9a5b07a8-6eaa-4a93-8439-80e72f307ead",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-28T06:16:42.558Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "9a5b07a8-6eaa-4a93-8439-80e72f307ead",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-28T06:16:42.558Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "9a5b07a8-6eaa-4a93-8439-80e72f307ead",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-04-28T06:16:42.558Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "9a5b07a8-6eaa-4a93-8439-80e72f307ead",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 2,
-    "passed": false,
-    "@timestamp": "2025-04-28T06:16:42.558Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "9a5b07a8-6eaa-4a93-8439-80e72f307ead",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 20,
-    "passed": true,
-    "@timestamp": "2025-04-28T06:16:42.558Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "9a5b07a8-6eaa-4a93-8439-80e72f307ead",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 21,
-    "passed": true,
-    "@timestamp": "2025-04-28T06:16:42.558Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "9a5b07a8-6eaa-4a93-8439-80e72f307ead",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 57,
-    "passed": false,
-    "@timestamp": "2025-04-28T06:16:42.558Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "55834e5e-97d4-4aa7-9ca8-a0371fe318a7",
+    "dataset_id": "9f31461f-c46b-4ca4-a5c5-22b4eeafa7f1",
+    "dataset_name": "Dataset 2",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -254,13 +142,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-04-12T15:47:07.669Z"
+    "@timestamp": "2025-07-27T01:53:55.576Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "55834e5e-97d4-4aa7-9ca8-a0371fe318a7",
+    "dataset_id": "9f31461f-c46b-4ca4-a5c5-22b4eeafa7f1",
+    "dataset_name": "Dataset 2",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -269,13 +158,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-04-12T15:47:07.669Z"
+    "@timestamp": "2025-07-27T01:53:55.576Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "55834e5e-97d4-4aa7-9ca8-a0371fe318a7",
+    "dataset_id": "9f31461f-c46b-4ca4-a5c5-22b4eeafa7f1",
+    "dataset_name": "Dataset 2",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -284,13 +174,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-04-12T15:47:07.669Z"
+    "@timestamp": "2025-07-27T01:53:55.576Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "55834e5e-97d4-4aa7-9ca8-a0371fe318a7",
+    "dataset_id": "9f31461f-c46b-4ca4-a5c5-22b4eeafa7f1",
+    "dataset_name": "Dataset 2",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -299,13 +190,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 2,
     "passed": true,
-    "@timestamp": "2025-04-12T15:47:07.669Z"
+    "@timestamp": "2025-07-27T01:53:55.576Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "55834e5e-97d4-4aa7-9ca8-a0371fe318a7",
+    "dataset_id": "9f31461f-c46b-4ca4-a5c5-22b4eeafa7f1",
+    "dataset_name": "Dataset 2",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -314,618 +206,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-04-12T15:47:07.669Z"
+    "@timestamp": "2025-07-27T01:53:55.576Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "55834e5e-97d4-4aa7-9ca8-a0371fe318a7",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 33,
-    "passed": true,
-    "@timestamp": "2025-04-12T15:47:07.669Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "55834e5e-97d4-4aa7-9ca8-a0371fe318a7",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 23,
-    "passed": true,
-    "@timestamp": "2025-04-12T15:47:07.669Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "55834e5e-97d4-4aa7-9ca8-a0371fe318a7",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 53,
-    "passed": true,
-    "@timestamp": "2025-04-12T15:47:07.669Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "347d0afe-6e32-4055-b881-c030876667a4",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 97,
-    "passed": false,
-    "@timestamp": "2025-04-19T04:25:27.077Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "347d0afe-6e32-4055-b881-c030876667a4",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-19T04:25:27.077Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "347d0afe-6e32-4055-b881-c030876667a4",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-19T04:25:27.077Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "347d0afe-6e32-4055-b881-c030876667a4",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-04-19T04:25:27.077Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "347d0afe-6e32-4055-b881-c030876667a4",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-04-19T04:25:27.077Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "347d0afe-6e32-4055-b881-c030876667a4",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 34,
-    "passed": true,
-    "@timestamp": "2025-04-19T04:25:27.077Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "347d0afe-6e32-4055-b881-c030876667a4",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 19,
-    "passed": true,
-    "@timestamp": "2025-04-19T04:25:27.077Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "347d0afe-6e32-4055-b881-c030876667a4",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 53,
-    "passed": true,
-    "@timestamp": "2025-04-19T04:25:27.077Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4220c538-8735-4ba7-97d2-403408e5451e",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-01T21:43:23.580Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4220c538-8735-4ba7-97d2-403408e5451e",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-01T21:43:23.580Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4220c538-8735-4ba7-97d2-403408e5451e",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-01T21:43:23.580Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4220c538-8735-4ba7-97d2-403408e5451e",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-04-01T21:43:23.580Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4220c538-8735-4ba7-97d2-403408e5451e",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-04-01T21:43:23.580Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4220c538-8735-4ba7-97d2-403408e5451e",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 16,
-    "passed": false,
-    "@timestamp": "2025-04-01T21:43:23.580Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4220c538-8735-4ba7-97d2-403408e5451e",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 15,
-    "passed": true,
-    "@timestamp": "2025-04-01T21:43:23.580Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4220c538-8735-4ba7-97d2-403408e5451e",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 54,
-    "passed": true,
-    "@timestamp": "2025-04-01T21:43:23.580Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cc60398c-5258-42a3-a6a5-0491319d01f2",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-18T01:45:37.800Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cc60398c-5258-42a3-a6a5-0491319d01f2",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-18T01:45:37.800Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cc60398c-5258-42a3-a6a5-0491319d01f2",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-18T01:45:37.800Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cc60398c-5258-42a3-a6a5-0491319d01f2",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-18T01:45:37.800Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cc60398c-5258-42a3-a6a5-0491319d01f2",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-05-18T01:45:37.800Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cc60398c-5258-42a3-a6a5-0491319d01f2",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 38,
-    "passed": true,
-    "@timestamp": "2025-05-18T01:45:37.800Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cc60398c-5258-42a3-a6a5-0491319d01f2",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 20,
-    "passed": true,
-    "@timestamp": "2025-05-18T01:45:37.800Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cc60398c-5258-42a3-a6a5-0491319d01f2",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 60,
-    "passed": false,
-    "@timestamp": "2025-05-18T01:45:37.800Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "fd006ebc-cd6f-4447-b4b5-102ff9651997",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-20T21:57:33.262Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "fd006ebc-cd6f-4447-b4b5-102ff9651997",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-20T21:57:33.262Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "fd006ebc-cd6f-4447-b4b5-102ff9651997",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 96,
-    "passed": false,
-    "@timestamp": "2025-06-20T21:57:33.262Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "fd006ebc-cd6f-4447-b4b5-102ff9651997",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-06-20T21:57:33.262Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "fd006ebc-cd6f-4447-b4b5-102ff9651997",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 2,
-    "passed": false,
-    "@timestamp": "2025-06-20T21:57:33.262Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "fd006ebc-cd6f-4447-b4b5-102ff9651997",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 31,
-    "passed": true,
-    "@timestamp": "2025-06-20T21:57:33.262Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "fd006ebc-cd6f-4447-b4b5-102ff9651997",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 21,
-    "passed": true,
-    "@timestamp": "2025-06-20T21:57:33.262Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "fd006ebc-cd6f-4447-b4b5-102ff9651997",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 59,
-    "passed": false,
-    "@timestamp": "2025-06-20T21:57:33.262Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1a0d74aa-8d22-4e01-b9f6-9f55da162c95",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-02T06:47:43.991Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1a0d74aa-8d22-4e01-b9f6-9f55da162c95",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-02T06:47:43.991Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1a0d74aa-8d22-4e01-b9f6-9f55da162c95",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-02T06:47:43.991Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1a0d74aa-8d22-4e01-b9f6-9f55da162c95",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-06-02T06:47:43.991Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1a0d74aa-8d22-4e01-b9f6-9f55da162c95",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-06-02T06:47:43.991Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1a0d74aa-8d22-4e01-b9f6-9f55da162c95",
+    "dataset_id": "9f31461f-c46b-4ca4-a5c5-22b4eeafa7f1",
+    "dataset_name": "Dataset 2",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
@@ -934,28 +222,30 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 18,
     "value": 25,
     "passed": true,
-    "@timestamp": "2025-06-02T06:47:43.991Z"
+    "@timestamp": "2025-07-27T01:53:55.576Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "1a0d74aa-8d22-4e01-b9f6-9f55da162c95",
+    "dataset_id": "9f31461f-c46b-4ca4-a5c5-22b4eeafa7f1",
+    "dataset_name": "Dataset 2",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "high": 30,
-    "value": 26,
+    "value": 29,
     "passed": true,
-    "@timestamp": "2025-06-02T06:47:43.991Z"
+    "@timestamp": "2025-07-27T01:53:55.576Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "1a0d74aa-8d22-4e01-b9f6-9f55da162c95",
+    "dataset_id": "9f31461f-c46b-4ca4-a5c5-22b4eeafa7f1",
+    "dataset_name": "Dataset 2",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -963,15 +253,16 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     },
     "low": 45,
     "high": 55,
-    "value": 60,
+    "value": 56,
     "passed": false,
-    "@timestamp": "2025-06-02T06:47:43.991Z"
+    "@timestamp": "2025-07-27T01:53:55.576Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "36827b12-721a-48c3-8765-e565448325a5",
+    "dataset_id": "c8a6c7a2-2b75-4e3c-b2d3-fd8f769bda00",
+    "dataset_name": "Dataset 3",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -980,13 +271,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-06-17T00:55:43.808Z"
+    "@timestamp": "2025-05-29T13:49:28.298Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "36827b12-721a-48c3-8765-e565448325a5",
+    "dataset_id": "c8a6c7a2-2b75-4e3c-b2d3-fd8f769bda00",
+    "dataset_name": "Dataset 3",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -995,13 +287,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-06-17T00:55:43.808Z"
+    "@timestamp": "2025-05-29T13:49:28.298Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "36827b12-721a-48c3-8765-e565448325a5",
+    "dataset_id": "c8a6c7a2-2b75-4e3c-b2d3-fd8f769bda00",
+    "dataset_name": "Dataset 3",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -1010,13 +303,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-06-17T00:55:43.808Z"
+    "@timestamp": "2025-05-29T13:49:28.298Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "36827b12-721a-48c3-8765-e565448325a5",
+    "dataset_id": "c8a6c7a2-2b75-4e3c-b2d3-fd8f769bda00",
+    "dataset_name": "Dataset 3",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -1025,255 +319,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 2,
     "passed": true,
-    "@timestamp": "2025-06-17T00:55:43.808Z"
+    "@timestamp": "2025-05-29T13:49:28.298Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "36827b12-721a-48c3-8765-e565448325a5",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 2,
-    "passed": false,
-    "@timestamp": "2025-06-17T00:55:43.808Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "36827b12-721a-48c3-8765-e565448325a5",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 21,
-    "passed": true,
-    "@timestamp": "2025-06-17T00:55:43.808Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "36827b12-721a-48c3-8765-e565448325a5",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 32,
-    "passed": false,
-    "@timestamp": "2025-06-17T00:55:43.808Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "36827b12-721a-48c3-8765-e565448325a5",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 51,
-    "passed": true,
-    "@timestamp": "2025-06-17T00:55:43.808Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0828ca3c-63e6-40dd-9f48-5869dd409b16",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-06T03:03:46.858Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0828ca3c-63e6-40dd-9f48-5869dd409b16",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-06T03:03:46.858Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0828ca3c-63e6-40dd-9f48-5869dd409b16",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-06T03:03:46.858Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0828ca3c-63e6-40dd-9f48-5869dd409b16",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-06T03:03:46.858Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0828ca3c-63e6-40dd-9f48-5869dd409b16",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 2,
-    "passed": false,
-    "@timestamp": "2025-05-06T03:03:46.858Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0828ca3c-63e6-40dd-9f48-5869dd409b16",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 35,
-    "passed": true,
-    "@timestamp": "2025-05-06T03:03:46.858Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0828ca3c-63e6-40dd-9f48-5869dd409b16",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 38,
-    "passed": false,
-    "@timestamp": "2025-05-06T03:03:46.858Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0828ca3c-63e6-40dd-9f48-5869dd409b16",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 55,
-    "passed": true,
-    "@timestamp": "2025-05-06T03:03:46.858Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d07e0fbe-c0a6-40e3-ad32-597b8b734054",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-22T12:12:00.322Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d07e0fbe-c0a6-40e3-ad32-597b8b734054",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-22T12:12:00.322Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d07e0fbe-c0a6-40e3-ad32-597b8b734054",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-22T12:12:00.322Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d07e0fbe-c0a6-40e3-ad32-597b8b734054",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-06-22T12:12:00.322Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d07e0fbe-c0a6-40e3-ad32-597b8b734054",
+    "dataset_id": "c8a6c7a2-2b75-4e3c-b2d3-fd8f769bda00",
+    "dataset_name": "Dataset 3",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -1282,43 +335,46 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-06-22T12:12:00.322Z"
+    "@timestamp": "2025-05-29T13:49:28.298Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "d07e0fbe-c0a6-40e3-ad32-597b8b734054",
+    "dataset_id": "c8a6c7a2-2b75-4e3c-b2d3-fd8f769bda00",
+    "dataset_name": "Dataset 3",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "low": 18,
-    "value": 27,
-    "passed": true,
-    "@timestamp": "2025-06-22T12:12:00.322Z"
+    "value": 17,
+    "passed": false,
+    "@timestamp": "2025-05-29T13:49:28.298Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "d07e0fbe-c0a6-40e3-ad32-597b8b734054",
+    "dataset_id": "c8a6c7a2-2b75-4e3c-b2d3-fd8f769bda00",
+    "dataset_name": "Dataset 3",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "high": 30,
-    "value": 27,
-    "passed": true,
-    "@timestamp": "2025-06-22T12:12:00.322Z"
+    "value": 31,
+    "passed": false,
+    "@timestamp": "2025-05-29T13:49:28.298Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "d07e0fbe-c0a6-40e3-ad32-597b8b734054",
+    "dataset_id": "c8a6c7a2-2b75-4e3c-b2d3-fd8f769bda00",
+    "dataset_name": "Dataset 3",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -1328,13 +384,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 55,
     "value": 50,
     "passed": true,
-    "@timestamp": "2025-06-22T12:12:00.322Z"
+    "@timestamp": "2025-05-29T13:49:28.298Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0a9e0a5b-2ee8-4d4f-85aa-2fdbe4ed9ffb",
+    "dataset_id": "1516d35f-2420-4988-ab12-ad5863de300e",
+    "dataset_name": "Dataset 4",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -1343,13 +400,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-01T00:48:52.087Z"
+    "@timestamp": "2025-06-05T06:20:02.803Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0a9e0a5b-2ee8-4d4f-85aa-2fdbe4ed9ffb",
+    "dataset_id": "1516d35f-2420-4988-ab12-ad5863de300e",
+    "dataset_name": "Dataset 4",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -1358,13 +416,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-01T00:48:52.087Z"
+    "@timestamp": "2025-06-05T06:20:02.803Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0a9e0a5b-2ee8-4d4f-85aa-2fdbe4ed9ffb",
+    "dataset_id": "1516d35f-2420-4988-ab12-ad5863de300e",
+    "dataset_name": "Dataset 4",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -1373,28 +432,30 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-01T00:48:52.087Z"
+    "@timestamp": "2025-06-05T06:20:02.803Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0a9e0a5b-2ee8-4d4f-85aa-2fdbe4ed9ffb",
+    "dataset_id": "1516d35f-2420-4988-ab12-ad5863de300e",
+    "dataset_name": "Dataset 4",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
       "category": "completeness"
     },
     "low": 2,
-    "value": 0,
-    "passed": false,
-    "@timestamp": "2025-05-01T00:48:52.087Z"
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-05T06:20:02.803Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0a9e0a5b-2ee8-4d4f-85aa-2fdbe4ed9ffb",
+    "dataset_id": "1516d35f-2420-4988-ab12-ad5863de300e",
+    "dataset_name": "Dataset 4",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -1403,164 +464,46 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-05-01T00:48:52.087Z"
+    "@timestamp": "2025-06-05T06:20:02.803Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0a9e0a5b-2ee8-4d4f-85aa-2fdbe4ed9ffb",
+    "dataset_id": "1516d35f-2420-4988-ab12-ad5863de300e",
+    "dataset_name": "Dataset 4",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "low": 18,
-    "value": 35,
-    "passed": true,
-    "@timestamp": "2025-05-01T00:48:52.087Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0a9e0a5b-2ee8-4d4f-85aa-2fdbe4ed9ffb",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 16,
-    "passed": true,
-    "@timestamp": "2025-05-01T00:48:52.087Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0a9e0a5b-2ee8-4d4f-85aa-2fdbe4ed9ffb",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 52,
-    "passed": true,
-    "@timestamp": "2025-05-01T00:48:52.087Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a0bba9c7-f53c-4981-8231-75668adae898",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-03T17:12:10.969Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a0bba9c7-f53c-4981-8231-75668adae898",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-03T17:12:10.969Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a0bba9c7-f53c-4981-8231-75668adae898",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-03T17:12:10.969Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a0bba9c7-f53c-4981-8231-75668adae898",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-03T17:12:10.969Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a0bba9c7-f53c-4981-8231-75668adae898",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 2,
-    "passed": false,
-    "@timestamp": "2025-05-03T17:12:10.969Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a0bba9c7-f53c-4981-8231-75668adae898",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 26,
-    "passed": true,
-    "@timestamp": "2025-05-03T17:12:10.969Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a0bba9c7-f53c-4981-8231-75668adae898",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
     "value": 30,
     "passed": true,
-    "@timestamp": "2025-05-03T17:12:10.969Z"
+    "@timestamp": "2025-06-05T06:20:02.803Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "a0bba9c7-f53c-4981-8231-75668adae898",
+    "dataset_id": "1516d35f-2420-4988-ab12-ad5863de300e",
+    "dataset_name": "Dataset 4",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 38,
+    "passed": false,
+    "@timestamp": "2025-06-05T06:20:02.803Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "1516d35f-2420-4988-ab12-ad5863de300e",
+    "dataset_name": "Dataset 4",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -1570,13 +513,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 55,
     "value": 60,
     "passed": false,
-    "@timestamp": "2025-05-03T17:12:10.969Z"
+    "@timestamp": "2025-06-05T06:20:02.803Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "85f6c8eb-d471-4842-acd3-d73d99ec1e61",
+    "dataset_id": "75085a83-3847-4400-9930-7c0cdb25d073",
+    "dataset_name": "Dataset 5",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -1585,13 +529,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-20T18:16:57.895Z"
+    "@timestamp": "2025-06-21T08:05:32.033Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "85f6c8eb-d471-4842-acd3-d73d99ec1e61",
+    "dataset_id": "75085a83-3847-4400-9930-7c0cdb25d073",
+    "dataset_name": "Dataset 5",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -1600,28 +545,30 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-20T18:16:57.895Z"
+    "@timestamp": "2025-06-21T08:05:32.033Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "85f6c8eb-d471-4842-acd3-d73d99ec1e61",
+    "dataset_id": "75085a83-3847-4400-9930-7c0cdb25d073",
+    "dataset_name": "Dataset 5",
     "name": "validLVEF",
     "category": {
       "context": "verification",
       "category": "completeness"
     },
     "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-20T18:16:57.895Z"
+    "value": 96,
+    "passed": false,
+    "@timestamp": "2025-06-21T08:05:32.033Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "85f6c8eb-d471-4842-acd3-d73d99ec1e61",
+    "dataset_id": "75085a83-3847-4400-9930-7c0cdb25d073",
+    "dataset_name": "Dataset 5",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -1630,13 +577,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 2,
     "passed": true,
-    "@timestamp": "2025-05-20T18:16:57.895Z"
+    "@timestamp": "2025-06-21T08:05:32.033Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "85f6c8eb-d471-4842-acd3-d73d99ec1e61",
+    "dataset_id": "75085a83-3847-4400-9930-7c0cdb25d073",
+    "dataset_name": "Dataset 5",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -1645,43 +593,46 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-05-20T18:16:57.895Z"
+    "@timestamp": "2025-06-21T08:05:32.033Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "85f6c8eb-d471-4842-acd3-d73d99ec1e61",
+    "dataset_id": "75085a83-3847-4400-9930-7c0cdb25d073",
+    "dataset_name": "Dataset 5",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "low": 18,
-    "value": 34,
+    "value": 31,
     "passed": true,
-    "@timestamp": "2025-05-20T18:16:57.895Z"
+    "@timestamp": "2025-06-21T08:05:32.033Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "85f6c8eb-d471-4842-acd3-d73d99ec1e61",
+    "dataset_id": "75085a83-3847-4400-9930-7c0cdb25d073",
+    "dataset_name": "Dataset 5",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "high": 30,
-    "value": 21,
+    "value": 29,
     "passed": true,
-    "@timestamp": "2025-05-20T18:16:57.895Z"
+    "@timestamp": "2025-06-21T08:05:32.033Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "85f6c8eb-d471-4842-acd3-d73d99ec1e61",
+    "dataset_id": "75085a83-3847-4400-9930-7c0cdb25d073",
+    "dataset_name": "Dataset 5",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -1691,13 +642,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 55,
     "value": 59,
     "passed": false,
-    "@timestamp": "2025-05-20T18:16:57.895Z"
+    "@timestamp": "2025-06-21T08:05:32.033Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0114f20a-72fa-4ee7-a576-7c5e608f55c1",
+    "dataset_id": "98f545de-e755-41c2-b039-a54753b2108c",
+    "dataset_name": "Dataset 6",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -1706,13 +658,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-04-16T06:05:29.908Z"
+    "@timestamp": "2025-07-09T08:38:53.936Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0114f20a-72fa-4ee7-a576-7c5e608f55c1",
+    "dataset_id": "98f545de-e755-41c2-b039-a54753b2108c",
+    "dataset_name": "Dataset 6",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -1721,13 +674,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-04-16T06:05:29.908Z"
+    "@timestamp": "2025-07-09T08:38:53.936Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0114f20a-72fa-4ee7-a576-7c5e608f55c1",
+    "dataset_id": "98f545de-e755-41c2-b039-a54753b2108c",
+    "dataset_name": "Dataset 6",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -1736,13 +690,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-04-16T06:05:29.908Z"
+    "@timestamp": "2025-07-09T08:38:53.936Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0114f20a-72fa-4ee7-a576-7c5e608f55c1",
+    "dataset_id": "98f545de-e755-41c2-b039-a54753b2108c",
+    "dataset_name": "Dataset 6",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -1751,13 +706,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 2,
     "passed": true,
-    "@timestamp": "2025-04-16T06:05:29.908Z"
+    "@timestamp": "2025-07-09T08:38:53.936Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0114f20a-72fa-4ee7-a576-7c5e608f55c1",
+    "dataset_id": "98f545de-e755-41c2-b039-a54753b2108c",
+    "dataset_name": "Dataset 6",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -1766,43 +722,304 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-04-16T06:05:29.908Z"
+    "@timestamp": "2025-07-09T08:38:53.936Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0114f20a-72fa-4ee7-a576-7c5e608f55c1",
+    "dataset_id": "98f545de-e755-41c2-b039-a54753b2108c",
+    "dataset_name": "Dataset 6",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "low": 18,
-    "value": 21,
+    "value": 34,
     "passed": true,
-    "@timestamp": "2025-04-16T06:05:29.908Z"
+    "@timestamp": "2025-07-09T08:38:53.936Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0114f20a-72fa-4ee7-a576-7c5e608f55c1",
+    "dataset_id": "98f545de-e755-41c2-b039-a54753b2108c",
+    "dataset_name": "Dataset 6",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "high": 30,
-    "value": 36,
-    "passed": false,
-    "@timestamp": "2025-04-16T06:05:29.908Z"
+    "value": 26,
+    "passed": true,
+    "@timestamp": "2025-07-09T08:38:53.936Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0114f20a-72fa-4ee7-a576-7c5e608f55c1",
+    "dataset_id": "98f545de-e755-41c2-b039-a54753b2108c",
+    "dataset_name": "Dataset 6",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 58,
+    "passed": false,
+    "@timestamp": "2025-07-09T08:38:53.936Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5d2100a4-5487-4db5-b28b-32b58849f8b1",
+    "dataset_name": "Dataset 7",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-16T09:04:40.028Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5d2100a4-5487-4db5-b28b-32b58849f8b1",
+    "dataset_name": "Dataset 7",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-16T09:04:40.028Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5d2100a4-5487-4db5-b28b-32b58849f8b1",
+    "dataset_name": "Dataset 7",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-16T09:04:40.028Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5d2100a4-5487-4db5-b28b-32b58849f8b1",
+    "dataset_name": "Dataset 7",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-16T09:04:40.028Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5d2100a4-5487-4db5-b28b-32b58849f8b1",
+    "dataset_name": "Dataset 7",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-16T09:04:40.028Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5d2100a4-5487-4db5-b28b-32b58849f8b1",
+    "dataset_name": "Dataset 7",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 30,
+    "passed": true,
+    "@timestamp": "2025-06-16T09:04:40.028Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5d2100a4-5487-4db5-b28b-32b58849f8b1",
+    "dataset_name": "Dataset 7",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 24,
+    "passed": true,
+    "@timestamp": "2025-06-16T09:04:40.028Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5d2100a4-5487-4db5-b28b-32b58849f8b1",
+    "dataset_name": "Dataset 7",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 52,
+    "passed": true,
+    "@timestamp": "2025-06-16T09:04:40.028Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "335c9036-6e34-4a9c-bc0c-042037cf7a92",
+    "dataset_name": "Dataset 8",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-08T14:18:10.470Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "335c9036-6e34-4a9c-bc0c-042037cf7a92",
+    "dataset_name": "Dataset 8",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-08T14:18:10.470Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "335c9036-6e34-4a9c-bc0c-042037cf7a92",
+    "dataset_name": "Dataset 8",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-08T14:18:10.470Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "335c9036-6e34-4a9c-bc0c-042037cf7a92",
+    "dataset_name": "Dataset 8",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-08T14:18:10.470Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "335c9036-6e34-4a9c-bc0c-042037cf7a92",
+    "dataset_name": "Dataset 8",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-08T14:18:10.470Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "335c9036-6e34-4a9c-bc0c-042037cf7a92",
+    "dataset_name": "Dataset 8",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 28,
+    "passed": true,
+    "@timestamp": "2025-06-08T14:18:10.470Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "335c9036-6e34-4a9c-bc0c-042037cf7a92",
+    "dataset_name": "Dataset 8",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 17,
+    "passed": true,
+    "@timestamp": "2025-06-08T14:18:10.470Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "335c9036-6e34-4a9c-bc0c-042037cf7a92",
+    "dataset_name": "Dataset 8",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -1812,13 +1029,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 55,
     "value": 57,
     "passed": false,
-    "@timestamp": "2025-04-16T06:05:29.908Z"
+    "@timestamp": "2025-06-08T14:18:10.470Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "2ee5c1bd-ba13-4628-998f-2fc5a99bf130",
+    "dataset_id": "fa819da7-12fd-43e1-a002-5bd8d003dc4a",
+    "dataset_name": "Dataset 9",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -1827,13 +1045,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-06T20:11:36.120Z"
+    "@timestamp": "2025-07-26T12:05:41.321Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "2ee5c1bd-ba13-4628-998f-2fc5a99bf130",
+    "dataset_id": "fa819da7-12fd-43e1-a002-5bd8d003dc4a",
+    "dataset_name": "Dataset 9",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -1842,13 +1061,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-06T20:11:36.120Z"
+    "@timestamp": "2025-07-26T12:05:41.321Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "2ee5c1bd-ba13-4628-998f-2fc5a99bf130",
+    "dataset_id": "fa819da7-12fd-43e1-a002-5bd8d003dc4a",
+    "dataset_name": "Dataset 9",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -1857,13 +1077,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-06T20:11:36.120Z"
+    "@timestamp": "2025-07-26T12:05:41.321Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "2ee5c1bd-ba13-4628-998f-2fc5a99bf130",
+    "dataset_id": "fa819da7-12fd-43e1-a002-5bd8d003dc4a",
+    "dataset_name": "Dataset 9",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -1872,13 +1093,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 2,
     "passed": true,
-    "@timestamp": "2025-05-06T20:11:36.120Z"
+    "@timestamp": "2025-07-26T12:05:41.321Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "2ee5c1bd-ba13-4628-998f-2fc5a99bf130",
+    "dataset_id": "fa819da7-12fd-43e1-a002-5bd8d003dc4a",
+    "dataset_name": "Dataset 9",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -1887,13 +1109,1691 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-05-06T20:11:36.120Z"
+    "@timestamp": "2025-07-26T12:05:41.321Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "2ee5c1bd-ba13-4628-998f-2fc5a99bf130",
+    "dataset_id": "fa819da7-12fd-43e1-a002-5bd8d003dc4a",
+    "dataset_name": "Dataset 9",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 19,
+    "passed": true,
+    "@timestamp": "2025-07-26T12:05:41.321Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "fa819da7-12fd-43e1-a002-5bd8d003dc4a",
+    "dataset_name": "Dataset 9",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 33,
+    "passed": false,
+    "@timestamp": "2025-07-26T12:05:41.321Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "fa819da7-12fd-43e1-a002-5bd8d003dc4a",
+    "dataset_name": "Dataset 9",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 52,
+    "passed": true,
+    "@timestamp": "2025-07-26T12:05:41.321Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2d8f0b59-90fd-4480-a73b-5bde781c7903",
+    "dataset_name": "Dataset 10",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-06T13:14:17.566Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2d8f0b59-90fd-4480-a73b-5bde781c7903",
+    "dataset_name": "Dataset 10",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 98,
+    "passed": false,
+    "@timestamp": "2025-06-06T13:14:17.566Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2d8f0b59-90fd-4480-a73b-5bde781c7903",
+    "dataset_name": "Dataset 10",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 96,
+    "passed": false,
+    "@timestamp": "2025-06-06T13:14:17.566Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2d8f0b59-90fd-4480-a73b-5bde781c7903",
+    "dataset_name": "Dataset 10",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-06T13:14:17.566Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2d8f0b59-90fd-4480-a73b-5bde781c7903",
+    "dataset_name": "Dataset 10",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-06T13:14:17.566Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2d8f0b59-90fd-4480-a73b-5bde781c7903",
+    "dataset_name": "Dataset 10",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 30,
+    "passed": true,
+    "@timestamp": "2025-06-06T13:14:17.566Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2d8f0b59-90fd-4480-a73b-5bde781c7903",
+    "dataset_name": "Dataset 10",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 29,
+    "passed": true,
+    "@timestamp": "2025-06-06T13:14:17.566Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2d8f0b59-90fd-4480-a73b-5bde781c7903",
+    "dataset_name": "Dataset 10",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 58,
+    "passed": false,
+    "@timestamp": "2025-06-06T13:14:17.566Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5b408bad-5a45-47ab-b4e1-05b5f437e31a",
+    "dataset_name": "Dataset 11",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 97,
+    "passed": false,
+    "@timestamp": "2025-08-01T18:24:45.243Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5b408bad-5a45-47ab-b4e1-05b5f437e31a",
+    "dataset_name": "Dataset 11",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 98,
+    "passed": false,
+    "@timestamp": "2025-08-01T18:24:45.243Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5b408bad-5a45-47ab-b4e1-05b5f437e31a",
+    "dataset_name": "Dataset 11",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-01T18:24:45.243Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5b408bad-5a45-47ab-b4e1-05b5f437e31a",
+    "dataset_name": "Dataset 11",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-08-01T18:24:45.243Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5b408bad-5a45-47ab-b4e1-05b5f437e31a",
+    "dataset_name": "Dataset 11",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-08-01T18:24:45.243Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5b408bad-5a45-47ab-b4e1-05b5f437e31a",
+    "dataset_name": "Dataset 11",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 20,
+    "passed": true,
+    "@timestamp": "2025-08-01T18:24:45.243Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5b408bad-5a45-47ab-b4e1-05b5f437e31a",
+    "dataset_name": "Dataset 11",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 39,
+    "passed": false,
+    "@timestamp": "2025-08-01T18:24:45.243Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5b408bad-5a45-47ab-b4e1-05b5f437e31a",
+    "dataset_name": "Dataset 11",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 52,
+    "passed": true,
+    "@timestamp": "2025-08-01T18:24:45.243Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "19418e79-47fd-487d-a535-9bf2a8385b62",
+    "dataset_name": "Dataset 12",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-10T12:09:46.231Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "19418e79-47fd-487d-a535-9bf2a8385b62",
+    "dataset_name": "Dataset 12",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-10T12:09:46.231Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "19418e79-47fd-487d-a535-9bf2a8385b62",
+    "dataset_name": "Dataset 12",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-10T12:09:46.231Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "19418e79-47fd-487d-a535-9bf2a8385b62",
+    "dataset_name": "Dataset 12",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-10T12:09:46.231Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "19418e79-47fd-487d-a535-9bf2a8385b62",
+    "dataset_name": "Dataset 12",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-07-10T12:09:46.231Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "19418e79-47fd-487d-a535-9bf2a8385b62",
+    "dataset_name": "Dataset 12",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 36,
+    "passed": true,
+    "@timestamp": "2025-07-10T12:09:46.231Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "19418e79-47fd-487d-a535-9bf2a8385b62",
+    "dataset_name": "Dataset 12",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 19,
+    "passed": true,
+    "@timestamp": "2025-07-10T12:09:46.231Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "19418e79-47fd-487d-a535-9bf2a8385b62",
+    "dataset_name": "Dataset 12",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 55,
+    "passed": true,
+    "@timestamp": "2025-07-10T12:09:46.231Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "cb399888-c43e-46f1-bb6b-5b9e8e0eb4ea",
+    "dataset_name": "Dataset 13",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-11T05:30:14.064Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "cb399888-c43e-46f1-bb6b-5b9e8e0eb4ea",
+    "dataset_name": "Dataset 13",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-11T05:30:14.064Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "cb399888-c43e-46f1-bb6b-5b9e8e0eb4ea",
+    "dataset_name": "Dataset 13",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-11T05:30:14.064Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "cb399888-c43e-46f1-bb6b-5b9e8e0eb4ea",
+    "dataset_name": "Dataset 13",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-11T05:30:14.064Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "cb399888-c43e-46f1-bb6b-5b9e8e0eb4ea",
+    "dataset_name": "Dataset 13",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-07-11T05:30:14.064Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "cb399888-c43e-46f1-bb6b-5b9e8e0eb4ea",
+    "dataset_name": "Dataset 13",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 33,
+    "passed": true,
+    "@timestamp": "2025-07-11T05:30:14.064Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "cb399888-c43e-46f1-bb6b-5b9e8e0eb4ea",
+    "dataset_name": "Dataset 13",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 29,
+    "passed": true,
+    "@timestamp": "2025-07-11T05:30:14.064Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "cb399888-c43e-46f1-bb6b-5b9e8e0eb4ea",
+    "dataset_name": "Dataset 13",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 52,
+    "passed": true,
+    "@timestamp": "2025-07-11T05:30:14.064Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e3e29f42-e8e2-4c94-bc2b-5f2d07911acf",
+    "dataset_name": "Dataset 14",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-20T19:26:11.812Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e3e29f42-e8e2-4c94-bc2b-5f2d07911acf",
+    "dataset_name": "Dataset 14",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-20T19:26:11.812Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e3e29f42-e8e2-4c94-bc2b-5f2d07911acf",
+    "dataset_name": "Dataset 14",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-20T19:26:11.812Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e3e29f42-e8e2-4c94-bc2b-5f2d07911acf",
+    "dataset_name": "Dataset 14",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-20T19:26:11.812Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e3e29f42-e8e2-4c94-bc2b-5f2d07911acf",
+    "dataset_name": "Dataset 14",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-20T19:26:11.812Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e3e29f42-e8e2-4c94-bc2b-5f2d07911acf",
+    "dataset_name": "Dataset 14",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 15,
+    "passed": false,
+    "@timestamp": "2025-06-20T19:26:11.812Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e3e29f42-e8e2-4c94-bc2b-5f2d07911acf",
+    "dataset_name": "Dataset 14",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 27,
+    "passed": true,
+    "@timestamp": "2025-06-20T19:26:11.812Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e3e29f42-e8e2-4c94-bc2b-5f2d07911acf",
+    "dataset_name": "Dataset 14",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 55,
+    "passed": true,
+    "@timestamp": "2025-06-20T19:26:11.812Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8ced48bf-cd87-4703-afd0-79a15a253576",
+    "dataset_name": "Dataset 15",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-13T21:05:33.039Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8ced48bf-cd87-4703-afd0-79a15a253576",
+    "dataset_name": "Dataset 15",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-13T21:05:33.039Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8ced48bf-cd87-4703-afd0-79a15a253576",
+    "dataset_name": "Dataset 15",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-13T21:05:33.039Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8ced48bf-cd87-4703-afd0-79a15a253576",
+    "dataset_name": "Dataset 15",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 0,
+    "passed": false,
+    "@timestamp": "2025-07-13T21:05:33.039Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8ced48bf-cd87-4703-afd0-79a15a253576",
+    "dataset_name": "Dataset 15",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-07-13T21:05:33.039Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8ced48bf-cd87-4703-afd0-79a15a253576",
+    "dataset_name": "Dataset 15",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 19,
+    "passed": true,
+    "@timestamp": "2025-07-13T21:05:33.039Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8ced48bf-cd87-4703-afd0-79a15a253576",
+    "dataset_name": "Dataset 15",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 35,
+    "passed": false,
+    "@timestamp": "2025-07-13T21:05:33.039Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8ced48bf-cd87-4703-afd0-79a15a253576",
+    "dataset_name": "Dataset 15",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 59,
+    "passed": false,
+    "@timestamp": "2025-07-13T21:05:33.039Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8f82e35b-c470-446c-a22e-2f74b5efa133",
+    "dataset_name": "Dataset 16",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-22T13:09:17.527Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8f82e35b-c470-446c-a22e-2f74b5efa133",
+    "dataset_name": "Dataset 16",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-22T13:09:17.527Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8f82e35b-c470-446c-a22e-2f74b5efa133",
+    "dataset_name": "Dataset 16",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-22T13:09:17.527Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8f82e35b-c470-446c-a22e-2f74b5efa133",
+    "dataset_name": "Dataset 16",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-05-22T13:09:17.527Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8f82e35b-c470-446c-a22e-2f74b5efa133",
+    "dataset_name": "Dataset 16",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-05-22T13:09:17.527Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8f82e35b-c470-446c-a22e-2f74b5efa133",
+    "dataset_name": "Dataset 16",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 30,
+    "passed": true,
+    "@timestamp": "2025-05-22T13:09:17.527Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8f82e35b-c470-446c-a22e-2f74b5efa133",
+    "dataset_name": "Dataset 16",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 18,
+    "passed": true,
+    "@timestamp": "2025-05-22T13:09:17.527Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8f82e35b-c470-446c-a22e-2f74b5efa133",
+    "dataset_name": "Dataset 16",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 56,
+    "passed": false,
+    "@timestamp": "2025-05-22T13:09:17.527Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "6e722aeb-3322-4069-9460-763a9089ec52",
+    "dataset_name": "Dataset 17",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-31T01:55:00.004Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "6e722aeb-3322-4069-9460-763a9089ec52",
+    "dataset_name": "Dataset 17",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-31T01:55:00.004Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "6e722aeb-3322-4069-9460-763a9089ec52",
+    "dataset_name": "Dataset 17",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-31T01:55:00.004Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "6e722aeb-3322-4069-9460-763a9089ec52",
+    "dataset_name": "Dataset 17",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-31T01:55:00.004Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "6e722aeb-3322-4069-9460-763a9089ec52",
+    "dataset_name": "Dataset 17",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-07-31T01:55:00.004Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "6e722aeb-3322-4069-9460-763a9089ec52",
+    "dataset_name": "Dataset 17",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 39,
+    "passed": true,
+    "@timestamp": "2025-07-31T01:55:00.004Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "6e722aeb-3322-4069-9460-763a9089ec52",
+    "dataset_name": "Dataset 17",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 27,
+    "passed": true,
+    "@timestamp": "2025-07-31T01:55:00.004Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "6e722aeb-3322-4069-9460-763a9089ec52",
+    "dataset_name": "Dataset 17",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 56,
+    "passed": false,
+    "@timestamp": "2025-07-31T01:55:00.004Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "82b13d8f-6e64-414f-8689-ca27bd8745a1",
+    "dataset_name": "Dataset 18",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-08T16:06:39.437Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "82b13d8f-6e64-414f-8689-ca27bd8745a1",
+    "dataset_name": "Dataset 18",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-08T16:06:39.437Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "82b13d8f-6e64-414f-8689-ca27bd8745a1",
+    "dataset_name": "Dataset 18",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-08T16:06:39.437Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "82b13d8f-6e64-414f-8689-ca27bd8745a1",
+    "dataset_name": "Dataset 18",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-08-08T16:06:39.437Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "82b13d8f-6e64-414f-8689-ca27bd8745a1",
+    "dataset_name": "Dataset 18",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-08-08T16:06:39.437Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "82b13d8f-6e64-414f-8689-ca27bd8745a1",
+    "dataset_name": "Dataset 18",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 20,
+    "passed": true,
+    "@timestamp": "2025-08-08T16:06:39.437Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "82b13d8f-6e64-414f-8689-ca27bd8745a1",
+    "dataset_name": "Dataset 18",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 31,
+    "passed": false,
+    "@timestamp": "2025-08-08T16:06:39.437Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "82b13d8f-6e64-414f-8689-ca27bd8745a1",
+    "dataset_name": "Dataset 18",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 59,
+    "passed": false,
+    "@timestamp": "2025-08-08T16:06:39.437Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2f84fd21-094d-462e-8444-c542c56d3545",
+    "dataset_name": "Dataset 19",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-20T23:00:05.587Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2f84fd21-094d-462e-8444-c542c56d3545",
+    "dataset_name": "Dataset 19",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-20T23:00:05.587Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2f84fd21-094d-462e-8444-c542c56d3545",
+    "dataset_name": "Dataset 19",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-20T23:00:05.587Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2f84fd21-094d-462e-8444-c542c56d3545",
+    "dataset_name": "Dataset 19",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-20T23:00:05.587Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2f84fd21-094d-462e-8444-c542c56d3545",
+    "dataset_name": "Dataset 19",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-07-20T23:00:05.587Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2f84fd21-094d-462e-8444-c542c56d3545",
+    "dataset_name": "Dataset 19",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 15,
+    "passed": false,
+    "@timestamp": "2025-07-20T23:00:05.587Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2f84fd21-094d-462e-8444-c542c56d3545",
+    "dataset_name": "Dataset 19",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 37,
+    "passed": false,
+    "@timestamp": "2025-07-20T23:00:05.587Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2f84fd21-094d-462e-8444-c542c56d3545",
+    "dataset_name": "Dataset 19",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 53,
+    "passed": true,
+    "@timestamp": "2025-07-20T23:00:05.587Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "32200a8b-0c2f-4362-a8b2-fcb279bb5d00",
+    "dataset_name": "Dataset 20",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 97,
+    "passed": false,
+    "@timestamp": "2025-06-10T22:11:14.983Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "32200a8b-0c2f-4362-a8b2-fcb279bb5d00",
+    "dataset_name": "Dataset 20",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-10T22:11:14.983Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "32200a8b-0c2f-4362-a8b2-fcb279bb5d00",
+    "dataset_name": "Dataset 20",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-10T22:11:14.983Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "32200a8b-0c2f-4362-a8b2-fcb279bb5d00",
+    "dataset_name": "Dataset 20",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-10T22:11:14.983Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "32200a8b-0c2f-4362-a8b2-fcb279bb5d00",
+    "dataset_name": "Dataset 20",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-10T22:11:14.983Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "32200a8b-0c2f-4362-a8b2-fcb279bb5d00",
+    "dataset_name": "Dataset 20",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 34,
+    "passed": true,
+    "@timestamp": "2025-06-10T22:11:14.983Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "32200a8b-0c2f-4362-a8b2-fcb279bb5d00",
+    "dataset_name": "Dataset 20",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 21,
+    "passed": true,
+    "@timestamp": "2025-06-10T22:11:14.983Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "32200a8b-0c2f-4362-a8b2-fcb279bb5d00",
+    "dataset_name": "Dataset 20",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 57,
+    "passed": false,
+    "@timestamp": "2025-06-10T22:11:14.983Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "71926a73-912c-4366-992c-8d2fadb775cc",
+    "dataset_name": "Dataset 21",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-22T06:39:48.759Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "71926a73-912c-4366-992c-8d2fadb775cc",
+    "dataset_name": "Dataset 21",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-22T06:39:48.759Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "71926a73-912c-4366-992c-8d2fadb775cc",
+    "dataset_name": "Dataset 21",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-22T06:39:48.759Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "71926a73-912c-4366-992c-8d2fadb775cc",
+    "dataset_name": "Dataset 21",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-05-22T06:39:48.759Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "71926a73-912c-4366-992c-8d2fadb775cc",
+    "dataset_name": "Dataset 21",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-05-22T06:39:48.759Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "71926a73-912c-4366-992c-8d2fadb775cc",
+    "dataset_name": "Dataset 21",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 38,
+    "passed": true,
+    "@timestamp": "2025-05-22T06:39:48.759Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "71926a73-912c-4366-992c-8d2fadb775cc",
+    "dataset_name": "Dataset 21",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 31,
+    "passed": false,
+    "@timestamp": "2025-05-22T06:39:48.759Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "71926a73-912c-4366-992c-8d2fadb775cc",
+    "dataset_name": "Dataset 21",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 57,
+    "passed": false,
+    "@timestamp": "2025-05-22T06:39:48.759Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a4ece276-91e0-46d2-a391-d2ed49a97492",
+    "dataset_name": "Dataset 22",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 97,
+    "passed": false,
+    "@timestamp": "2025-07-19T03:39:28.759Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a4ece276-91e0-46d2-a391-d2ed49a97492",
+    "dataset_name": "Dataset 22",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-19T03:39:28.759Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a4ece276-91e0-46d2-a391-d2ed49a97492",
+    "dataset_name": "Dataset 22",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-19T03:39:28.759Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a4ece276-91e0-46d2-a391-d2ed49a97492",
+    "dataset_name": "Dataset 22",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-19T03:39:28.759Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a4ece276-91e0-46d2-a391-d2ed49a97492",
+    "dataset_name": "Dataset 22",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-07-19T03:39:28.759Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a4ece276-91e0-46d2-a391-d2ed49a97492",
+    "dataset_name": "Dataset 22",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
@@ -1902,28 +2802,159 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 18,
     "value": 37,
     "passed": true,
-    "@timestamp": "2025-05-06T20:11:36.120Z"
+    "@timestamp": "2025-07-19T03:39:28.759Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "2ee5c1bd-ba13-4628-998f-2fc5a99bf130",
+    "dataset_id": "a4ece276-91e0-46d2-a391-d2ed49a97492",
+    "dataset_name": "Dataset 22",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "high": 30,
-    "value": 29,
+    "value": 24,
     "passed": true,
-    "@timestamp": "2025-05-06T20:11:36.120Z"
+    "@timestamp": "2025-07-19T03:39:28.759Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "2ee5c1bd-ba13-4628-998f-2fc5a99bf130",
+    "dataset_id": "a4ece276-91e0-46d2-a391-d2ed49a97492",
+    "dataset_name": "Dataset 22",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 52,
+    "passed": true,
+    "@timestamp": "2025-07-19T03:39:28.759Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f2e9e21f-5e8b-4f12-8b08-cd64435988f7",
+    "dataset_name": "Dataset 23",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-17T00:01:38.012Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f2e9e21f-5e8b-4f12-8b08-cd64435988f7",
+    "dataset_name": "Dataset 23",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-17T00:01:38.012Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f2e9e21f-5e8b-4f12-8b08-cd64435988f7",
+    "dataset_name": "Dataset 23",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-17T00:01:38.012Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f2e9e21f-5e8b-4f12-8b08-cd64435988f7",
+    "dataset_name": "Dataset 23",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-05-17T00:01:38.012Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f2e9e21f-5e8b-4f12-8b08-cd64435988f7",
+    "dataset_name": "Dataset 23",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-05-17T00:01:38.012Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f2e9e21f-5e8b-4f12-8b08-cd64435988f7",
+    "dataset_name": "Dataset 23",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 30,
+    "passed": true,
+    "@timestamp": "2025-05-17T00:01:38.012Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f2e9e21f-5e8b-4f12-8b08-cd64435988f7",
+    "dataset_name": "Dataset 23",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 28,
+    "passed": true,
+    "@timestamp": "2025-05-17T00:01:38.012Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f2e9e21f-5e8b-4f12-8b08-cd64435988f7",
+    "dataset_name": "Dataset 23",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -1933,149 +2964,30 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 55,
     "value": 55,
     "passed": true,
-    "@timestamp": "2025-05-06T20:11:36.120Z"
+    "@timestamp": "2025-05-17T00:01:38.012Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e9221a80-a4f5-455b-abd0-faa235042970",
+    "dataset_id": "915ebead-2168-4218-96f8-e85e06ba4c70",
+    "dataset_name": "Dataset 24",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
       "category": "conformance"
     },
     "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-23T12:59:38.059Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e9221a80-a4f5-455b-abd0-faa235042970",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 98,
+    "value": 97,
     "passed": false,
-    "@timestamp": "2025-05-23T12:59:38.059Z"
+    "@timestamp": "2025-07-11T00:42:40.204Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e9221a80-a4f5-455b-abd0-faa235042970",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-23T12:59:38.059Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e9221a80-a4f5-455b-abd0-faa235042970",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-23T12:59:38.059Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e9221a80-a4f5-455b-abd0-faa235042970",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-05-23T12:59:38.059Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e9221a80-a4f5-455b-abd0-faa235042970",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 31,
-    "passed": true,
-    "@timestamp": "2025-05-23T12:59:38.059Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e9221a80-a4f5-455b-abd0-faa235042970",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 32,
-    "passed": false,
-    "@timestamp": "2025-05-23T12:59:38.059Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e9221a80-a4f5-455b-abd0-faa235042970",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 59,
-    "passed": false,
-    "@timestamp": "2025-05-23T12:59:38.059Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "5bbe70c1-fadb-420f-92d7-48d0772cae3c",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-16T17:32:50.579Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "5bbe70c1-fadb-420f-92d7-48d0772cae3c",
+    "dataset_id": "915ebead-2168-4218-96f8-e85e06ba4c70",
+    "dataset_name": "Dataset 24",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -2084,13 +2996,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-06-16T17:32:50.579Z"
+    "@timestamp": "2025-07-11T00:42:40.204Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "5bbe70c1-fadb-420f-92d7-48d0772cae3c",
+    "dataset_id": "915ebead-2168-4218-96f8-e85e06ba4c70",
+    "dataset_name": "Dataset 24",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -2099,13 +3012,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-06-16T17:32:50.579Z"
+    "@timestamp": "2025-07-11T00:42:40.204Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "5bbe70c1-fadb-420f-92d7-48d0772cae3c",
+    "dataset_id": "915ebead-2168-4218-96f8-e85e06ba4c70",
+    "dataset_name": "Dataset 24",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -2114,13 +3028,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 0,
     "passed": false,
-    "@timestamp": "2025-06-16T17:32:50.579Z"
+    "@timestamp": "2025-07-11T00:42:40.204Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "5bbe70c1-fadb-420f-92d7-48d0772cae3c",
+    "dataset_id": "915ebead-2168-4218-96f8-e85e06ba4c70",
+    "dataset_name": "Dataset 24",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -2129,28 +3044,417 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-06-16T17:32:50.579Z"
+    "@timestamp": "2025-07-11T00:42:40.204Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "5bbe70c1-fadb-420f-92d7-48d0772cae3c",
+    "dataset_id": "915ebead-2168-4218-96f8-e85e06ba4c70",
+    "dataset_name": "Dataset 24",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "low": 18,
-    "value": 27,
-    "passed": true,
-    "@timestamp": "2025-06-16T17:32:50.579Z"
+    "value": 15,
+    "passed": false,
+    "@timestamp": "2025-07-11T00:42:40.204Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "5bbe70c1-fadb-420f-92d7-48d0772cae3c",
+    "dataset_id": "915ebead-2168-4218-96f8-e85e06ba4c70",
+    "dataset_name": "Dataset 24",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 26,
+    "passed": true,
+    "@timestamp": "2025-07-11T00:42:40.204Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "915ebead-2168-4218-96f8-e85e06ba4c70",
+    "dataset_name": "Dataset 24",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 52,
+    "passed": true,
+    "@timestamp": "2025-07-11T00:42:40.204Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "531de5eb-68f4-414b-96a6-598d8357af87",
+    "dataset_name": "Dataset 25",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-29T01:56:39.501Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "531de5eb-68f4-414b-96a6-598d8357af87",
+    "dataset_name": "Dataset 25",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-29T01:56:39.501Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "531de5eb-68f4-414b-96a6-598d8357af87",
+    "dataset_name": "Dataset 25",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-29T01:56:39.501Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "531de5eb-68f4-414b-96a6-598d8357af87",
+    "dataset_name": "Dataset 25",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-29T01:56:39.501Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "531de5eb-68f4-414b-96a6-598d8357af87",
+    "dataset_name": "Dataset 25",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-29T01:56:39.501Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "531de5eb-68f4-414b-96a6-598d8357af87",
+    "dataset_name": "Dataset 25",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 34,
+    "passed": true,
+    "@timestamp": "2025-06-29T01:56:39.501Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "531de5eb-68f4-414b-96a6-598d8357af87",
+    "dataset_name": "Dataset 25",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 31,
+    "passed": false,
+    "@timestamp": "2025-06-29T01:56:39.501Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "531de5eb-68f4-414b-96a6-598d8357af87",
+    "dataset_name": "Dataset 25",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 56,
+    "passed": false,
+    "@timestamp": "2025-06-29T01:56:39.501Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "afa2d16c-e151-46c5-8113-b77800b4b576",
+    "dataset_name": "Dataset 26",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 97,
+    "passed": false,
+    "@timestamp": "2025-06-03T17:05:57.502Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "afa2d16c-e151-46c5-8113-b77800b4b576",
+    "dataset_name": "Dataset 26",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-03T17:05:57.502Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "afa2d16c-e151-46c5-8113-b77800b4b576",
+    "dataset_name": "Dataset 26",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-03T17:05:57.502Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "afa2d16c-e151-46c5-8113-b77800b4b576",
+    "dataset_name": "Dataset 26",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-03T17:05:57.502Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "afa2d16c-e151-46c5-8113-b77800b4b576",
+    "dataset_name": "Dataset 26",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 2,
+    "passed": false,
+    "@timestamp": "2025-06-03T17:05:57.502Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "afa2d16c-e151-46c5-8113-b77800b4b576",
+    "dataset_name": "Dataset 26",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 18,
+    "passed": true,
+    "@timestamp": "2025-06-03T17:05:57.502Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "afa2d16c-e151-46c5-8113-b77800b4b576",
+    "dataset_name": "Dataset 26",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 22,
+    "passed": true,
+    "@timestamp": "2025-06-03T17:05:57.502Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "afa2d16c-e151-46c5-8113-b77800b4b576",
+    "dataset_name": "Dataset 26",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 50,
+    "passed": true,
+    "@timestamp": "2025-06-03T17:05:57.502Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "3b9f37e0-bbed-40da-a7a6-088d047b624b",
+    "dataset_name": "Dataset 27",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-04T09:46:55.085Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "3b9f37e0-bbed-40da-a7a6-088d047b624b",
+    "dataset_name": "Dataset 27",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-04T09:46:55.085Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "3b9f37e0-bbed-40da-a7a6-088d047b624b",
+    "dataset_name": "Dataset 27",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-04T09:46:55.085Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "3b9f37e0-bbed-40da-a7a6-088d047b624b",
+    "dataset_name": "Dataset 27",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-04T09:46:55.085Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "3b9f37e0-bbed-40da-a7a6-088d047b624b",
+    "dataset_name": "Dataset 27",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-07-04T09:46:55.085Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "3b9f37e0-bbed-40da-a7a6-088d047b624b",
+    "dataset_name": "Dataset 27",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 18,
+    "passed": true,
+    "@timestamp": "2025-07-04T09:46:55.085Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "3b9f37e0-bbed-40da-a7a6-088d047b624b",
+    "dataset_name": "Dataset 27",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
@@ -2159,13 +3463,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 30,
     "value": 37,
     "passed": false,
-    "@timestamp": "2025-06-16T17:32:50.579Z"
+    "@timestamp": "2025-07-04T09:46:55.085Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "5bbe70c1-fadb-420f-92d7-48d0772cae3c",
+    "dataset_id": "3b9f37e0-bbed-40da-a7a6-088d047b624b",
+    "dataset_name": "Dataset 27",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -2173,15 +3478,16 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     },
     "low": 45,
     "high": 55,
-    "value": 56,
-    "passed": false,
-    "@timestamp": "2025-06-16T17:32:50.579Z"
+    "value": 50,
+    "passed": true,
+    "@timestamp": "2025-07-04T09:46:55.085Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0cfc9c8e-186d-492b-8ec1-6f66f92da517",
+    "dataset_id": "a3352474-8dc8-4812-8d37-c0619ece3f3d",
+    "dataset_name": "Dataset 28",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -2190,13 +3496,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-01T16:10:36.611Z"
+    "@timestamp": "2025-08-02T19:17:47.995Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0cfc9c8e-186d-492b-8ec1-6f66f92da517",
+    "dataset_id": "a3352474-8dc8-4812-8d37-c0619ece3f3d",
+    "dataset_name": "Dataset 28",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -2205,13 +3512,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-01T16:10:36.611Z"
+    "@timestamp": "2025-08-02T19:17:47.995Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0cfc9c8e-186d-492b-8ec1-6f66f92da517",
+    "dataset_id": "a3352474-8dc8-4812-8d37-c0619ece3f3d",
+    "dataset_name": "Dataset 28",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -2220,134 +3528,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-01T16:10:36.611Z"
+    "@timestamp": "2025-08-02T19:17:47.995Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0cfc9c8e-186d-492b-8ec1-6f66f92da517",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 0,
-    "passed": false,
-    "@timestamp": "2025-05-01T16:10:36.611Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0cfc9c8e-186d-492b-8ec1-6f66f92da517",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-05-01T16:10:36.611Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0cfc9c8e-186d-492b-8ec1-6f66f92da517",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 27,
-    "passed": true,
-    "@timestamp": "2025-05-01T16:10:36.611Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0cfc9c8e-186d-492b-8ec1-6f66f92da517",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 15,
-    "passed": true,
-    "@timestamp": "2025-05-01T16:10:36.611Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0cfc9c8e-186d-492b-8ec1-6f66f92da517",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 51,
-    "passed": true,
-    "@timestamp": "2025-05-01T16:10:36.611Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "62ea9a3e-5122-4a3a-8c77-fd08d72d07e6",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-27T06:48:30.713Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "62ea9a3e-5122-4a3a-8c77-fd08d72d07e6",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-27T06:48:30.713Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "62ea9a3e-5122-4a3a-8c77-fd08d72d07e6",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-27T06:48:30.713Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "62ea9a3e-5122-4a3a-8c77-fd08d72d07e6",
+    "dataset_id": "a3352474-8dc8-4812-8d37-c0619ece3f3d",
+    "dataset_name": "Dataset 28",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -2356,13 +3544,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 2,
     "passed": true,
-    "@timestamp": "2025-04-27T06:48:30.713Z"
+    "@timestamp": "2025-08-02T19:17:47.995Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "62ea9a3e-5122-4a3a-8c77-fd08d72d07e6",
+    "dataset_id": "a3352474-8dc8-4812-8d37-c0619ece3f3d",
+    "dataset_name": "Dataset 28",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -2371,648 +3560,46 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-04-27T06:48:30.713Z"
+    "@timestamp": "2025-08-02T19:17:47.995Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "62ea9a3e-5122-4a3a-8c77-fd08d72d07e6",
+    "dataset_id": "a3352474-8dc8-4812-8d37-c0619ece3f3d",
+    "dataset_name": "Dataset 28",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "low": 18,
-    "value": 25,
+    "value": 37,
     "passed": true,
-    "@timestamp": "2025-04-27T06:48:30.713Z"
+    "@timestamp": "2025-08-02T19:17:47.995Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "62ea9a3e-5122-4a3a-8c77-fd08d72d07e6",
+    "dataset_id": "a3352474-8dc8-4812-8d37-c0619ece3f3d",
+    "dataset_name": "Dataset 28",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "high": 30,
-    "value": 22,
-    "passed": true,
-    "@timestamp": "2025-04-27T06:48:30.713Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "62ea9a3e-5122-4a3a-8c77-fd08d72d07e6",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 51,
-    "passed": true,
-    "@timestamp": "2025-04-27T06:48:30.713Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a77a5e4e-f108-4454-ab88-2ce0b8de3e79",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-01T19:12:35.072Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a77a5e4e-f108-4454-ab88-2ce0b8de3e79",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-01T19:12:35.072Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a77a5e4e-f108-4454-ab88-2ce0b8de3e79",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-01T19:12:35.072Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a77a5e4e-f108-4454-ab88-2ce0b8de3e79",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-04-01T19:12:35.072Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a77a5e4e-f108-4454-ab88-2ce0b8de3e79",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-04-01T19:12:35.072Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a77a5e4e-f108-4454-ab88-2ce0b8de3e79",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 32,
-    "passed": true,
-    "@timestamp": "2025-04-01T19:12:35.072Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a77a5e4e-f108-4454-ab88-2ce0b8de3e79",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 15,
-    "passed": true,
-    "@timestamp": "2025-04-01T19:12:35.072Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a77a5e4e-f108-4454-ab88-2ce0b8de3e79",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 58,
-    "passed": false,
-    "@timestamp": "2025-04-01T19:12:35.072Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "bf83d35a-403e-4dea-a6ff-28a9aa32e2d1",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-30T18:22:09.006Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "bf83d35a-403e-4dea-a6ff-28a9aa32e2d1",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-30T18:22:09.006Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "bf83d35a-403e-4dea-a6ff-28a9aa32e2d1",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-30T18:22:09.006Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "bf83d35a-403e-4dea-a6ff-28a9aa32e2d1",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-04-30T18:22:09.006Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "bf83d35a-403e-4dea-a6ff-28a9aa32e2d1",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-04-30T18:22:09.006Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "bf83d35a-403e-4dea-a6ff-28a9aa32e2d1",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 34,
-    "passed": true,
-    "@timestamp": "2025-04-30T18:22:09.006Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "bf83d35a-403e-4dea-a6ff-28a9aa32e2d1",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 38,
-    "passed": false,
-    "@timestamp": "2025-04-30T18:22:09.006Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "bf83d35a-403e-4dea-a6ff-28a9aa32e2d1",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 52,
-    "passed": true,
-    "@timestamp": "2025-04-30T18:22:09.006Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f4f6034d-c89d-4254-a6fd-90f533291d07",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-28T04:04:36.154Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f4f6034d-c89d-4254-a6fd-90f533291d07",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-28T04:04:36.154Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f4f6034d-c89d-4254-a6fd-90f533291d07",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-28T04:04:36.154Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f4f6034d-c89d-4254-a6fd-90f533291d07",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-28T04:04:36.154Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f4f6034d-c89d-4254-a6fd-90f533291d07",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-05-28T04:04:36.154Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f4f6034d-c89d-4254-a6fd-90f533291d07",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 35,
-    "passed": true,
-    "@timestamp": "2025-05-28T04:04:36.154Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f4f6034d-c89d-4254-a6fd-90f533291d07",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 24,
-    "passed": true,
-    "@timestamp": "2025-05-28T04:04:36.154Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f4f6034d-c89d-4254-a6fd-90f533291d07",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 59,
-    "passed": false,
-    "@timestamp": "2025-05-28T04:04:36.154Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b255e455-9ed0-4109-a301-160ccb443576",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-15T12:06:06.947Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b255e455-9ed0-4109-a301-160ccb443576",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-15T12:06:06.947Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b255e455-9ed0-4109-a301-160ccb443576",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 96,
-    "passed": false,
-    "@timestamp": "2025-05-15T12:06:06.947Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b255e455-9ed0-4109-a301-160ccb443576",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-15T12:06:06.947Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b255e455-9ed0-4109-a301-160ccb443576",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-05-15T12:06:06.947Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b255e455-9ed0-4109-a301-160ccb443576",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 17,
-    "passed": false,
-    "@timestamp": "2025-05-15T12:06:06.947Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b255e455-9ed0-4109-a301-160ccb443576",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 16,
-    "passed": true,
-    "@timestamp": "2025-05-15T12:06:06.947Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b255e455-9ed0-4109-a301-160ccb443576",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 52,
-    "passed": true,
-    "@timestamp": "2025-05-15T12:06:06.947Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1bdc20be-e92a-45a1-abdb-e63d5f9cbe81",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-25T03:59:19.267Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1bdc20be-e92a-45a1-abdb-e63d5f9cbe81",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 98,
-    "passed": false,
-    "@timestamp": "2025-04-25T03:59:19.267Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1bdc20be-e92a-45a1-abdb-e63d5f9cbe81",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-25T03:59:19.267Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1bdc20be-e92a-45a1-abdb-e63d5f9cbe81",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-04-25T03:59:19.267Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1bdc20be-e92a-45a1-abdb-e63d5f9cbe81",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-04-25T03:59:19.267Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1bdc20be-e92a-45a1-abdb-e63d5f9cbe81",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
     "value": 21,
     "passed": true,
-    "@timestamp": "2025-04-25T03:59:19.267Z"
+    "@timestamp": "2025-08-02T19:17:47.995Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "1bdc20be-e92a-45a1-abdb-e63d5f9cbe81",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 36,
-    "passed": false,
-    "@timestamp": "2025-04-25T03:59:19.267Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1bdc20be-e92a-45a1-abdb-e63d5f9cbe81",
+    "dataset_id": "a3352474-8dc8-4812-8d37-c0619ece3f3d",
+    "dataset_name": "Dataset 28",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -3020,1104 +3607,16 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     },
     "low": 45,
     "high": 55,
-    "value": 53,
+    "value": 52,
     "passed": true,
-    "@timestamp": "2025-04-25T03:59:19.267Z"
+    "@timestamp": "2025-08-02T19:17:47.995Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "7f2bff54-79ca-488e-b41e-e32992e4fad2",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-21T19:56:29.207Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7f2bff54-79ca-488e-b41e-e32992e4fad2",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-21T19:56:29.207Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7f2bff54-79ca-488e-b41e-e32992e4fad2",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-21T19:56:29.207Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7f2bff54-79ca-488e-b41e-e32992e4fad2",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-21T19:56:29.207Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7f2bff54-79ca-488e-b41e-e32992e4fad2",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-05-21T19:56:29.207Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7f2bff54-79ca-488e-b41e-e32992e4fad2",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 39,
-    "passed": true,
-    "@timestamp": "2025-05-21T19:56:29.207Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7f2bff54-79ca-488e-b41e-e32992e4fad2",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 29,
-    "passed": true,
-    "@timestamp": "2025-05-21T19:56:29.207Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7f2bff54-79ca-488e-b41e-e32992e4fad2",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 53,
-    "passed": true,
-    "@timestamp": "2025-05-21T19:56:29.207Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f3590488-a9b6-44bf-95de-65e3455211ff",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-22T01:17:57.071Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f3590488-a9b6-44bf-95de-65e3455211ff",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-22T01:17:57.071Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f3590488-a9b6-44bf-95de-65e3455211ff",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 96,
-    "passed": false,
-    "@timestamp": "2025-05-22T01:17:57.071Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f3590488-a9b6-44bf-95de-65e3455211ff",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-22T01:17:57.071Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f3590488-a9b6-44bf-95de-65e3455211ff",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-05-22T01:17:57.071Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f3590488-a9b6-44bf-95de-65e3455211ff",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 15,
-    "passed": false,
-    "@timestamp": "2025-05-22T01:17:57.071Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f3590488-a9b6-44bf-95de-65e3455211ff",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 30,
-    "passed": true,
-    "@timestamp": "2025-05-22T01:17:57.071Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f3590488-a9b6-44bf-95de-65e3455211ff",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 56,
-    "passed": false,
-    "@timestamp": "2025-05-22T01:17:57.071Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e98aba67-6c5c-41c6-8656-c3de7ff41bfe",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-13T17:37:36.858Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e98aba67-6c5c-41c6-8656-c3de7ff41bfe",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-13T17:37:36.858Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e98aba67-6c5c-41c6-8656-c3de7ff41bfe",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-13T17:37:36.858Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e98aba67-6c5c-41c6-8656-c3de7ff41bfe",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-06-13T17:37:36.858Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e98aba67-6c5c-41c6-8656-c3de7ff41bfe",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-06-13T17:37:36.858Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e98aba67-6c5c-41c6-8656-c3de7ff41bfe",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 25,
-    "passed": true,
-    "@timestamp": "2025-06-13T17:37:36.858Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e98aba67-6c5c-41c6-8656-c3de7ff41bfe",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 25,
-    "passed": true,
-    "@timestamp": "2025-06-13T17:37:36.858Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e98aba67-6c5c-41c6-8656-c3de7ff41bfe",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 54,
-    "passed": true,
-    "@timestamp": "2025-06-13T17:37:36.858Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "9431e637-3630-4e17-be6f-e0ba0b31f7d8",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-13T23:54:48.621Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "9431e637-3630-4e17-be6f-e0ba0b31f7d8",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-13T23:54:48.621Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "9431e637-3630-4e17-be6f-e0ba0b31f7d8",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 96,
-    "passed": false,
-    "@timestamp": "2025-06-13T23:54:48.621Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "9431e637-3630-4e17-be6f-e0ba0b31f7d8",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-06-13T23:54:48.621Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "9431e637-3630-4e17-be6f-e0ba0b31f7d8",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-06-13T23:54:48.621Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "9431e637-3630-4e17-be6f-e0ba0b31f7d8",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 31,
-    "passed": true,
-    "@timestamp": "2025-06-13T23:54:48.621Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "9431e637-3630-4e17-be6f-e0ba0b31f7d8",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 18,
-    "passed": true,
-    "@timestamp": "2025-06-13T23:54:48.621Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "9431e637-3630-4e17-be6f-e0ba0b31f7d8",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 60,
-    "passed": false,
-    "@timestamp": "2025-06-13T23:54:48.621Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "971f75a7-6784-4206-ae05-a2421529dcaf",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-22T16:53:13.860Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "971f75a7-6784-4206-ae05-a2421529dcaf",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-22T16:53:13.860Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "971f75a7-6784-4206-ae05-a2421529dcaf",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 96,
-    "passed": false,
-    "@timestamp": "2025-05-22T16:53:13.860Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "971f75a7-6784-4206-ae05-a2421529dcaf",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-22T16:53:13.860Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "971f75a7-6784-4206-ae05-a2421529dcaf",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-05-22T16:53:13.860Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "971f75a7-6784-4206-ae05-a2421529dcaf",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 38,
-    "passed": true,
-    "@timestamp": "2025-05-22T16:53:13.860Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "971f75a7-6784-4206-ae05-a2421529dcaf",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 25,
-    "passed": true,
-    "@timestamp": "2025-05-22T16:53:13.860Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "971f75a7-6784-4206-ae05-a2421529dcaf",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 53,
-    "passed": true,
-    "@timestamp": "2025-05-22T16:53:13.860Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "24e06ae8-2b7c-49dd-b191-00bff3faade1",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-08T12:42:09.506Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "24e06ae8-2b7c-49dd-b191-00bff3faade1",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-08T12:42:09.506Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "24e06ae8-2b7c-49dd-b191-00bff3faade1",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-08T12:42:09.506Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "24e06ae8-2b7c-49dd-b191-00bff3faade1",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 0,
-    "passed": false,
-    "@timestamp": "2025-06-08T12:42:09.506Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "24e06ae8-2b7c-49dd-b191-00bff3faade1",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-06-08T12:42:09.506Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "24e06ae8-2b7c-49dd-b191-00bff3faade1",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 32,
-    "passed": true,
-    "@timestamp": "2025-06-08T12:42:09.506Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "24e06ae8-2b7c-49dd-b191-00bff3faade1",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 26,
-    "passed": true,
-    "@timestamp": "2025-06-08T12:42:09.506Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "24e06ae8-2b7c-49dd-b191-00bff3faade1",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 60,
-    "passed": false,
-    "@timestamp": "2025-06-08T12:42:09.506Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "991ca2d5-6556-4bc6-977e-47da5fba9e4d",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-20T13:53:26.351Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "991ca2d5-6556-4bc6-977e-47da5fba9e4d",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 98,
-    "passed": false,
-    "@timestamp": "2025-05-20T13:53:26.351Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "991ca2d5-6556-4bc6-977e-47da5fba9e4d",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-20T13:53:26.351Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "991ca2d5-6556-4bc6-977e-47da5fba9e4d",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-20T13:53:26.351Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "991ca2d5-6556-4bc6-977e-47da5fba9e4d",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-05-20T13:53:26.351Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "991ca2d5-6556-4bc6-977e-47da5fba9e4d",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 32,
-    "passed": true,
-    "@timestamp": "2025-05-20T13:53:26.351Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "991ca2d5-6556-4bc6-977e-47da5fba9e4d",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 31,
-    "passed": false,
-    "@timestamp": "2025-05-20T13:53:26.351Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "991ca2d5-6556-4bc6-977e-47da5fba9e4d",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 60,
-    "passed": false,
-    "@timestamp": "2025-05-20T13:53:26.351Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cc90c648-4dd2-40c6-bf80-8aea03255a60",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-16T05:29:15.307Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cc90c648-4dd2-40c6-bf80-8aea03255a60",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-16T05:29:15.307Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cc90c648-4dd2-40c6-bf80-8aea03255a60",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-16T05:29:15.307Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cc90c648-4dd2-40c6-bf80-8aea03255a60",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-06-16T05:29:15.307Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cc90c648-4dd2-40c6-bf80-8aea03255a60",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 2,
-    "passed": false,
-    "@timestamp": "2025-06-16T05:29:15.307Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cc90c648-4dd2-40c6-bf80-8aea03255a60",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 20,
-    "passed": true,
-    "@timestamp": "2025-06-16T05:29:15.307Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cc90c648-4dd2-40c6-bf80-8aea03255a60",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 25,
-    "passed": true,
-    "@timestamp": "2025-06-16T05:29:15.307Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cc90c648-4dd2-40c6-bf80-8aea03255a60",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 60,
-    "passed": false,
-    "@timestamp": "2025-06-16T05:29:15.307Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7859dfb4-752b-4241-8b0d-c4580f0669c1",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-29T05:31:18.293Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7859dfb4-752b-4241-8b0d-c4580f0669c1",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-29T05:31:18.293Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7859dfb4-752b-4241-8b0d-c4580f0669c1",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-29T05:31:18.293Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7859dfb4-752b-4241-8b0d-c4580f0669c1",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-04-29T05:31:18.293Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7859dfb4-752b-4241-8b0d-c4580f0669c1",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-04-29T05:31:18.293Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7859dfb4-752b-4241-8b0d-c4580f0669c1",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 34,
-    "passed": true,
-    "@timestamp": "2025-04-29T05:31:18.293Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7859dfb4-752b-4241-8b0d-c4580f0669c1",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 32,
-    "passed": false,
-    "@timestamp": "2025-04-29T05:31:18.293Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7859dfb4-752b-4241-8b0d-c4580f0669c1",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 56,
-    "passed": false,
-    "@timestamp": "2025-04-29T05:31:18.293Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0ecfc1c0-029e-4316-9b39-3d65db787919",
+    "dataset_id": "7ac5cc42-9888-4220-8f06-2c86397b901f",
+    "dataset_name": "Dataset 29",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -4126,13 +3625,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 97,
     "passed": false,
-    "@timestamp": "2025-05-24T18:45:51.864Z"
+    "@timestamp": "2025-06-09T18:59:26.569Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0ecfc1c0-029e-4316-9b39-3d65db787919",
+    "dataset_id": "7ac5cc42-9888-4220-8f06-2c86397b901f",
+    "dataset_name": "Dataset 29",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -4141,13 +3641,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-24T18:45:51.864Z"
+    "@timestamp": "2025-06-09T18:59:26.569Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0ecfc1c0-029e-4316-9b39-3d65db787919",
+    "dataset_id": "7ac5cc42-9888-4220-8f06-2c86397b901f",
+    "dataset_name": "Dataset 29",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -4156,13 +3657,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-24T18:45:51.864Z"
+    "@timestamp": "2025-06-09T18:59:26.569Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0ecfc1c0-029e-4316-9b39-3d65db787919",
+    "dataset_id": "7ac5cc42-9888-4220-8f06-2c86397b901f",
+    "dataset_name": "Dataset 29",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -4171,255 +3673,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 2,
     "passed": true,
-    "@timestamp": "2025-05-24T18:45:51.864Z"
+    "@timestamp": "2025-06-09T18:59:26.569Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "0ecfc1c0-029e-4316-9b39-3d65db787919",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-05-24T18:45:51.864Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0ecfc1c0-029e-4316-9b39-3d65db787919",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 34,
-    "passed": true,
-    "@timestamp": "2025-05-24T18:45:51.864Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0ecfc1c0-029e-4316-9b39-3d65db787919",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 28,
-    "passed": true,
-    "@timestamp": "2025-05-24T18:45:51.864Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0ecfc1c0-029e-4316-9b39-3d65db787919",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 50,
-    "passed": true,
-    "@timestamp": "2025-05-24T18:45:51.864Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1a249baa-c232-4758-9608-26550054610e",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-28T13:29:25.245Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1a249baa-c232-4758-9608-26550054610e",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-28T13:29:25.245Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1a249baa-c232-4758-9608-26550054610e",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-28T13:29:25.245Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1a249baa-c232-4758-9608-26550054610e",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-28T13:29:25.245Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1a249baa-c232-4758-9608-26550054610e",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-05-28T13:29:25.245Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1a249baa-c232-4758-9608-26550054610e",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 15,
-    "passed": false,
-    "@timestamp": "2025-05-28T13:29:25.245Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1a249baa-c232-4758-9608-26550054610e",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 20,
-    "passed": true,
-    "@timestamp": "2025-05-28T13:29:25.245Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1a249baa-c232-4758-9608-26550054610e",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 50,
-    "passed": true,
-    "@timestamp": "2025-05-28T13:29:25.245Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e4fa3650-4109-4e1f-8ab3-93dab2550639",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-08T05:46:39.804Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e4fa3650-4109-4e1f-8ab3-93dab2550639",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-08T05:46:39.804Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e4fa3650-4109-4e1f-8ab3-93dab2550639",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 96,
-    "passed": false,
-    "@timestamp": "2025-05-08T05:46:39.804Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e4fa3650-4109-4e1f-8ab3-93dab2550639",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-08T05:46:39.804Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e4fa3650-4109-4e1f-8ab3-93dab2550639",
+    "dataset_id": "7ac5cc42-9888-4220-8f06-2c86397b901f",
+    "dataset_name": "Dataset 29",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -4428,648 +3689,46 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 2,
     "passed": false,
-    "@timestamp": "2025-05-08T05:46:39.804Z"
+    "@timestamp": "2025-06-09T18:59:26.569Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e4fa3650-4109-4e1f-8ab3-93dab2550639",
+    "dataset_id": "7ac5cc42-9888-4220-8f06-2c86397b901f",
+    "dataset_name": "Dataset 29",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "low": 18,
-    "value": 18,
+    "value": 25,
     "passed": true,
-    "@timestamp": "2025-05-08T05:46:39.804Z"
+    "@timestamp": "2025-06-09T18:59:26.569Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e4fa3650-4109-4e1f-8ab3-93dab2550639",
+    "dataset_id": "7ac5cc42-9888-4220-8f06-2c86397b901f",
+    "dataset_name": "Dataset 29",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "high": 30,
-    "value": 31,
-    "passed": false,
-    "@timestamp": "2025-05-08T05:46:39.804Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e4fa3650-4109-4e1f-8ab3-93dab2550639",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 56,
-    "passed": false,
-    "@timestamp": "2025-05-08T05:46:39.804Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "238f30f6-2fb1-4831-892f-6d31e11a71c5",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
+    "value": 25,
     "passed": true,
-    "@timestamp": "2025-06-24T01:41:56.927Z"
+    "@timestamp": "2025-06-09T18:59:26.569Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "238f30f6-2fb1-4831-892f-6d31e11a71c5",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-24T01:41:56.927Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "238f30f6-2fb1-4831-892f-6d31e11a71c5",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-24T01:41:56.927Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "238f30f6-2fb1-4831-892f-6d31e11a71c5",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-06-24T01:41:56.927Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "238f30f6-2fb1-4831-892f-6d31e11a71c5",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-06-24T01:41:56.927Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "238f30f6-2fb1-4831-892f-6d31e11a71c5",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 18,
-    "passed": true,
-    "@timestamp": "2025-06-24T01:41:56.927Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "238f30f6-2fb1-4831-892f-6d31e11a71c5",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 15,
-    "passed": true,
-    "@timestamp": "2025-06-24T01:41:56.927Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "238f30f6-2fb1-4831-892f-6d31e11a71c5",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 59,
-    "passed": false,
-    "@timestamp": "2025-06-24T01:41:56.927Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0fff126c-ccff-42c0-8ed9-6dfe52e7605a",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-20T14:40:15.466Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0fff126c-ccff-42c0-8ed9-6dfe52e7605a",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-20T14:40:15.466Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0fff126c-ccff-42c0-8ed9-6dfe52e7605a",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-20T14:40:15.466Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0fff126c-ccff-42c0-8ed9-6dfe52e7605a",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-04-20T14:40:15.466Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0fff126c-ccff-42c0-8ed9-6dfe52e7605a",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-04-20T14:40:15.466Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0fff126c-ccff-42c0-8ed9-6dfe52e7605a",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 30,
-    "passed": true,
-    "@timestamp": "2025-04-20T14:40:15.466Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0fff126c-ccff-42c0-8ed9-6dfe52e7605a",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 30,
-    "passed": true,
-    "@timestamp": "2025-04-20T14:40:15.466Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0fff126c-ccff-42c0-8ed9-6dfe52e7605a",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 54,
-    "passed": true,
-    "@timestamp": "2025-04-20T14:40:15.466Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ea59de2e-7ccb-4c32-91a3-6530e3b5ef2b",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 97,
-    "passed": false,
-    "@timestamp": "2025-04-15T12:51:46.215Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ea59de2e-7ccb-4c32-91a3-6530e3b5ef2b",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 98,
-    "passed": false,
-    "@timestamp": "2025-04-15T12:51:46.215Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ea59de2e-7ccb-4c32-91a3-6530e3b5ef2b",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 96,
-    "passed": false,
-    "@timestamp": "2025-04-15T12:51:46.215Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ea59de2e-7ccb-4c32-91a3-6530e3b5ef2b",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-04-15T12:51:46.215Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ea59de2e-7ccb-4c32-91a3-6530e3b5ef2b",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-04-15T12:51:46.215Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ea59de2e-7ccb-4c32-91a3-6530e3b5ef2b",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 22,
-    "passed": true,
-    "@timestamp": "2025-04-15T12:51:46.215Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ea59de2e-7ccb-4c32-91a3-6530e3b5ef2b",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 24,
-    "passed": true,
-    "@timestamp": "2025-04-15T12:51:46.215Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ea59de2e-7ccb-4c32-91a3-6530e3b5ef2b",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 58,
-    "passed": false,
-    "@timestamp": "2025-04-15T12:51:46.215Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "3b9f96be-77d7-4024-9823-295ea96e1e03",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-28T05:21:25.040Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "3b9f96be-77d7-4024-9823-295ea96e1e03",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-28T05:21:25.040Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "3b9f96be-77d7-4024-9823-295ea96e1e03",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-28T05:21:25.040Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "3b9f96be-77d7-4024-9823-295ea96e1e03",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-28T05:21:25.040Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "3b9f96be-77d7-4024-9823-295ea96e1e03",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-05-28T05:21:25.040Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "3b9f96be-77d7-4024-9823-295ea96e1e03",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 28,
-    "passed": true,
-    "@timestamp": "2025-05-28T05:21:25.040Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "3b9f96be-77d7-4024-9823-295ea96e1e03",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 20,
-    "passed": true,
-    "@timestamp": "2025-05-28T05:21:25.040Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "3b9f96be-77d7-4024-9823-295ea96e1e03",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 50,
-    "passed": true,
-    "@timestamp": "2025-05-28T05:21:25.040Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "5caa4221-cf68-4ce0-b4e0-a22dd1a59539",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-05T21:48:46.326Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "5caa4221-cf68-4ce0-b4e0-a22dd1a59539",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-05T21:48:46.326Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "5caa4221-cf68-4ce0-b4e0-a22dd1a59539",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-05T21:48:46.326Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "5caa4221-cf68-4ce0-b4e0-a22dd1a59539",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 0,
-    "passed": false,
-    "@timestamp": "2025-06-05T21:48:46.326Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "5caa4221-cf68-4ce0-b4e0-a22dd1a59539",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-06-05T21:48:46.326Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "5caa4221-cf68-4ce0-b4e0-a22dd1a59539",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 20,
-    "passed": true,
-    "@timestamp": "2025-06-05T21:48:46.326Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "5caa4221-cf68-4ce0-b4e0-a22dd1a59539",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 18,
-    "passed": true,
-    "@timestamp": "2025-06-05T21:48:46.326Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "5caa4221-cf68-4ce0-b4e0-a22dd1a59539",
+    "dataset_id": "7ac5cc42-9888-4220-8f06-2c86397b901f",
+    "dataset_name": "Dataset 29",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -5079,13 +3738,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 55,
     "value": 55,
     "passed": true,
-    "@timestamp": "2025-06-05T21:48:46.326Z"
+    "@timestamp": "2025-06-09T18:59:26.569Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "86b51382-f9fb-4eaa-ac85-c0957056496d",
+    "dataset_id": "688daed8-dcf6-4350-b303-4d1e4b7444e0",
+    "dataset_name": "Dataset 30",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -5094,149 +3754,30 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-04-07T05:29:47.011Z"
+    "@timestamp": "2025-08-10T00:04:12.613Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "86b51382-f9fb-4eaa-ac85-c0957056496d",
+    "dataset_id": "688daed8-dcf6-4350-b303-4d1e4b7444e0",
+    "dataset_name": "Dataset 30",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
       "category": "conformance"
     },
     "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-07T05:29:47.011Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "86b51382-f9fb-4eaa-ac85-c0957056496d",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-07T05:29:47.011Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "86b51382-f9fb-4eaa-ac85-c0957056496d",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 0,
+    "value": 98,
     "passed": false,
-    "@timestamp": "2025-04-07T05:29:47.011Z"
+    "@timestamp": "2025-08-10T00:04:12.613Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "86b51382-f9fb-4eaa-ac85-c0957056496d",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-04-07T05:29:47.011Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "86b51382-f9fb-4eaa-ac85-c0957056496d",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 32,
-    "passed": true,
-    "@timestamp": "2025-04-07T05:29:47.011Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "86b51382-f9fb-4eaa-ac85-c0957056496d",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 40,
-    "passed": false,
-    "@timestamp": "2025-04-07T05:29:47.011Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "86b51382-f9fb-4eaa-ac85-c0957056496d",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 60,
-    "passed": false,
-    "@timestamp": "2025-04-07T05:29:47.011Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "943206f2-4e90-4449-a6e5-718d1ec75a73",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-08T10:59:59.003Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "943206f2-4e90-4449-a6e5-718d1ec75a73",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-08T10:59:59.003Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "943206f2-4e90-4449-a6e5-718d1ec75a73",
+    "dataset_id": "688daed8-dcf6-4350-b303-4d1e4b7444e0",
+    "dataset_name": "Dataset 30",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -5245,13 +3786,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 96,
     "passed": false,
-    "@timestamp": "2025-05-08T10:59:59.003Z"
+    "@timestamp": "2025-08-10T00:04:12.613Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "943206f2-4e90-4449-a6e5-718d1ec75a73",
+    "dataset_id": "688daed8-dcf6-4350-b303-4d1e4b7444e0",
+    "dataset_name": "Dataset 30",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -5260,255 +3802,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 0,
     "passed": false,
-    "@timestamp": "2025-05-08T10:59:59.003Z"
+    "@timestamp": "2025-08-10T00:04:12.613Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "943206f2-4e90-4449-a6e5-718d1ec75a73",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 2,
-    "passed": false,
-    "@timestamp": "2025-05-08T10:59:59.003Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "943206f2-4e90-4449-a6e5-718d1ec75a73",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 25,
-    "passed": true,
-    "@timestamp": "2025-05-08T10:59:59.003Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "943206f2-4e90-4449-a6e5-718d1ec75a73",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 17,
-    "passed": true,
-    "@timestamp": "2025-05-08T10:59:59.003Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "943206f2-4e90-4449-a6e5-718d1ec75a73",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 56,
-    "passed": false,
-    "@timestamp": "2025-05-08T10:59:59.003Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d67249c5-2aa3-4f8e-bb69-0f22356c6069",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-08T09:50:32.029Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d67249c5-2aa3-4f8e-bb69-0f22356c6069",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-08T09:50:32.029Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d67249c5-2aa3-4f8e-bb69-0f22356c6069",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-08T09:50:32.029Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d67249c5-2aa3-4f8e-bb69-0f22356c6069",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-06-08T09:50:32.029Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d67249c5-2aa3-4f8e-bb69-0f22356c6069",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 2,
-    "passed": false,
-    "@timestamp": "2025-06-08T09:50:32.029Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d67249c5-2aa3-4f8e-bb69-0f22356c6069",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 16,
-    "passed": false,
-    "@timestamp": "2025-06-08T09:50:32.029Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d67249c5-2aa3-4f8e-bb69-0f22356c6069",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 19,
-    "passed": true,
-    "@timestamp": "2025-06-08T09:50:32.029Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d67249c5-2aa3-4f8e-bb69-0f22356c6069",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 52,
-    "passed": true,
-    "@timestamp": "2025-06-08T09:50:32.029Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ef0c45e7-973d-468b-9b64-7c8766677b46",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-27T17:04:18.778Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ef0c45e7-973d-468b-9b64-7c8766677b46",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-27T17:04:18.778Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ef0c45e7-973d-468b-9b64-7c8766677b46",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-27T17:04:18.778Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ef0c45e7-973d-468b-9b64-7c8766677b46",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-27T17:04:18.778Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ef0c45e7-973d-468b-9b64-7c8766677b46",
+    "dataset_id": "688daed8-dcf6-4350-b303-4d1e4b7444e0",
+    "dataset_name": "Dataset 30",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -5517,769 +3818,46 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-05-27T17:04:18.778Z"
+    "@timestamp": "2025-08-10T00:04:12.613Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "ef0c45e7-973d-468b-9b64-7c8766677b46",
+    "dataset_id": "688daed8-dcf6-4350-b303-4d1e4b7444e0",
+    "dataset_name": "Dataset 30",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "low": 18,
-    "value": 31,
+    "value": 24,
     "passed": true,
-    "@timestamp": "2025-05-27T17:04:18.778Z"
+    "@timestamp": "2025-08-10T00:04:12.613Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "ef0c45e7-973d-468b-9b64-7c8766677b46",
+    "dataset_id": "688daed8-dcf6-4350-b303-4d1e4b7444e0",
+    "dataset_name": "Dataset 30",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "high": 30,
-    "value": 35,
-    "passed": false,
-    "@timestamp": "2025-05-27T17:04:18.778Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ef0c45e7-973d-468b-9b64-7c8766677b46",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 59,
-    "passed": false,
-    "@timestamp": "2025-05-27T17:04:18.778Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4fdd7493-d5de-45cd-b55b-5f50784a2f17",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 97,
-    "passed": false,
-    "@timestamp": "2025-06-08T11:31:16.204Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4fdd7493-d5de-45cd-b55b-5f50784a2f17",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
+    "value": 29,
     "passed": true,
-    "@timestamp": "2025-06-08T11:31:16.204Z"
+    "@timestamp": "2025-08-10T00:04:12.613Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "4fdd7493-d5de-45cd-b55b-5f50784a2f17",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-08T11:31:16.204Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4fdd7493-d5de-45cd-b55b-5f50784a2f17",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 0,
-    "passed": false,
-    "@timestamp": "2025-06-08T11:31:16.204Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4fdd7493-d5de-45cd-b55b-5f50784a2f17",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 2,
-    "passed": false,
-    "@timestamp": "2025-06-08T11:31:16.204Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4fdd7493-d5de-45cd-b55b-5f50784a2f17",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 27,
-    "passed": true,
-    "@timestamp": "2025-06-08T11:31:16.204Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4fdd7493-d5de-45cd-b55b-5f50784a2f17",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 22,
-    "passed": true,
-    "@timestamp": "2025-06-08T11:31:16.204Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4fdd7493-d5de-45cd-b55b-5f50784a2f17",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 50,
-    "passed": true,
-    "@timestamp": "2025-06-08T11:31:16.204Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7bebc0a3-7ce4-4494-b0c0-377f8d2df0fe",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-08T20:46:44.329Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7bebc0a3-7ce4-4494-b0c0-377f8d2df0fe",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-08T20:46:44.329Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7bebc0a3-7ce4-4494-b0c0-377f8d2df0fe",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-08T20:46:44.329Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7bebc0a3-7ce4-4494-b0c0-377f8d2df0fe",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-04-08T20:46:44.329Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7bebc0a3-7ce4-4494-b0c0-377f8d2df0fe",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-04-08T20:46:44.329Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7bebc0a3-7ce4-4494-b0c0-377f8d2df0fe",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 33,
-    "passed": true,
-    "@timestamp": "2025-04-08T20:46:44.329Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7bebc0a3-7ce4-4494-b0c0-377f8d2df0fe",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 19,
-    "passed": true,
-    "@timestamp": "2025-04-08T20:46:44.329Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7bebc0a3-7ce4-4494-b0c0-377f8d2df0fe",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 52,
-    "passed": true,
-    "@timestamp": "2025-04-08T20:46:44.329Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d11a6451-8fa6-4345-839e-441c9a7be3fc",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-14T08:52:01.446Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d11a6451-8fa6-4345-839e-441c9a7be3fc",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-14T08:52:01.446Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d11a6451-8fa6-4345-839e-441c9a7be3fc",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 96,
-    "passed": false,
-    "@timestamp": "2025-06-14T08:52:01.446Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d11a6451-8fa6-4345-839e-441c9a7be3fc",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-06-14T08:52:01.446Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d11a6451-8fa6-4345-839e-441c9a7be3fc",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-06-14T08:52:01.446Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d11a6451-8fa6-4345-839e-441c9a7be3fc",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 40,
-    "passed": true,
-    "@timestamp": "2025-06-14T08:52:01.446Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d11a6451-8fa6-4345-839e-441c9a7be3fc",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 15,
-    "passed": true,
-    "@timestamp": "2025-06-14T08:52:01.446Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d11a6451-8fa6-4345-839e-441c9a7be3fc",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 59,
-    "passed": false,
-    "@timestamp": "2025-06-14T08:52:01.446Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "56231e22-0a8b-429a-acec-caf677936a0d",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 97,
-    "passed": false,
-    "@timestamp": "2025-04-06T06:47:06.358Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "56231e22-0a8b-429a-acec-caf677936a0d",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-06T06:47:06.358Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "56231e22-0a8b-429a-acec-caf677936a0d",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-06T06:47:06.358Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "56231e22-0a8b-429a-acec-caf677936a0d",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-04-06T06:47:06.358Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "56231e22-0a8b-429a-acec-caf677936a0d",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 2,
-    "passed": false,
-    "@timestamp": "2025-04-06T06:47:06.358Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "56231e22-0a8b-429a-acec-caf677936a0d",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 34,
-    "passed": true,
-    "@timestamp": "2025-04-06T06:47:06.358Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "56231e22-0a8b-429a-acec-caf677936a0d",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 20,
-    "passed": true,
-    "@timestamp": "2025-04-06T06:47:06.358Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "56231e22-0a8b-429a-acec-caf677936a0d",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 57,
-    "passed": false,
-    "@timestamp": "2025-04-06T06:47:06.358Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4af77690-01c5-47c4-ae83-bbce37f740ba",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-06T11:21:15.566Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4af77690-01c5-47c4-ae83-bbce37f740ba",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-06T11:21:15.566Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4af77690-01c5-47c4-ae83-bbce37f740ba",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-06T11:21:15.566Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4af77690-01c5-47c4-ae83-bbce37f740ba",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-06T11:21:15.566Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4af77690-01c5-47c4-ae83-bbce37f740ba",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-05-06T11:21:15.566Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4af77690-01c5-47c4-ae83-bbce37f740ba",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 40,
-    "passed": true,
-    "@timestamp": "2025-05-06T11:21:15.566Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4af77690-01c5-47c4-ae83-bbce37f740ba",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 39,
-    "passed": false,
-    "@timestamp": "2025-05-06T11:21:15.566Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4af77690-01c5-47c4-ae83-bbce37f740ba",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 55,
-    "passed": true,
-    "@timestamp": "2025-05-06T11:21:15.566Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0bd006fe-cc01-4f28-938b-423c37655fe5",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-03-29T15:13:26.533Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0bd006fe-cc01-4f28-938b-423c37655fe5",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-03-29T15:13:26.533Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0bd006fe-cc01-4f28-938b-423c37655fe5",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-03-29T15:13:26.533Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0bd006fe-cc01-4f28-938b-423c37655fe5",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-03-29T15:13:26.533Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0bd006fe-cc01-4f28-938b-423c37655fe5",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 2,
-    "passed": false,
-    "@timestamp": "2025-03-29T15:13:26.533Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0bd006fe-cc01-4f28-938b-423c37655fe5",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 40,
-    "passed": true,
-    "@timestamp": "2025-03-29T15:13:26.533Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0bd006fe-cc01-4f28-938b-423c37655fe5",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 19,
-    "passed": true,
-    "@timestamp": "2025-03-29T15:13:26.533Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "0bd006fe-cc01-4f28-938b-423c37655fe5",
+    "dataset_id": "688daed8-dcf6-4350-b303-4d1e4b7444e0",
+    "dataset_name": "Dataset 30",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -6289,13 +3867,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 55,
     "value": 53,
     "passed": true,
-    "@timestamp": "2025-03-29T15:13:26.533Z"
+    "@timestamp": "2025-08-10T00:04:12.613Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "d305af4d-22f2-4470-b509-c3f5eb80eede",
+    "dataset_id": "8a030ae3-27c5-4966-82ce-c8c4569948fe",
+    "dataset_name": "Dataset 31",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -6304,13 +3883,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-06-02T18:17:36.958Z"
+    "@timestamp": "2025-06-24T06:07:57.473Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "d305af4d-22f2-4470-b509-c3f5eb80eede",
+    "dataset_id": "8a030ae3-27c5-4966-82ce-c8c4569948fe",
+    "dataset_name": "Dataset 31",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -6319,13 +3899,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-06-02T18:17:36.958Z"
+    "@timestamp": "2025-06-24T06:07:57.473Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "d305af4d-22f2-4470-b509-c3f5eb80eede",
+    "dataset_id": "8a030ae3-27c5-4966-82ce-c8c4569948fe",
+    "dataset_name": "Dataset 31",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -6334,13 +3915,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-06-02T18:17:36.958Z"
+    "@timestamp": "2025-06-24T06:07:57.473Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "d305af4d-22f2-4470-b509-c3f5eb80eede",
+    "dataset_id": "8a030ae3-27c5-4966-82ce-c8c4569948fe",
+    "dataset_name": "Dataset 31",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -6349,376 +3931,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 2,
     "passed": true,
-    "@timestamp": "2025-06-02T18:17:36.958Z"
+    "@timestamp": "2025-06-24T06:07:57.473Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "d305af4d-22f2-4470-b509-c3f5eb80eede",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 2,
-    "passed": false,
-    "@timestamp": "2025-06-02T18:17:36.958Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d305af4d-22f2-4470-b509-c3f5eb80eede",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 29,
-    "passed": true,
-    "@timestamp": "2025-06-02T18:17:36.958Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d305af4d-22f2-4470-b509-c3f5eb80eede",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 39,
-    "passed": false,
-    "@timestamp": "2025-06-02T18:17:36.958Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "d305af4d-22f2-4470-b509-c3f5eb80eede",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 56,
-    "passed": false,
-    "@timestamp": "2025-06-02T18:17:36.958Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f6d93eee-734f-40ba-8d77-179fb539a961",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-21T20:11:30.964Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f6d93eee-734f-40ba-8d77-179fb539a961",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-21T20:11:30.964Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f6d93eee-734f-40ba-8d77-179fb539a961",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-21T20:11:30.964Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f6d93eee-734f-40ba-8d77-179fb539a961",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-04-21T20:11:30.964Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f6d93eee-734f-40ba-8d77-179fb539a961",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 2,
-    "passed": false,
-    "@timestamp": "2025-04-21T20:11:30.964Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f6d93eee-734f-40ba-8d77-179fb539a961",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 20,
-    "passed": true,
-    "@timestamp": "2025-04-21T20:11:30.964Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f6d93eee-734f-40ba-8d77-179fb539a961",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 27,
-    "passed": true,
-    "@timestamp": "2025-04-21T20:11:30.964Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f6d93eee-734f-40ba-8d77-179fb539a961",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 52,
-    "passed": true,
-    "@timestamp": "2025-04-21T20:11:30.964Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "64b08123-a530-4b9e-9790-60b2cef8480c",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-05T22:46:47.903Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "64b08123-a530-4b9e-9790-60b2cef8480c",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-05T22:46:47.903Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "64b08123-a530-4b9e-9790-60b2cef8480c",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-05T22:46:47.903Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "64b08123-a530-4b9e-9790-60b2cef8480c",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 0,
-    "passed": false,
-    "@timestamp": "2025-05-05T22:46:47.903Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "64b08123-a530-4b9e-9790-60b2cef8480c",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 2,
-    "passed": false,
-    "@timestamp": "2025-05-05T22:46:47.903Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "64b08123-a530-4b9e-9790-60b2cef8480c",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 15,
-    "passed": false,
-    "@timestamp": "2025-05-05T22:46:47.903Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "64b08123-a530-4b9e-9790-60b2cef8480c",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 18,
-    "passed": true,
-    "@timestamp": "2025-05-05T22:46:47.903Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "64b08123-a530-4b9e-9790-60b2cef8480c",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 51,
-    "passed": true,
-    "@timestamp": "2025-05-05T22:46:47.903Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b3f42088-a9f2-4ada-b578-add01b4488b7",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-29T02:08:31.861Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b3f42088-a9f2-4ada-b578-add01b4488b7",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-29T02:08:31.861Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b3f42088-a9f2-4ada-b578-add01b4488b7",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-29T02:08:31.861Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b3f42088-a9f2-4ada-b578-add01b4488b7",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-04-29T02:08:31.861Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b3f42088-a9f2-4ada-b578-add01b4488b7",
+    "dataset_id": "8a030ae3-27c5-4966-82ce-c8c4569948fe",
+    "dataset_name": "Dataset 31",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -6727,164 +3947,46 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-04-29T02:08:31.861Z"
+    "@timestamp": "2025-06-24T06:07:57.473Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "b3f42088-a9f2-4ada-b578-add01b4488b7",
+    "dataset_id": "8a030ae3-27c5-4966-82ce-c8c4569948fe",
+    "dataset_name": "Dataset 31",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "low": 18,
-    "value": 28,
-    "passed": true,
-    "@timestamp": "2025-04-29T02:08:31.861Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b3f42088-a9f2-4ada-b578-add01b4488b7",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 26,
-    "passed": true,
-    "@timestamp": "2025-04-29T02:08:31.861Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b3f42088-a9f2-4ada-b578-add01b4488b7",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 57,
+    "value": 16,
     "passed": false,
-    "@timestamp": "2025-04-29T02:08:31.861Z"
+    "@timestamp": "2025-06-24T06:07:57.473Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "dc064ddb-e19d-4680-bf72-594e33a2d199",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-25T13:57:55.262Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "dc064ddb-e19d-4680-bf72-594e33a2d199",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-25T13:57:55.262Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "dc064ddb-e19d-4680-bf72-594e33a2d199",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-25T13:57:55.262Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "dc064ddb-e19d-4680-bf72-594e33a2d199",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-06-25T13:57:55.262Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "dc064ddb-e19d-4680-bf72-594e33a2d199",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-06-25T13:57:55.262Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "dc064ddb-e19d-4680-bf72-594e33a2d199",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 36,
-    "passed": true,
-    "@timestamp": "2025-06-25T13:57:55.262Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "dc064ddb-e19d-4680-bf72-594e33a2d199",
+    "dataset_id": "8a030ae3-27c5-4966-82ce-c8c4569948fe",
+    "dataset_name": "Dataset 31",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "high": 30,
-    "value": 19,
+    "value": 24,
     "passed": true,
-    "@timestamp": "2025-06-25T13:57:55.262Z"
+    "@timestamp": "2025-06-24T06:07:57.473Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "dc064ddb-e19d-4680-bf72-594e33a2d199",
+    "dataset_id": "8a030ae3-27c5-4966-82ce-c8c4569948fe",
+    "dataset_name": "Dataset 31",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -6894,13 +3996,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 55,
     "value": 58,
     "passed": false,
-    "@timestamp": "2025-06-25T13:57:55.262Z"
+    "@timestamp": "2025-06-24T06:07:57.473Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "726dae92-a9e6-432a-86f7-b7e252b30346",
+    "dataset_id": "6a73a2d1-c332-4f60-ab7f-6a00409b1b71",
+    "dataset_name": "Dataset 32",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -6909,13 +4012,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 97,
     "passed": false,
-    "@timestamp": "2025-03-29T11:21:12.651Z"
+    "@timestamp": "2025-05-24T23:42:01.014Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "726dae92-a9e6-432a-86f7-b7e252b30346",
+    "dataset_id": "6a73a2d1-c332-4f60-ab7f-6a00409b1b71",
+    "dataset_name": "Dataset 32",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -6924,13 +4028,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-03-29T11:21:12.651Z"
+    "@timestamp": "2025-05-24T23:42:01.014Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "726dae92-a9e6-432a-86f7-b7e252b30346",
+    "dataset_id": "6a73a2d1-c332-4f60-ab7f-6a00409b1b71",
+    "dataset_name": "Dataset 32",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -6939,13 +4044,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-03-29T11:21:12.651Z"
+    "@timestamp": "2025-05-24T23:42:01.014Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "726dae92-a9e6-432a-86f7-b7e252b30346",
+    "dataset_id": "6a73a2d1-c332-4f60-ab7f-6a00409b1b71",
+    "dataset_name": "Dataset 32",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -6954,13 +4060,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 2,
     "passed": true,
-    "@timestamp": "2025-03-29T11:21:12.651Z"
+    "@timestamp": "2025-05-24T23:42:01.014Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "726dae92-a9e6-432a-86f7-b7e252b30346",
+    "dataset_id": "6a73a2d1-c332-4f60-ab7f-6a00409b1b71",
+    "dataset_name": "Dataset 32",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -6969,270 +4076,30 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-03-29T11:21:12.651Z"
+    "@timestamp": "2025-05-24T23:42:01.014Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "726dae92-a9e6-432a-86f7-b7e252b30346",
+    "dataset_id": "6a73a2d1-c332-4f60-ab7f-6a00409b1b71",
+    "dataset_name": "Dataset 32",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "low": 18,
-    "value": 35,
+    "value": 29,
     "passed": true,
-    "@timestamp": "2025-03-29T11:21:12.651Z"
+    "@timestamp": "2025-05-24T23:42:01.014Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "726dae92-a9e6-432a-86f7-b7e252b30346",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 40,
-    "passed": false,
-    "@timestamp": "2025-03-29T11:21:12.651Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "726dae92-a9e6-432a-86f7-b7e252b30346",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 56,
-    "passed": false,
-    "@timestamp": "2025-03-29T11:21:12.651Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b5e4e2bb-cb79-42be-ad7d-0f809cff20be",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-24T03:08:53.566Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b5e4e2bb-cb79-42be-ad7d-0f809cff20be",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 98,
-    "passed": false,
-    "@timestamp": "2025-06-24T03:08:53.566Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b5e4e2bb-cb79-42be-ad7d-0f809cff20be",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-24T03:08:53.566Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b5e4e2bb-cb79-42be-ad7d-0f809cff20be",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-06-24T03:08:53.566Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b5e4e2bb-cb79-42be-ad7d-0f809cff20be",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-06-24T03:08:53.566Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b5e4e2bb-cb79-42be-ad7d-0f809cff20be",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 15,
-    "passed": false,
-    "@timestamp": "2025-06-24T03:08:53.566Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b5e4e2bb-cb79-42be-ad7d-0f809cff20be",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 31,
-    "passed": false,
-    "@timestamp": "2025-06-24T03:08:53.566Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "b5e4e2bb-cb79-42be-ad7d-0f809cff20be",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 60,
-    "passed": false,
-    "@timestamp": "2025-06-24T03:08:53.566Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "92cf08c8-45f7-4347-924f-eca62f9599c0",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-01T11:46:10.979Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "92cf08c8-45f7-4347-924f-eca62f9599c0",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-01T11:46:10.979Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "92cf08c8-45f7-4347-924f-eca62f9599c0",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-01T11:46:10.979Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "92cf08c8-45f7-4347-924f-eca62f9599c0",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-06-01T11:46:10.979Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "92cf08c8-45f7-4347-924f-eca62f9599c0",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-06-01T11:46:10.979Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "92cf08c8-45f7-4347-924f-eca62f9599c0",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 27,
-    "passed": true,
-    "@timestamp": "2025-06-01T11:46:10.979Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "92cf08c8-45f7-4347-924f-eca62f9599c0",
+    "dataset_id": "6a73a2d1-c332-4f60-ab7f-6a00409b1b71",
+    "dataset_name": "Dataset 32",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
@@ -7241,13 +4108,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 30,
     "value": 22,
     "passed": true,
-    "@timestamp": "2025-06-01T11:46:10.979Z"
+    "@timestamp": "2025-05-24T23:42:01.014Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "92cf08c8-45f7-4347-924f-eca62f9599c0",
+    "dataset_id": "6a73a2d1-c332-4f60-ab7f-6a00409b1b71",
+    "dataset_name": "Dataset 32",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -7255,15 +4123,16 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     },
     "low": 45,
     "high": 55,
-    "value": 51,
+    "value": 50,
     "passed": true,
-    "@timestamp": "2025-06-01T11:46:10.979Z"
+    "@timestamp": "2025-05-24T23:42:01.014Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "d544e901-198a-406f-bbd4-39231939b0ea",
+    "dataset_id": "94841a17-e189-42cb-936a-787d3b0c2fc7",
+    "dataset_name": "Dataset 33",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -7272,13 +4141,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-06-12T04:45:31.706Z"
+    "@timestamp": "2025-07-05T01:34:58.228Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "d544e901-198a-406f-bbd4-39231939b0ea",
+    "dataset_id": "94841a17-e189-42cb-936a-787d3b0c2fc7",
+    "dataset_name": "Dataset 33",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -7287,43 +4157,46 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-06-12T04:45:31.706Z"
+    "@timestamp": "2025-07-05T01:34:58.228Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "d544e901-198a-406f-bbd4-39231939b0ea",
+    "dataset_id": "94841a17-e189-42cb-936a-787d3b0c2fc7",
+    "dataset_name": "Dataset 33",
     "name": "validLVEF",
     "category": {
       "context": "verification",
       "category": "completeness"
     },
     "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-12T04:45:31.706Z"
+    "value": 96,
+    "passed": false,
+    "@timestamp": "2025-07-05T01:34:58.228Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "d544e901-198a-406f-bbd4-39231939b0ea",
+    "dataset_id": "94841a17-e189-42cb-936a-787d3b0c2fc7",
+    "dataset_name": "Dataset 33",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
       "category": "completeness"
     },
     "low": 2,
-    "value": 0,
-    "passed": false,
-    "@timestamp": "2025-06-12T04:45:31.706Z"
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-05T01:34:58.228Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "d544e901-198a-406f-bbd4-39231939b0ea",
+    "dataset_id": "94841a17-e189-42cb-936a-787d3b0c2fc7",
+    "dataset_name": "Dataset 33",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -7332,43 +4205,175 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-06-12T04:45:31.706Z"
+    "@timestamp": "2025-07-05T01:34:58.228Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "d544e901-198a-406f-bbd4-39231939b0ea",
+    "dataset_id": "94841a17-e189-42cb-936a-787d3b0c2fc7",
+    "dataset_name": "Dataset 33",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "low": 18,
-    "value": 32,
+    "value": 22,
     "passed": true,
-    "@timestamp": "2025-06-12T04:45:31.706Z"
+    "@timestamp": "2025-07-05T01:34:58.228Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "d544e901-198a-406f-bbd4-39231939b0ea",
+    "dataset_id": "94841a17-e189-42cb-936a-787d3b0c2fc7",
+    "dataset_name": "Dataset 33",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "high": 30,
-    "value": 25,
-    "passed": true,
-    "@timestamp": "2025-06-12T04:45:31.706Z"
+    "value": 37,
+    "passed": false,
+    "@timestamp": "2025-07-05T01:34:58.228Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "d544e901-198a-406f-bbd4-39231939b0ea",
+    "dataset_id": "94841a17-e189-42cb-936a-787d3b0c2fc7",
+    "dataset_name": "Dataset 33",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 50,
+    "passed": true,
+    "@timestamp": "2025-07-05T01:34:58.228Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "0a834050-659b-419a-8df0-9fe4fc5dcee8",
+    "dataset_name": "Dataset 34",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-29T11:56:10.398Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "0a834050-659b-419a-8df0-9fe4fc5dcee8",
+    "dataset_name": "Dataset 34",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-29T11:56:10.398Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "0a834050-659b-419a-8df0-9fe4fc5dcee8",
+    "dataset_name": "Dataset 34",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-29T11:56:10.398Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "0a834050-659b-419a-8df0-9fe4fc5dcee8",
+    "dataset_name": "Dataset 34",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-05-29T11:56:10.398Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "0a834050-659b-419a-8df0-9fe4fc5dcee8",
+    "dataset_name": "Dataset 34",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 2,
+    "passed": false,
+    "@timestamp": "2025-05-29T11:56:10.398Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "0a834050-659b-419a-8df0-9fe4fc5dcee8",
+    "dataset_name": "Dataset 34",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 24,
+    "passed": true,
+    "@timestamp": "2025-05-29T11:56:10.398Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "0a834050-659b-419a-8df0-9fe4fc5dcee8",
+    "dataset_name": "Dataset 34",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 31,
+    "passed": false,
+    "@timestamp": "2025-05-29T11:56:10.398Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "0a834050-659b-419a-8df0-9fe4fc5dcee8",
+    "dataset_name": "Dataset 34",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -7378,13 +4383,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 55,
     "value": 59,
     "passed": false,
-    "@timestamp": "2025-06-12T04:45:31.706Z"
+    "@timestamp": "2025-05-29T11:56:10.398Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "f2f66ee7-29cf-48d8-9acf-5a69f54aa7e4",
+    "dataset_id": "ae59360b-c3ae-43b0-8e25-6da6d8249bc3",
+    "dataset_name": "Dataset 35",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -7393,13 +4399,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-06-13T13:33:13.439Z"
+    "@timestamp": "2025-06-19T10:45:14.638Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "f2f66ee7-29cf-48d8-9acf-5a69f54aa7e4",
+    "dataset_id": "ae59360b-c3ae-43b0-8e25-6da6d8249bc3",
+    "dataset_name": "Dataset 35",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -7408,13 +4415,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 98,
     "passed": false,
-    "@timestamp": "2025-06-13T13:33:13.439Z"
+    "@timestamp": "2025-06-19T10:45:14.638Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "f2f66ee7-29cf-48d8-9acf-5a69f54aa7e4",
+    "dataset_id": "ae59360b-c3ae-43b0-8e25-6da6d8249bc3",
+    "dataset_name": "Dataset 35",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -7423,13 +4431,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-06-13T13:33:13.439Z"
+    "@timestamp": "2025-06-19T10:45:14.638Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "f2f66ee7-29cf-48d8-9acf-5a69f54aa7e4",
+    "dataset_id": "ae59360b-c3ae-43b0-8e25-6da6d8249bc3",
+    "dataset_name": "Dataset 35",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -7438,255 +4447,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 2,
     "passed": true,
-    "@timestamp": "2025-06-13T13:33:13.439Z"
+    "@timestamp": "2025-06-19T10:45:14.638Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "f2f66ee7-29cf-48d8-9acf-5a69f54aa7e4",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-06-13T13:33:13.439Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f2f66ee7-29cf-48d8-9acf-5a69f54aa7e4",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 24,
-    "passed": true,
-    "@timestamp": "2025-06-13T13:33:13.439Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f2f66ee7-29cf-48d8-9acf-5a69f54aa7e4",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 39,
-    "passed": false,
-    "@timestamp": "2025-06-13T13:33:13.439Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f2f66ee7-29cf-48d8-9acf-5a69f54aa7e4",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 52,
-    "passed": true,
-    "@timestamp": "2025-06-13T13:33:13.439Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "29eb27ff-3b38-4e0d-bf42-9716b30c671a",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-28T16:51:01.533Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "29eb27ff-3b38-4e0d-bf42-9716b30c671a",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-28T16:51:01.533Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "29eb27ff-3b38-4e0d-bf42-9716b30c671a",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-28T16:51:01.533Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "29eb27ff-3b38-4e0d-bf42-9716b30c671a",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-28T16:51:01.533Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "29eb27ff-3b38-4e0d-bf42-9716b30c671a",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-05-28T16:51:01.533Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "29eb27ff-3b38-4e0d-bf42-9716b30c671a",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 33,
-    "passed": true,
-    "@timestamp": "2025-05-28T16:51:01.533Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "29eb27ff-3b38-4e0d-bf42-9716b30c671a",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 27,
-    "passed": true,
-    "@timestamp": "2025-05-28T16:51:01.533Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "29eb27ff-3b38-4e0d-bf42-9716b30c671a",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 56,
-    "passed": false,
-    "@timestamp": "2025-05-28T16:51:01.533Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "51c341c9-3fba-4b00-971a-29fa62b5703a",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-28T20:08:58.208Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "51c341c9-3fba-4b00-971a-29fa62b5703a",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-28T20:08:58.208Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "51c341c9-3fba-4b00-971a-29fa62b5703a",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-28T20:08:58.208Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "51c341c9-3fba-4b00-971a-29fa62b5703a",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 0,
-    "passed": false,
-    "@timestamp": "2025-05-28T20:08:58.208Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "51c341c9-3fba-4b00-971a-29fa62b5703a",
+    "dataset_id": "ae59360b-c3ae-43b0-8e25-6da6d8249bc3",
+    "dataset_name": "Dataset 35",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -7695,860 +4463,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 2,
     "passed": false,
-    "@timestamp": "2025-05-28T20:08:58.208Z"
+    "@timestamp": "2025-06-19T10:45:14.638Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "51c341c9-3fba-4b00-971a-29fa62b5703a",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 25,
-    "passed": true,
-    "@timestamp": "2025-05-28T20:08:58.208Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "51c341c9-3fba-4b00-971a-29fa62b5703a",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 15,
-    "passed": true,
-    "@timestamp": "2025-05-28T20:08:58.208Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "51c341c9-3fba-4b00-971a-29fa62b5703a",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 57,
-    "passed": false,
-    "@timestamp": "2025-05-28T20:08:58.208Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4986a779-d30c-4808-bd4e-1545bd861c64",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-23T02:56:50.096Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4986a779-d30c-4808-bd4e-1545bd861c64",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-23T02:56:50.096Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4986a779-d30c-4808-bd4e-1545bd861c64",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 96,
-    "passed": false,
-    "@timestamp": "2025-06-23T02:56:50.096Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4986a779-d30c-4808-bd4e-1545bd861c64",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-06-23T02:56:50.096Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4986a779-d30c-4808-bd4e-1545bd861c64",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-06-23T02:56:50.096Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4986a779-d30c-4808-bd4e-1545bd861c64",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 32,
-    "passed": true,
-    "@timestamp": "2025-06-23T02:56:50.096Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4986a779-d30c-4808-bd4e-1545bd861c64",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 38,
-    "passed": false,
-    "@timestamp": "2025-06-23T02:56:50.096Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4986a779-d30c-4808-bd4e-1545bd861c64",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 52,
-    "passed": true,
-    "@timestamp": "2025-06-23T02:56:50.096Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a84aff7e-f194-47b4-aa1e-c777b10eb024",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-20T19:53:56.304Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a84aff7e-f194-47b4-aa1e-c777b10eb024",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-20T19:53:56.304Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a84aff7e-f194-47b4-aa1e-c777b10eb024",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-20T19:53:56.304Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a84aff7e-f194-47b4-aa1e-c777b10eb024",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-04-20T19:53:56.304Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a84aff7e-f194-47b4-aa1e-c777b10eb024",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-04-20T19:53:56.304Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a84aff7e-f194-47b4-aa1e-c777b10eb024",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 15,
-    "passed": false,
-    "@timestamp": "2025-04-20T19:53:56.304Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a84aff7e-f194-47b4-aa1e-c777b10eb024",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 26,
-    "passed": true,
-    "@timestamp": "2025-04-20T19:53:56.304Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a84aff7e-f194-47b4-aa1e-c777b10eb024",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 57,
-    "passed": false,
-    "@timestamp": "2025-04-20T19:53:56.304Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "3e60c2fb-c76d-4eb7-b7d7-cb9071db2803",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 97,
-    "passed": false,
-    "@timestamp": "2025-06-16T23:23:30.552Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "3e60c2fb-c76d-4eb7-b7d7-cb9071db2803",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-16T23:23:30.552Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "3e60c2fb-c76d-4eb7-b7d7-cb9071db2803",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-16T23:23:30.552Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "3e60c2fb-c76d-4eb7-b7d7-cb9071db2803",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-06-16T23:23:30.552Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "3e60c2fb-c76d-4eb7-b7d7-cb9071db2803",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-06-16T23:23:30.552Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "3e60c2fb-c76d-4eb7-b7d7-cb9071db2803",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 19,
-    "passed": true,
-    "@timestamp": "2025-06-16T23:23:30.552Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "3e60c2fb-c76d-4eb7-b7d7-cb9071db2803",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 16,
-    "passed": true,
-    "@timestamp": "2025-06-16T23:23:30.552Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "3e60c2fb-c76d-4eb7-b7d7-cb9071db2803",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 60,
-    "passed": false,
-    "@timestamp": "2025-06-16T23:23:30.552Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e813a274-6b70-4aea-aad3-c8d9a0aa0da1",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-13T01:11:59.008Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e813a274-6b70-4aea-aad3-c8d9a0aa0da1",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-13T01:11:59.008Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e813a274-6b70-4aea-aad3-c8d9a0aa0da1",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 96,
-    "passed": false,
-    "@timestamp": "2025-06-13T01:11:59.008Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e813a274-6b70-4aea-aad3-c8d9a0aa0da1",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 0,
-    "passed": false,
-    "@timestamp": "2025-06-13T01:11:59.008Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e813a274-6b70-4aea-aad3-c8d9a0aa0da1",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-06-13T01:11:59.008Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e813a274-6b70-4aea-aad3-c8d9a0aa0da1",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 21,
-    "passed": true,
-    "@timestamp": "2025-06-13T01:11:59.008Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e813a274-6b70-4aea-aad3-c8d9a0aa0da1",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 16,
-    "passed": true,
-    "@timestamp": "2025-06-13T01:11:59.008Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e813a274-6b70-4aea-aad3-c8d9a0aa0da1",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 51,
-    "passed": true,
-    "@timestamp": "2025-06-13T01:11:59.008Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "5c4448b6-7de1-4f3b-bdaf-492b138db3a7",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-04T16:19:15.779Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "5c4448b6-7de1-4f3b-bdaf-492b138db3a7",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-04T16:19:15.779Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "5c4448b6-7de1-4f3b-bdaf-492b138db3a7",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-04T16:19:15.779Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "5c4448b6-7de1-4f3b-bdaf-492b138db3a7",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-04T16:19:15.779Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "5c4448b6-7de1-4f3b-bdaf-492b138db3a7",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-05-04T16:19:15.779Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "5c4448b6-7de1-4f3b-bdaf-492b138db3a7",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 17,
-    "passed": false,
-    "@timestamp": "2025-05-04T16:19:15.779Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "5c4448b6-7de1-4f3b-bdaf-492b138db3a7",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 39,
-    "passed": false,
-    "@timestamp": "2025-05-04T16:19:15.779Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "5c4448b6-7de1-4f3b-bdaf-492b138db3a7",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 54,
-    "passed": true,
-    "@timestamp": "2025-05-04T16:19:15.779Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4fd60a01-7363-4b3f-b51a-36823d076e56",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-19T14:14:03.157Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4fd60a01-7363-4b3f-b51a-36823d076e56",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-19T14:14:03.157Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4fd60a01-7363-4b3f-b51a-36823d076e56",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-19T14:14:03.157Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4fd60a01-7363-4b3f-b51a-36823d076e56",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-04-19T14:14:03.157Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4fd60a01-7363-4b3f-b51a-36823d076e56",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 2,
-    "passed": false,
-    "@timestamp": "2025-04-19T14:14:03.157Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4fd60a01-7363-4b3f-b51a-36823d076e56",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 35,
-    "passed": true,
-    "@timestamp": "2025-04-19T14:14:03.157Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4fd60a01-7363-4b3f-b51a-36823d076e56",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 25,
-    "passed": true,
-    "@timestamp": "2025-04-19T14:14:03.157Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4fd60a01-7363-4b3f-b51a-36823d076e56",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 54,
-    "passed": true,
-    "@timestamp": "2025-04-19T14:14:03.157Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e18e08c8-aadc-4714-813f-2609154698b7",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-01T11:04:34.069Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e18e08c8-aadc-4714-813f-2609154698b7",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-01T11:04:34.069Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e18e08c8-aadc-4714-813f-2609154698b7",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 96,
-    "passed": false,
-    "@timestamp": "2025-05-01T11:04:34.069Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e18e08c8-aadc-4714-813f-2609154698b7",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-01T11:04:34.069Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e18e08c8-aadc-4714-813f-2609154698b7",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-05-01T11:04:34.069Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e18e08c8-aadc-4714-813f-2609154698b7",
+    "dataset_id": "ae59360b-c3ae-43b0-8e25-6da6d8249bc3",
+    "dataset_name": "Dataset 35",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
@@ -8557,1117 +4479,30 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 18,
     "value": 23,
     "passed": true,
-    "@timestamp": "2025-05-01T11:04:34.069Z"
+    "@timestamp": "2025-06-19T10:45:14.638Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e18e08c8-aadc-4714-813f-2609154698b7",
+    "dataset_id": "ae59360b-c3ae-43b0-8e25-6da6d8249bc3",
+    "dataset_name": "Dataset 35",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "high": 30,
-    "value": 27,
-    "passed": true,
-    "@timestamp": "2025-05-01T11:04:34.069Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e18e08c8-aadc-4714-813f-2609154698b7",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 50,
-    "passed": true,
-    "@timestamp": "2025-05-01T11:04:34.069Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "aa6b5143-7d7f-4600-8922-c6f039c02dfb",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-03T04:50:19.079Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "aa6b5143-7d7f-4600-8922-c6f039c02dfb",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-03T04:50:19.079Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "aa6b5143-7d7f-4600-8922-c6f039c02dfb",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-03T04:50:19.079Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "aa6b5143-7d7f-4600-8922-c6f039c02dfb",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 0,
-    "passed": false,
-    "@timestamp": "2025-05-03T04:50:19.079Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "aa6b5143-7d7f-4600-8922-c6f039c02dfb",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 2,
-    "passed": false,
-    "@timestamp": "2025-05-03T04:50:19.079Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "aa6b5143-7d7f-4600-8922-c6f039c02dfb",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 27,
-    "passed": true,
-    "@timestamp": "2025-05-03T04:50:19.079Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "aa6b5143-7d7f-4600-8922-c6f039c02dfb",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 40,
-    "passed": false,
-    "@timestamp": "2025-05-03T04:50:19.079Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "aa6b5143-7d7f-4600-8922-c6f039c02dfb",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 50,
-    "passed": true,
-    "@timestamp": "2025-05-03T04:50:19.079Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "c297c40c-87f9-43ae-bf5a-3d7f15b0b23d",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-21T04:15:45.532Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "c297c40c-87f9-43ae-bf5a-3d7f15b0b23d",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-21T04:15:45.532Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "c297c40c-87f9-43ae-bf5a-3d7f15b0b23d",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-21T04:15:45.532Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "c297c40c-87f9-43ae-bf5a-3d7f15b0b23d",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-21T04:15:45.532Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "c297c40c-87f9-43ae-bf5a-3d7f15b0b23d",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-05-21T04:15:45.532Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "c297c40c-87f9-43ae-bf5a-3d7f15b0b23d",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
     "value": 38,
-    "passed": true,
-    "@timestamp": "2025-05-21T04:15:45.532Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "c297c40c-87f9-43ae-bf5a-3d7f15b0b23d",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 27,
-    "passed": true,
-    "@timestamp": "2025-05-21T04:15:45.532Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "c297c40c-87f9-43ae-bf5a-3d7f15b0b23d",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 54,
-    "passed": true,
-    "@timestamp": "2025-05-21T04:15:45.532Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "c25a39e1-159b-42ce-b44e-e39150bce163",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-03-30T18:47:25.123Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "c25a39e1-159b-42ce-b44e-e39150bce163",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-03-30T18:47:25.123Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "c25a39e1-159b-42ce-b44e-e39150bce163",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-03-30T18:47:25.123Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "c25a39e1-159b-42ce-b44e-e39150bce163",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-03-30T18:47:25.123Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "c25a39e1-159b-42ce-b44e-e39150bce163",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-03-30T18:47:25.123Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "c25a39e1-159b-42ce-b44e-e39150bce163",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 22,
-    "passed": true,
-    "@timestamp": "2025-03-30T18:47:25.123Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "c25a39e1-159b-42ce-b44e-e39150bce163",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 26,
-    "passed": true,
-    "@timestamp": "2025-03-30T18:47:25.123Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "c25a39e1-159b-42ce-b44e-e39150bce163",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 55,
-    "passed": true,
-    "@timestamp": "2025-03-30T18:47:25.123Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a48ee370-a9a5-48cf-8d55-6530e28183a0",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-04T10:40:49.748Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a48ee370-a9a5-48cf-8d55-6530e28183a0",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 98,
     "passed": false,
-    "@timestamp": "2025-05-04T10:40:49.748Z"
+    "@timestamp": "2025-06-19T10:45:14.638Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "a48ee370-a9a5-48cf-8d55-6530e28183a0",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-04T10:40:49.748Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a48ee370-a9a5-48cf-8d55-6530e28183a0",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-04T10:40:49.748Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a48ee370-a9a5-48cf-8d55-6530e28183a0",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-05-04T10:40:49.748Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a48ee370-a9a5-48cf-8d55-6530e28183a0",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 25,
-    "passed": true,
-    "@timestamp": "2025-05-04T10:40:49.748Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a48ee370-a9a5-48cf-8d55-6530e28183a0",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 34,
-    "passed": false,
-    "@timestamp": "2025-05-04T10:40:49.748Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "a48ee370-a9a5-48cf-8d55-6530e28183a0",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 56,
-    "passed": false,
-    "@timestamp": "2025-05-04T10:40:49.748Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cf675eda-86ea-4cf6-9bba-6694a67c6a3b",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-26T08:23:44.377Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cf675eda-86ea-4cf6-9bba-6694a67c6a3b",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-26T08:23:44.377Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cf675eda-86ea-4cf6-9bba-6694a67c6a3b",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-26T08:23:44.377Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cf675eda-86ea-4cf6-9bba-6694a67c6a3b",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 0,
-    "passed": false,
-    "@timestamp": "2025-06-26T08:23:44.377Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cf675eda-86ea-4cf6-9bba-6694a67c6a3b",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-06-26T08:23:44.377Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cf675eda-86ea-4cf6-9bba-6694a67c6a3b",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 38,
-    "passed": true,
-    "@timestamp": "2025-06-26T08:23:44.377Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cf675eda-86ea-4cf6-9bba-6694a67c6a3b",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 19,
-    "passed": true,
-    "@timestamp": "2025-06-26T08:23:44.377Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "cf675eda-86ea-4cf6-9bba-6694a67c6a3b",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 59,
-    "passed": false,
-    "@timestamp": "2025-06-26T08:23:44.377Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "57f24ad7-4769-4c7e-9d2e-60267fe5723e",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-22T16:35:51.762Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "57f24ad7-4769-4c7e-9d2e-60267fe5723e",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-22T16:35:51.762Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "57f24ad7-4769-4c7e-9d2e-60267fe5723e",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-22T16:35:51.762Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "57f24ad7-4769-4c7e-9d2e-60267fe5723e",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-04-22T16:35:51.762Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "57f24ad7-4769-4c7e-9d2e-60267fe5723e",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-04-22T16:35:51.762Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "57f24ad7-4769-4c7e-9d2e-60267fe5723e",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 27,
-    "passed": true,
-    "@timestamp": "2025-04-22T16:35:51.762Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "57f24ad7-4769-4c7e-9d2e-60267fe5723e",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 16,
-    "passed": true,
-    "@timestamp": "2025-04-22T16:35:51.762Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "57f24ad7-4769-4c7e-9d2e-60267fe5723e",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 56,
-    "passed": false,
-    "@timestamp": "2025-04-22T16:35:51.762Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ad38833a-c089-494b-b546-0a19d374e027",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-22T08:41:46.190Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ad38833a-c089-494b-b546-0a19d374e027",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 98,
-    "passed": false,
-    "@timestamp": "2025-05-22T08:41:46.190Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ad38833a-c089-494b-b546-0a19d374e027",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-22T08:41:46.190Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ad38833a-c089-494b-b546-0a19d374e027",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-22T08:41:46.190Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ad38833a-c089-494b-b546-0a19d374e027",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 2,
-    "passed": false,
-    "@timestamp": "2025-05-22T08:41:46.190Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ad38833a-c089-494b-b546-0a19d374e027",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 18,
-    "passed": true,
-    "@timestamp": "2025-05-22T08:41:46.190Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ad38833a-c089-494b-b546-0a19d374e027",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 27,
-    "passed": true,
-    "@timestamp": "2025-05-22T08:41:46.190Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "ad38833a-c089-494b-b546-0a19d374e027",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 59,
-    "passed": false,
-    "@timestamp": "2025-05-22T08:41:46.190Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "25deca69-c944-4aca-8959-3635974b72b2",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-29T02:15:41.212Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "25deca69-c944-4aca-8959-3635974b72b2",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-29T02:15:41.212Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "25deca69-c944-4aca-8959-3635974b72b2",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-29T02:15:41.212Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "25deca69-c944-4aca-8959-3635974b72b2",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-04-29T02:15:41.212Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "25deca69-c944-4aca-8959-3635974b72b2",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-04-29T02:15:41.212Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "25deca69-c944-4aca-8959-3635974b72b2",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 25,
-    "passed": true,
-    "@timestamp": "2025-04-29T02:15:41.212Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "25deca69-c944-4aca-8959-3635974b72b2",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 29,
-    "passed": true,
-    "@timestamp": "2025-04-29T02:15:41.212Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "25deca69-c944-4aca-8959-3635974b72b2",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 59,
-    "passed": false,
-    "@timestamp": "2025-04-29T02:15:41.212Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "70cfce1c-7e2a-4e4f-944a-21ac674f1d63",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-06T21:57:37.629Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "70cfce1c-7e2a-4e4f-944a-21ac674f1d63",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 98,
-    "passed": false,
-    "@timestamp": "2025-06-06T21:57:37.629Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "70cfce1c-7e2a-4e4f-944a-21ac674f1d63",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-06T21:57:37.629Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "70cfce1c-7e2a-4e4f-944a-21ac674f1d63",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-06-06T21:57:37.629Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "70cfce1c-7e2a-4e4f-944a-21ac674f1d63",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-06-06T21:57:37.629Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "70cfce1c-7e2a-4e4f-944a-21ac674f1d63",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 27,
-    "passed": true,
-    "@timestamp": "2025-06-06T21:57:37.629Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "70cfce1c-7e2a-4e4f-944a-21ac674f1d63",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 16,
-    "passed": true,
-    "@timestamp": "2025-06-06T21:57:37.629Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "70cfce1c-7e2a-4e4f-944a-21ac674f1d63",
+    "dataset_id": "ae59360b-c3ae-43b0-8e25-6da6d8249bc3",
+    "dataset_name": "Dataset 35",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -9677,13 +4512,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 55,
     "value": 58,
     "passed": false,
-    "@timestamp": "2025-06-06T21:57:37.629Z"
+    "@timestamp": "2025-06-19T10:45:14.638Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "4f2800b8-0a4c-4c58-af24-da88e286ee97",
+    "dataset_id": "a0c79673-17f6-48b2-96c4-446627bcb513",
+    "dataset_name": "Dataset 36",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -9692,13 +4528,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-16T05:30:37.101Z"
+    "@timestamp": "2025-08-08T14:43:16.871Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "4f2800b8-0a4c-4c58-af24-da88e286ee97",
+    "dataset_id": "a0c79673-17f6-48b2-96c4-446627bcb513",
+    "dataset_name": "Dataset 36",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -9707,13 +4544,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-16T05:30:37.101Z"
+    "@timestamp": "2025-08-08T14:43:16.871Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "4f2800b8-0a4c-4c58-af24-da88e286ee97",
+    "dataset_id": "a0c79673-17f6-48b2-96c4-446627bcb513",
+    "dataset_name": "Dataset 36",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -9722,13 +4560,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-16T05:30:37.101Z"
+    "@timestamp": "2025-08-08T14:43:16.871Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "4f2800b8-0a4c-4c58-af24-da88e286ee97",
+    "dataset_id": "a0c79673-17f6-48b2-96c4-446627bcb513",
+    "dataset_name": "Dataset 36",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -9737,134 +4576,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 2,
     "passed": true,
-    "@timestamp": "2025-05-16T05:30:37.101Z"
+    "@timestamp": "2025-08-08T14:43:16.871Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "4f2800b8-0a4c-4c58-af24-da88e286ee97",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 2,
-    "passed": false,
-    "@timestamp": "2025-05-16T05:30:37.101Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4f2800b8-0a4c-4c58-af24-da88e286ee97",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 26,
-    "passed": true,
-    "@timestamp": "2025-05-16T05:30:37.101Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4f2800b8-0a4c-4c58-af24-da88e286ee97",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 33,
-    "passed": false,
-    "@timestamp": "2025-05-16T05:30:37.101Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "4f2800b8-0a4c-4c58-af24-da88e286ee97",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 57,
-    "passed": false,
-    "@timestamp": "2025-05-16T05:30:37.101Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e3957e9a-f0b6-4464-b620-87950c7625de",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-04T09:25:56.064Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e3957e9a-f0b6-4464-b620-87950c7625de",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-04T09:25:56.064Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e3957e9a-f0b6-4464-b620-87950c7625de",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-04T09:25:56.064Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e3957e9a-f0b6-4464-b620-87950c7625de",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-04T09:25:56.064Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e3957e9a-f0b6-4464-b620-87950c7625de",
+    "dataset_id": "a0c79673-17f6-48b2-96c4-446627bcb513",
+    "dataset_name": "Dataset 36",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -9873,149 +4592,30 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-05-04T09:25:56.064Z"
+    "@timestamp": "2025-08-08T14:43:16.871Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e3957e9a-f0b6-4464-b620-87950c7625de",
+    "dataset_id": "a0c79673-17f6-48b2-96c4-446627bcb513",
+    "dataset_name": "Dataset 36",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "low": 18,
-    "value": 30,
+    "value": 21,
     "passed": true,
-    "@timestamp": "2025-05-04T09:25:56.064Z"
+    "@timestamp": "2025-08-08T14:43:16.871Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e3957e9a-f0b6-4464-b620-87950c7625de",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 18,
-    "passed": true,
-    "@timestamp": "2025-05-04T09:25:56.064Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "e3957e9a-f0b6-4464-b620-87950c7625de",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 60,
-    "passed": false,
-    "@timestamp": "2025-05-04T09:25:56.064Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f3ee4ee8-656f-498f-a428-69ccd9c629da",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-13T22:25:55.795Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f3ee4ee8-656f-498f-a428-69ccd9c629da",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-13T22:25:55.795Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f3ee4ee8-656f-498f-a428-69ccd9c629da",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-13T22:25:55.795Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f3ee4ee8-656f-498f-a428-69ccd9c629da",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-06-13T22:25:55.795Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f3ee4ee8-656f-498f-a428-69ccd9c629da",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 2,
-    "passed": false,
-    "@timestamp": "2025-06-13T22:25:55.795Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f3ee4ee8-656f-498f-a428-69ccd9c629da",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 37,
-    "passed": true,
-    "@timestamp": "2025-06-13T22:25:55.795Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f3ee4ee8-656f-498f-a428-69ccd9c629da",
+    "dataset_id": "a0c79673-17f6-48b2-96c4-446627bcb513",
+    "dataset_name": "Dataset 36",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
@@ -10024,134 +4624,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 30,
     "value": 38,
     "passed": false,
-    "@timestamp": "2025-06-13T22:25:55.795Z"
+    "@timestamp": "2025-08-08T14:43:16.871Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "f3ee4ee8-656f-498f-a428-69ccd9c629da",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 55,
-    "passed": true,
-    "@timestamp": "2025-06-13T22:25:55.795Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "50cdc1fa-5adc-4f83-8437-0db3a455cd76",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-11T06:16:48.616Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "50cdc1fa-5adc-4f83-8437-0db3a455cd76",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-11T06:16:48.616Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "50cdc1fa-5adc-4f83-8437-0db3a455cd76",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-11T06:16:48.616Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "50cdc1fa-5adc-4f83-8437-0db3a455cd76",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-06-11T06:16:48.616Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "50cdc1fa-5adc-4f83-8437-0db3a455cd76",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-06-11T06:16:48.616Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "50cdc1fa-5adc-4f83-8437-0db3a455cd76",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 37,
-    "passed": true,
-    "@timestamp": "2025-06-11T06:16:48.616Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "50cdc1fa-5adc-4f83-8437-0db3a455cd76",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 22,
-    "passed": true,
-    "@timestamp": "2025-06-11T06:16:48.616Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "50cdc1fa-5adc-4f83-8437-0db3a455cd76",
+    "dataset_id": "a0c79673-17f6-48b2-96c4-446627bcb513",
+    "dataset_name": "Dataset 36",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -10161,13 +4641,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 55,
     "value": 58,
     "passed": false,
-    "@timestamp": "2025-06-11T06:16:48.616Z"
+    "@timestamp": "2025-08-08T14:43:16.871Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "1ff6fa8c-3b15-47e8-b659-4e8b51496aa0",
+    "dataset_id": "51c0d4d8-c667-4c5b-a3b9-5d752fa41d02",
+    "dataset_name": "Dataset 37",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -10176,13 +4657,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-12T14:11:07.973Z"
+    "@timestamp": "2025-06-02T15:25:49.634Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "1ff6fa8c-3b15-47e8-b659-4e8b51496aa0",
+    "dataset_id": "51c0d4d8-c667-4c5b-a3b9-5d752fa41d02",
+    "dataset_name": "Dataset 37",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -10191,28 +4673,30 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-12T14:11:07.973Z"
+    "@timestamp": "2025-06-02T15:25:49.634Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "1ff6fa8c-3b15-47e8-b659-4e8b51496aa0",
+    "dataset_id": "51c0d4d8-c667-4c5b-a3b9-5d752fa41d02",
+    "dataset_name": "Dataset 37",
     "name": "validLVEF",
     "category": {
       "context": "verification",
       "category": "completeness"
     },
     "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-12T14:11:07.973Z"
+    "value": 96,
+    "passed": false,
+    "@timestamp": "2025-06-02T15:25:49.634Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "1ff6fa8c-3b15-47e8-b659-4e8b51496aa0",
+    "dataset_id": "51c0d4d8-c667-4c5b-a3b9-5d752fa41d02",
+    "dataset_name": "Dataset 37",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -10221,13 +4705,143 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 2,
     "passed": true,
-    "@timestamp": "2025-05-12T14:11:07.973Z"
+    "@timestamp": "2025-06-02T15:25:49.634Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "1ff6fa8c-3b15-47e8-b659-4e8b51496aa0",
+    "dataset_id": "51c0d4d8-c667-4c5b-a3b9-5d752fa41d02",
+    "dataset_name": "Dataset 37",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 2,
+    "passed": false,
+    "@timestamp": "2025-06-02T15:25:49.634Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "51c0d4d8-c667-4c5b-a3b9-5d752fa41d02",
+    "dataset_name": "Dataset 37",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 28,
+    "passed": true,
+    "@timestamp": "2025-06-02T15:25:49.634Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "51c0d4d8-c667-4c5b-a3b9-5d752fa41d02",
+    "dataset_name": "Dataset 37",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 22,
+    "passed": true,
+    "@timestamp": "2025-06-02T15:25:49.634Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "51c0d4d8-c667-4c5b-a3b9-5d752fa41d02",
+    "dataset_name": "Dataset 37",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 52,
+    "passed": true,
+    "@timestamp": "2025-06-02T15:25:49.634Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4f9c2e53-3ad7-474d-8e7d-743a1cbc9455",
+    "dataset_name": "Dataset 38",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-08T06:26:03.659Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4f9c2e53-3ad7-474d-8e7d-743a1cbc9455",
+    "dataset_name": "Dataset 38",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-08T06:26:03.659Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4f9c2e53-3ad7-474d-8e7d-743a1cbc9455",
+    "dataset_name": "Dataset 38",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-08T06:26:03.659Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4f9c2e53-3ad7-474d-8e7d-743a1cbc9455",
+    "dataset_name": "Dataset 38",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-08T06:26:03.659Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4f9c2e53-3ad7-474d-8e7d-743a1cbc9455",
+    "dataset_name": "Dataset 38",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -10236,618 +4850,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-05-12T14:11:07.973Z"
+    "@timestamp": "2025-07-08T06:26:03.659Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "1ff6fa8c-3b15-47e8-b659-4e8b51496aa0",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 27,
-    "passed": true,
-    "@timestamp": "2025-05-12T14:11:07.973Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1ff6fa8c-3b15-47e8-b659-4e8b51496aa0",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 15,
-    "passed": true,
-    "@timestamp": "2025-05-12T14:11:07.973Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "1ff6fa8c-3b15-47e8-b659-4e8b51496aa0",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 57,
-    "passed": false,
-    "@timestamp": "2025-05-12T14:11:07.973Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "013de276-da28-430b-83a3-46fc77ed2cca",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-06T14:20:00.559Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "013de276-da28-430b-83a3-46fc77ed2cca",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-06T14:20:00.559Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "013de276-da28-430b-83a3-46fc77ed2cca",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-06T14:20:00.559Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "013de276-da28-430b-83a3-46fc77ed2cca",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-06T14:20:00.559Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "013de276-da28-430b-83a3-46fc77ed2cca",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-05-06T14:20:00.559Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "013de276-da28-430b-83a3-46fc77ed2cca",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 17,
-    "passed": false,
-    "@timestamp": "2025-05-06T14:20:00.559Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "013de276-da28-430b-83a3-46fc77ed2cca",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 33,
-    "passed": false,
-    "@timestamp": "2025-05-06T14:20:00.559Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "013de276-da28-430b-83a3-46fc77ed2cca",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 60,
-    "passed": false,
-    "@timestamp": "2025-05-06T14:20:00.559Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7913ed29-f570-4bcb-8a29-587e88b6c164",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-20T13:11:22.586Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7913ed29-f570-4bcb-8a29-587e88b6c164",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-20T13:11:22.586Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7913ed29-f570-4bcb-8a29-587e88b6c164",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-20T13:11:22.586Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7913ed29-f570-4bcb-8a29-587e88b6c164",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-20T13:11:22.586Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7913ed29-f570-4bcb-8a29-587e88b6c164",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 2,
-    "passed": false,
-    "@timestamp": "2025-05-20T13:11:22.586Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7913ed29-f570-4bcb-8a29-587e88b6c164",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 25,
-    "passed": true,
-    "@timestamp": "2025-05-20T13:11:22.586Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7913ed29-f570-4bcb-8a29-587e88b6c164",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 40,
-    "passed": false,
-    "@timestamp": "2025-05-20T13:11:22.586Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "7913ed29-f570-4bcb-8a29-587e88b6c164",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 57,
-    "passed": false,
-    "@timestamp": "2025-05-20T13:11:22.586Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "689d3ed6-4a57-4b2a-9c61-4d0f28f67fde",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-06T21:56:58.528Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "689d3ed6-4a57-4b2a-9c61-4d0f28f67fde",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-06T21:56:58.528Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "689d3ed6-4a57-4b2a-9c61-4d0f28f67fde",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-05-06T21:56:58.528Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "689d3ed6-4a57-4b2a-9c61-4d0f28f67fde",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-05-06T21:56:58.528Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "689d3ed6-4a57-4b2a-9c61-4d0f28f67fde",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-05-06T21:56:58.528Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "689d3ed6-4a57-4b2a-9c61-4d0f28f67fde",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 18,
-    "passed": true,
-    "@timestamp": "2025-05-06T21:56:58.528Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "689d3ed6-4a57-4b2a-9c61-4d0f28f67fde",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 27,
-    "passed": true,
-    "@timestamp": "2025-05-06T21:56:58.528Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "689d3ed6-4a57-4b2a-9c61-4d0f28f67fde",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 51,
-    "passed": true,
-    "@timestamp": "2025-05-06T21:56:58.528Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f4725f45-7170-4e3f-b735-9eb2ea2b394e",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-25T18:38:32.917Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f4725f45-7170-4e3f-b735-9eb2ea2b394e",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-25T18:38:32.917Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f4725f45-7170-4e3f-b735-9eb2ea2b394e",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-25T18:38:32.917Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f4725f45-7170-4e3f-b735-9eb2ea2b394e",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-04-25T18:38:32.917Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f4725f45-7170-4e3f-b735-9eb2ea2b394e",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-04-25T18:38:32.917Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f4725f45-7170-4e3f-b735-9eb2ea2b394e",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 19,
-    "passed": true,
-    "@timestamp": "2025-04-25T18:38:32.917Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f4725f45-7170-4e3f-b735-9eb2ea2b394e",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 37,
-    "passed": false,
-    "@timestamp": "2025-04-25T18:38:32.917Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f4725f45-7170-4e3f-b735-9eb2ea2b394e",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 56,
-    "passed": false,
-    "@timestamp": "2025-04-25T18:38:32.917Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f846d8ed-ba03-4455-9559-cb5f9070349c",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-13T07:49:22.249Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f846d8ed-ba03-4455-9559-cb5f9070349c",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-13T07:49:22.249Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f846d8ed-ba03-4455-9559-cb5f9070349c",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-04-13T07:49:22.249Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f846d8ed-ba03-4455-9559-cb5f9070349c",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-04-13T07:49:22.249Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f846d8ed-ba03-4455-9559-cb5f9070349c",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-04-13T07:49:22.249Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "f846d8ed-ba03-4455-9559-cb5f9070349c",
+    "dataset_id": "4f9c2e53-3ad7-474d-8e7d-743a1cbc9455",
+    "dataset_name": "Dataset 38",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
@@ -10856,13 +4866,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 18,
     "value": 30,
     "passed": true,
-    "@timestamp": "2025-04-13T07:49:22.249Z"
+    "@timestamp": "2025-07-08T06:26:03.659Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "f846d8ed-ba03-4455-9559-cb5f9070349c",
+    "dataset_id": "4f9c2e53-3ad7-474d-8e7d-743a1cbc9455",
+    "dataset_name": "Dataset 38",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
@@ -10871,134 +4882,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 30,
     "value": 30,
     "passed": true,
-    "@timestamp": "2025-04-13T07:49:22.249Z"
+    "@timestamp": "2025-07-08T06:26:03.659Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "f846d8ed-ba03-4455-9559-cb5f9070349c",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 54,
-    "passed": true,
-    "@timestamp": "2025-04-13T07:49:22.249Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "8118f0ef-d01e-4c48-b676-c37d2b98e30e",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-04T15:32:48.250Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "8118f0ef-d01e-4c48-b676-c37d2b98e30e",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-04T15:32:48.250Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "8118f0ef-d01e-4c48-b676-c37d2b98e30e",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-04T15:32:48.250Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "8118f0ef-d01e-4c48-b676-c37d2b98e30e",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-06-04T15:32:48.250Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "8118f0ef-d01e-4c48-b676-c37d2b98e30e",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-06-04T15:32:48.250Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "8118f0ef-d01e-4c48-b676-c37d2b98e30e",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 35,
-    "passed": true,
-    "@timestamp": "2025-06-04T15:32:48.250Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "8118f0ef-d01e-4c48-b676-c37d2b98e30e",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 19,
-    "passed": true,
-    "@timestamp": "2025-06-04T15:32:48.250Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "8118f0ef-d01e-4c48-b676-c37d2b98e30e",
+    "dataset_id": "4f9c2e53-3ad7-474d-8e7d-743a1cbc9455",
+    "dataset_name": "Dataset 38",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -11008,43 +4899,46 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 55,
     "value": 50,
     "passed": true,
-    "@timestamp": "2025-06-04T15:32:48.250Z"
+    "@timestamp": "2025-07-08T06:26:03.659Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "a5babb43-b456-4a48-a2f2-23d2d602e1d1",
+    "dataset_id": "0891e3cb-41c2-49c8-9f67-f9760cfc35e2",
+    "dataset_name": "Dataset 39",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
       "category": "conformance"
     },
     "low": 100,
-    "value": 97,
-    "passed": false,
-    "@timestamp": "2025-04-16T03:15:29.615Z"
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-16T15:53:18.619Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "a5babb43-b456-4a48-a2f2-23d2d602e1d1",
+    "dataset_id": "0891e3cb-41c2-49c8-9f67-f9760cfc35e2",
+    "dataset_name": "Dataset 39",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
       "category": "conformance"
     },
     "low": 100,
-    "value": 98,
-    "passed": false,
-    "@timestamp": "2025-04-16T03:15:29.615Z"
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-16T15:53:18.619Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "a5babb43-b456-4a48-a2f2-23d2d602e1d1",
+    "dataset_id": "0891e3cb-41c2-49c8-9f67-f9760cfc35e2",
+    "dataset_name": "Dataset 39",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -11053,13 +4947,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-04-16T03:15:29.615Z"
+    "@timestamp": "2025-05-16T15:53:18.619Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "a5babb43-b456-4a48-a2f2-23d2d602e1d1",
+    "dataset_id": "0891e3cb-41c2-49c8-9f67-f9760cfc35e2",
+    "dataset_name": "Dataset 39",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -11068,13 +4963,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 2,
     "passed": true,
-    "@timestamp": "2025-04-16T03:15:29.615Z"
+    "@timestamp": "2025-05-16T15:53:18.619Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "a5babb43-b456-4a48-a2f2-23d2d602e1d1",
+    "dataset_id": "0891e3cb-41c2-49c8-9f67-f9760cfc35e2",
+    "dataset_name": "Dataset 39",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -11083,13 +4979,272 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-04-16T03:15:29.615Z"
+    "@timestamp": "2025-05-16T15:53:18.619Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "a5babb43-b456-4a48-a2f2-23d2d602e1d1",
+    "dataset_id": "0891e3cb-41c2-49c8-9f67-f9760cfc35e2",
+    "dataset_name": "Dataset 39",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 30,
+    "passed": true,
+    "@timestamp": "2025-05-16T15:53:18.619Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "0891e3cb-41c2-49c8-9f67-f9760cfc35e2",
+    "dataset_name": "Dataset 39",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 27,
+    "passed": true,
+    "@timestamp": "2025-05-16T15:53:18.619Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "0891e3cb-41c2-49c8-9f67-f9760cfc35e2",
+    "dataset_name": "Dataset 39",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 54,
+    "passed": true,
+    "@timestamp": "2025-05-16T15:53:18.619Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "ee123c1e-b4f1-482f-bb40-34f391db14c5",
+    "dataset_name": "Dataset 40",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-11T19:02:43.448Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "ee123c1e-b4f1-482f-bb40-34f391db14c5",
+    "dataset_name": "Dataset 40",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-11T19:02:43.448Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "ee123c1e-b4f1-482f-bb40-34f391db14c5",
+    "dataset_name": "Dataset 40",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-11T19:02:43.448Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "ee123c1e-b4f1-482f-bb40-34f391db14c5",
+    "dataset_name": "Dataset 40",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-11T19:02:43.448Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "ee123c1e-b4f1-482f-bb40-34f391db14c5",
+    "dataset_name": "Dataset 40",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-07-11T19:02:43.448Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "ee123c1e-b4f1-482f-bb40-34f391db14c5",
+    "dataset_name": "Dataset 40",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 32,
+    "passed": true,
+    "@timestamp": "2025-07-11T19:02:43.448Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "ee123c1e-b4f1-482f-bb40-34f391db14c5",
+    "dataset_name": "Dataset 40",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 33,
+    "passed": false,
+    "@timestamp": "2025-07-11T19:02:43.448Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "ee123c1e-b4f1-482f-bb40-34f391db14c5",
+    "dataset_name": "Dataset 40",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 54,
+    "passed": true,
+    "@timestamp": "2025-07-11T19:02:43.448Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e97c5313-cc65-4a68-b8e4-f4234f61683c",
+    "dataset_name": "Dataset 41",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-11T14:32:50.416Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e97c5313-cc65-4a68-b8e4-f4234f61683c",
+    "dataset_name": "Dataset 41",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-11T14:32:50.416Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e97c5313-cc65-4a68-b8e4-f4234f61683c",
+    "dataset_name": "Dataset 41",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-11T14:32:50.416Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e97c5313-cc65-4a68-b8e4-f4234f61683c",
+    "dataset_name": "Dataset 41",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-08-11T14:32:50.416Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e97c5313-cc65-4a68-b8e4-f4234f61683c",
+    "dataset_name": "Dataset 41",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-08-11T14:32:50.416Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e97c5313-cc65-4a68-b8e4-f4234f61683c",
+    "dataset_name": "Dataset 41",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
@@ -11098,28 +5253,30 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 18,
     "value": 20,
     "passed": true,
-    "@timestamp": "2025-04-16T03:15:29.615Z"
+    "@timestamp": "2025-08-11T14:32:50.416Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "a5babb43-b456-4a48-a2f2-23d2d602e1d1",
+    "dataset_id": "e97c5313-cc65-4a68-b8e4-f4234f61683c",
+    "dataset_name": "Dataset 41",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "high": 30,
-    "value": 29,
-    "passed": true,
-    "@timestamp": "2025-04-16T03:15:29.615Z"
+    "value": 36,
+    "passed": false,
+    "@timestamp": "2025-08-11T14:32:50.416Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "a5babb43-b456-4a48-a2f2-23d2d602e1d1",
+    "dataset_id": "e97c5313-cc65-4a68-b8e4-f4234f61683c",
+    "dataset_name": "Dataset 41",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -11127,15 +5284,16 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     },
     "low": 45,
     "high": 55,
-    "value": 59,
+    "value": 58,
     "passed": false,
-    "@timestamp": "2025-04-16T03:15:29.615Z"
+    "@timestamp": "2025-08-11T14:32:50.416Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "08650357-3e8b-4d46-bb8d-1197894ba9b3",
+    "dataset_id": "745c42f4-a69e-4b76-af0b-1bb8da824d37",
+    "dataset_name": "Dataset 42",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -11144,13 +5302,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-06-13T03:30:59.311Z"
+    "@timestamp": "2025-08-08T15:21:51.239Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "08650357-3e8b-4d46-bb8d-1197894ba9b3",
+    "dataset_id": "745c42f4-a69e-4b76-af0b-1bb8da824d37",
+    "dataset_name": "Dataset 42",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -11159,13 +5318,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-06-13T03:30:59.311Z"
+    "@timestamp": "2025-08-08T15:21:51.239Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "08650357-3e8b-4d46-bb8d-1197894ba9b3",
+    "dataset_id": "745c42f4-a69e-4b76-af0b-1bb8da824d37",
+    "dataset_name": "Dataset 42",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -11174,28 +5334,30 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-06-13T03:30:59.311Z"
+    "@timestamp": "2025-08-08T15:21:51.239Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "08650357-3e8b-4d46-bb8d-1197894ba9b3",
+    "dataset_id": "745c42f4-a69e-4b76-af0b-1bb8da824d37",
+    "dataset_name": "Dataset 42",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
       "category": "completeness"
     },
     "low": 2,
-    "value": 2,
-    "passed": true,
-    "@timestamp": "2025-06-13T03:30:59.311Z"
+    "value": 0,
+    "passed": false,
+    "@timestamp": "2025-08-08T15:21:51.239Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "08650357-3e8b-4d46-bb8d-1197894ba9b3",
+    "dataset_id": "745c42f4-a69e-4b76-af0b-1bb8da824d37",
+    "dataset_name": "Dataset 42",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -11204,13 +5366,143 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-06-13T03:30:59.311Z"
+    "@timestamp": "2025-08-08T15:21:51.239Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "08650357-3e8b-4d46-bb8d-1197894ba9b3",
+    "dataset_id": "745c42f4-a69e-4b76-af0b-1bb8da824d37",
+    "dataset_name": "Dataset 42",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 28,
+    "passed": true,
+    "@timestamp": "2025-08-08T15:21:51.239Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "745c42f4-a69e-4b76-af0b-1bb8da824d37",
+    "dataset_name": "Dataset 42",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 16,
+    "passed": true,
+    "@timestamp": "2025-08-08T15:21:51.239Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "745c42f4-a69e-4b76-af0b-1bb8da824d37",
+    "dataset_name": "Dataset 42",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 56,
+    "passed": false,
+    "@timestamp": "2025-08-08T15:21:51.239Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8c3d7b32-d673-4000-ad78-9f68ccafa8ec",
+    "dataset_name": "Dataset 43",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-09T13:33:24.674Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8c3d7b32-d673-4000-ad78-9f68ccafa8ec",
+    "dataset_name": "Dataset 43",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-09T13:33:24.674Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8c3d7b32-d673-4000-ad78-9f68ccafa8ec",
+    "dataset_name": "Dataset 43",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-09T13:33:24.674Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8c3d7b32-d673-4000-ad78-9f68ccafa8ec",
+    "dataset_name": "Dataset 43",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-08-09T13:33:24.674Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8c3d7b32-d673-4000-ad78-9f68ccafa8ec",
+    "dataset_name": "Dataset 43",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-08-09T13:33:24.674Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8c3d7b32-d673-4000-ad78-9f68ccafa8ec",
+    "dataset_name": "Dataset 43",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
@@ -11219,28 +5511,159 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 18,
     "value": 37,
     "passed": true,
-    "@timestamp": "2025-06-13T03:30:59.311Z"
+    "@timestamp": "2025-08-09T13:33:24.674Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "08650357-3e8b-4d46-bb8d-1197894ba9b3",
+    "dataset_id": "8c3d7b32-d673-4000-ad78-9f68ccafa8ec",
+    "dataset_name": "Dataset 43",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "high": 30,
-    "value": 38,
-    "passed": false,
-    "@timestamp": "2025-06-13T03:30:59.311Z"
+    "value": 17,
+    "passed": true,
+    "@timestamp": "2025-08-09T13:33:24.674Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "08650357-3e8b-4d46-bb8d-1197894ba9b3",
+    "dataset_id": "8c3d7b32-d673-4000-ad78-9f68ccafa8ec",
+    "dataset_name": "Dataset 43",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 52,
+    "passed": true,
+    "@timestamp": "2025-08-09T13:33:24.674Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "cf2c8d6c-f2ab-4919-963f-320113a2b9a6",
+    "dataset_name": "Dataset 44",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-01T04:45:45.238Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "cf2c8d6c-f2ab-4919-963f-320113a2b9a6",
+    "dataset_name": "Dataset 44",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-01T04:45:45.238Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "cf2c8d6c-f2ab-4919-963f-320113a2b9a6",
+    "dataset_name": "Dataset 44",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-01T04:45:45.238Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "cf2c8d6c-f2ab-4919-963f-320113a2b9a6",
+    "dataset_name": "Dataset 44",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-08-01T04:45:45.238Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "cf2c8d6c-f2ab-4919-963f-320113a2b9a6",
+    "dataset_name": "Dataset 44",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 2,
+    "passed": false,
+    "@timestamp": "2025-08-01T04:45:45.238Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "cf2c8d6c-f2ab-4919-963f-320113a2b9a6",
+    "dataset_name": "Dataset 44",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 15,
+    "passed": false,
+    "@timestamp": "2025-08-01T04:45:45.238Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "cf2c8d6c-f2ab-4919-963f-320113a2b9a6",
+    "dataset_name": "Dataset 44",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 32,
+    "passed": false,
+    "@timestamp": "2025-08-01T04:45:45.238Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "cf2c8d6c-f2ab-4919-963f-320113a2b9a6",
+    "dataset_name": "Dataset 44",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -11250,13 +5673,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 55,
     "value": 53,
     "passed": true,
-    "@timestamp": "2025-06-13T03:30:59.311Z"
+    "@timestamp": "2025-08-01T04:45:45.238Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "88573352-482c-4809-839a-eccfb2538d00",
+    "dataset_id": "6eb5aa4a-76f7-4386-b7c5-fe2372c008ba",
+    "dataset_name": "Dataset 45",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -11265,13 +5689,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-06-09T07:35:15.949Z"
+    "@timestamp": "2025-06-19T10:36:12.442Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "88573352-482c-4809-839a-eccfb2538d00",
+    "dataset_id": "6eb5aa4a-76f7-4386-b7c5-fe2372c008ba",
+    "dataset_name": "Dataset 45",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -11280,13 +5705,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-06-09T07:35:15.949Z"
+    "@timestamp": "2025-06-19T10:36:12.442Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "88573352-482c-4809-839a-eccfb2538d00",
+    "dataset_id": "6eb5aa4a-76f7-4386-b7c5-fe2372c008ba",
+    "dataset_name": "Dataset 45",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -11295,13 +5721,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-06-09T07:35:15.949Z"
+    "@timestamp": "2025-06-19T10:36:12.442Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "88573352-482c-4809-839a-eccfb2538d00",
+    "dataset_id": "6eb5aa4a-76f7-4386-b7c5-fe2372c008ba",
+    "dataset_name": "Dataset 45",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -11310,13 +5737,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 2,
     "passed": true,
-    "@timestamp": "2025-06-09T07:35:15.949Z"
+    "@timestamp": "2025-06-19T10:36:12.442Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "88573352-482c-4809-839a-eccfb2538d00",
+    "dataset_id": "6eb5aa4a-76f7-4386-b7c5-fe2372c008ba",
+    "dataset_name": "Dataset 45",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -11325,43 +5753,46 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-06-09T07:35:15.949Z"
+    "@timestamp": "2025-06-19T10:36:12.442Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "88573352-482c-4809-839a-eccfb2538d00",
+    "dataset_id": "6eb5aa4a-76f7-4386-b7c5-fe2372c008ba",
+    "dataset_name": "Dataset 45",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "low": 18,
-    "value": 16,
-    "passed": false,
-    "@timestamp": "2025-06-09T07:35:15.949Z"
+    "value": 25,
+    "passed": true,
+    "@timestamp": "2025-06-19T10:36:12.442Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "88573352-482c-4809-839a-eccfb2538d00",
+    "dataset_id": "6eb5aa4a-76f7-4386-b7c5-fe2372c008ba",
+    "dataset_name": "Dataset 45",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "high": 30,
-    "value": 16,
+    "value": 25,
     "passed": true,
-    "@timestamp": "2025-06-09T07:35:15.949Z"
+    "@timestamp": "2025-06-19T10:36:12.442Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "88573352-482c-4809-839a-eccfb2538d00",
+    "dataset_id": "6eb5aa4a-76f7-4386-b7c5-fe2372c008ba",
+    "dataset_name": "Dataset 45",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -11369,151 +5800,32 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     },
     "low": 45,
     "high": 55,
-    "value": 59,
+    "value": 57,
     "passed": false,
-    "@timestamp": "2025-06-09T07:35:15.949Z"
+    "@timestamp": "2025-06-19T10:36:12.442Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "21afc1aa-b286-4df3-a9a1-a574f8810096",
+    "dataset_id": "6137f612-1beb-47b3-8459-821f3eaf8872",
+    "dataset_name": "Dataset 46",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
       "category": "conformance"
     },
     "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-20T19:50:46.798Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "21afc1aa-b286-4df3-a9a1-a574f8810096",
-    "name": "conceptConformanceDateTime",
-    "category": {
-      "context": "verification",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 98,
+    "value": 97,
     "passed": false,
-    "@timestamp": "2025-06-20T19:50:46.798Z"
+    "@timestamp": "2025-08-02T19:28:00.547Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "21afc1aa-b286-4df3-a9a1-a574f8810096",
-    "name": "validLVEF",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-20T19:50:46.798Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "21afc1aa-b286-4df3-a9a1-a574f8810096",
-    "name": "smokingStatusCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 2,
-    "value": 0,
-    "passed": false,
-    "@timestamp": "2025-06-20T19:50:46.798Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "21afc1aa-b286-4df3-a9a1-a574f8810096",
-    "name": "nyhaCardinality",
-    "category": {
-      "context": "verification",
-      "category": "completeness"
-    },
-    "low": 4,
-    "value": 4,
-    "passed": true,
-    "@timestamp": "2025-06-20T19:50:46.798Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "21afc1aa-b286-4df3-a9a1-a574f8810096",
-    "name": "bmiBelowThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 18,
-    "value": 33,
-    "passed": true,
-    "@timestamp": "2025-06-20T19:50:46.798Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "21afc1aa-b286-4df3-a9a1-a574f8810096",
-    "name": "bmiAboveThreshold",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "high": 30,
-    "value": 34,
-    "passed": false,
-    "@timestamp": "2025-06-20T19:50:46.798Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "21afc1aa-b286-4df3-a9a1-a574f8810096",
-    "name": "plausibleBalancedGender",
-    "category": {
-      "context": "validation",
-      "category": "plausibility"
-    },
-    "low": 45,
-    "high": 55,
-    "value": 54,
-    "passed": true,
-    "@timestamp": "2025-06-20T19:50:46.798Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "6ca2d504-09fd-41f9-bb13-eb19e075dfc8",
-    "name": "conceptConformanceSmokingStatus",
-    "category": {
-      "context": "validation",
-      "category": "conformance"
-    },
-    "low": 100,
-    "value": 100,
-    "passed": true,
-    "@timestamp": "2025-06-11T04:26:01.624Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "quality_check",
-    "dataset_id": "6ca2d504-09fd-41f9-bb13-eb19e075dfc8",
+    "dataset_id": "6137f612-1beb-47b3-8459-821f3eaf8872",
+    "dataset_name": "Dataset 46",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -11522,13 +5834,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-06-11T04:26:01.624Z"
+    "@timestamp": "2025-08-02T19:28:00.547Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "6ca2d504-09fd-41f9-bb13-eb19e075dfc8",
+    "dataset_id": "6137f612-1beb-47b3-8459-821f3eaf8872",
+    "dataset_name": "Dataset 46",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -11537,13 +5850,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-06-11T04:26:01.624Z"
+    "@timestamp": "2025-08-02T19:28:00.547Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "6ca2d504-09fd-41f9-bb13-eb19e075dfc8",
+    "dataset_id": "6137f612-1beb-47b3-8459-821f3eaf8872",
+    "dataset_name": "Dataset 46",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -11552,13 +5866,143 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 2,
     "passed": true,
-    "@timestamp": "2025-06-11T04:26:01.624Z"
+    "@timestamp": "2025-08-02T19:28:00.547Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "6ca2d504-09fd-41f9-bb13-eb19e075dfc8",
+    "dataset_id": "6137f612-1beb-47b3-8459-821f3eaf8872",
+    "dataset_name": "Dataset 46",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 2,
+    "passed": false,
+    "@timestamp": "2025-08-02T19:28:00.547Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "6137f612-1beb-47b3-8459-821f3eaf8872",
+    "dataset_name": "Dataset 46",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 18,
+    "passed": true,
+    "@timestamp": "2025-08-02T19:28:00.547Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "6137f612-1beb-47b3-8459-821f3eaf8872",
+    "dataset_name": "Dataset 46",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 19,
+    "passed": true,
+    "@timestamp": "2025-08-02T19:28:00.547Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "6137f612-1beb-47b3-8459-821f3eaf8872",
+    "dataset_name": "Dataset 46",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 52,
+    "passed": true,
+    "@timestamp": "2025-08-02T19:28:00.547Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "31b9522f-e9f7-4e68-b276-9ae8c47733d6",
+    "dataset_name": "Dataset 47",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-02T23:22:45.268Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "31b9522f-e9f7-4e68-b276-9ae8c47733d6",
+    "dataset_name": "Dataset 47",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-02T23:22:45.268Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "31b9522f-e9f7-4e68-b276-9ae8c47733d6",
+    "dataset_name": "Dataset 47",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-02T23:22:45.268Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "31b9522f-e9f7-4e68-b276-9ae8c47733d6",
+    "dataset_name": "Dataset 47",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-02T23:22:45.268Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "31b9522f-e9f7-4e68-b276-9ae8c47733d6",
+    "dataset_name": "Dataset 47",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -11567,43 +6011,46 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-06-11T04:26:01.624Z"
+    "@timestamp": "2025-07-02T23:22:45.268Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "6ca2d504-09fd-41f9-bb13-eb19e075dfc8",
+    "dataset_id": "31b9522f-e9f7-4e68-b276-9ae8c47733d6",
+    "dataset_name": "Dataset 47",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "low": 18,
-    "value": 15,
-    "passed": false,
-    "@timestamp": "2025-06-11T04:26:01.624Z"
+    "value": 19,
+    "passed": true,
+    "@timestamp": "2025-07-02T23:22:45.268Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "6ca2d504-09fd-41f9-bb13-eb19e075dfc8",
+    "dataset_id": "31b9522f-e9f7-4e68-b276-9ae8c47733d6",
+    "dataset_name": "Dataset 47",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "high": 30,
-    "value": 27,
+    "value": 28,
     "passed": true,
-    "@timestamp": "2025-06-11T04:26:01.624Z"
+    "@timestamp": "2025-07-02T23:22:45.268Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "6ca2d504-09fd-41f9-bb13-eb19e075dfc8",
+    "dataset_id": "31b9522f-e9f7-4e68-b276-9ae8c47733d6",
+    "dataset_name": "Dataset 47",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -11613,13 +6060,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 55,
     "value": 58,
     "passed": false,
-    "@timestamp": "2025-06-11T04:26:01.624Z"
+    "@timestamp": "2025-07-02T23:22:45.268Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "bfd20ce1-01a7-4538-a1d9-ce18aa65ec22",
+    "dataset_id": "94cc9f75-65f0-482c-9be8-436c1b711cb8",
+    "dataset_name": "Dataset 48",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -11628,13 +6076,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-04-05T05:49:26.007Z"
+    "@timestamp": "2025-07-04T05:01:38.097Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "bfd20ce1-01a7-4538-a1d9-ce18aa65ec22",
+    "dataset_id": "94cc9f75-65f0-482c-9be8-436c1b711cb8",
+    "dataset_name": "Dataset 48",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -11643,13 +6092,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-04-05T05:49:26.007Z"
+    "@timestamp": "2025-07-04T05:01:38.097Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "bfd20ce1-01a7-4538-a1d9-ce18aa65ec22",
+    "dataset_id": "94cc9f75-65f0-482c-9be8-436c1b711cb8",
+    "dataset_name": "Dataset 48",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -11658,13 +6108,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-04-05T05:49:26.007Z"
+    "@timestamp": "2025-07-04T05:01:38.097Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "bfd20ce1-01a7-4538-a1d9-ce18aa65ec22",
+    "dataset_id": "94cc9f75-65f0-482c-9be8-436c1b711cb8",
+    "dataset_name": "Dataset 48",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -11673,13 +6124,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 2,
     "passed": true,
-    "@timestamp": "2025-04-05T05:49:26.007Z"
+    "@timestamp": "2025-07-04T05:01:38.097Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "bfd20ce1-01a7-4538-a1d9-ce18aa65ec22",
+    "dataset_id": "94cc9f75-65f0-482c-9be8-436c1b711cb8",
+    "dataset_name": "Dataset 48",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -11688,43 +6140,1207 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-04-05T05:49:26.007Z"
+    "@timestamp": "2025-07-04T05:01:38.097Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "bfd20ce1-01a7-4538-a1d9-ce18aa65ec22",
+    "dataset_id": "94cc9f75-65f0-482c-9be8-436c1b711cb8",
+    "dataset_name": "Dataset 48",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "low": 18,
-    "value": 36,
+    "value": 22,
     "passed": true,
-    "@timestamp": "2025-04-05T05:49:26.007Z"
+    "@timestamp": "2025-07-04T05:01:38.097Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "bfd20ce1-01a7-4538-a1d9-ce18aa65ec22",
+    "dataset_id": "94cc9f75-65f0-482c-9be8-436c1b711cb8",
+    "dataset_name": "Dataset 48",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "high": 30,
-    "value": 38,
+    "value": 33,
     "passed": false,
-    "@timestamp": "2025-04-05T05:49:26.007Z"
+    "@timestamp": "2025-07-04T05:01:38.097Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "bfd20ce1-01a7-4538-a1d9-ce18aa65ec22",
+    "dataset_id": "94cc9f75-65f0-482c-9be8-436c1b711cb8",
+    "dataset_name": "Dataset 48",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 52,
+    "passed": true,
+    "@timestamp": "2025-07-04T05:01:38.097Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "d7a4a616-7922-4446-8912-06d68c5d5c5e",
+    "dataset_name": "Dataset 49",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-03T00:07:52.079Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "d7a4a616-7922-4446-8912-06d68c5d5c5e",
+    "dataset_name": "Dataset 49",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-03T00:07:52.079Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "d7a4a616-7922-4446-8912-06d68c5d5c5e",
+    "dataset_name": "Dataset 49",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 96,
+    "passed": false,
+    "@timestamp": "2025-07-03T00:07:52.079Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "d7a4a616-7922-4446-8912-06d68c5d5c5e",
+    "dataset_name": "Dataset 49",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-03T00:07:52.079Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "d7a4a616-7922-4446-8912-06d68c5d5c5e",
+    "dataset_name": "Dataset 49",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-07-03T00:07:52.079Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "d7a4a616-7922-4446-8912-06d68c5d5c5e",
+    "dataset_name": "Dataset 49",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 32,
+    "passed": true,
+    "@timestamp": "2025-07-03T00:07:52.079Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "d7a4a616-7922-4446-8912-06d68c5d5c5e",
+    "dataset_name": "Dataset 49",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 24,
+    "passed": true,
+    "@timestamp": "2025-07-03T00:07:52.079Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "d7a4a616-7922-4446-8912-06d68c5d5c5e",
+    "dataset_name": "Dataset 49",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 57,
+    "passed": false,
+    "@timestamp": "2025-07-03T00:07:52.079Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "15a487f0-0e21-47e9-9635-53f82762e140",
+    "dataset_name": "Dataset 50",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-23T02:51:13.471Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "15a487f0-0e21-47e9-9635-53f82762e140",
+    "dataset_name": "Dataset 50",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-23T02:51:13.471Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "15a487f0-0e21-47e9-9635-53f82762e140",
+    "dataset_name": "Dataset 50",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 96,
+    "passed": false,
+    "@timestamp": "2025-05-23T02:51:13.471Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "15a487f0-0e21-47e9-9635-53f82762e140",
+    "dataset_name": "Dataset 50",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 0,
+    "passed": false,
+    "@timestamp": "2025-05-23T02:51:13.471Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "15a487f0-0e21-47e9-9635-53f82762e140",
+    "dataset_name": "Dataset 50",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 2,
+    "passed": false,
+    "@timestamp": "2025-05-23T02:51:13.471Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "15a487f0-0e21-47e9-9635-53f82762e140",
+    "dataset_name": "Dataset 50",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 37,
+    "passed": true,
+    "@timestamp": "2025-05-23T02:51:13.471Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "15a487f0-0e21-47e9-9635-53f82762e140",
+    "dataset_name": "Dataset 50",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 28,
+    "passed": true,
+    "@timestamp": "2025-05-23T02:51:13.471Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "15a487f0-0e21-47e9-9635-53f82762e140",
+    "dataset_name": "Dataset 50",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 52,
+    "passed": true,
+    "@timestamp": "2025-05-23T02:51:13.471Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8bfcffab-35c3-40cc-96d8-1549e587fe89",
+    "dataset_name": "Dataset 51",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-16T11:33:30.310Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8bfcffab-35c3-40cc-96d8-1549e587fe89",
+    "dataset_name": "Dataset 51",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-16T11:33:30.310Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8bfcffab-35c3-40cc-96d8-1549e587fe89",
+    "dataset_name": "Dataset 51",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-16T11:33:30.310Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8bfcffab-35c3-40cc-96d8-1549e587fe89",
+    "dataset_name": "Dataset 51",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-16T11:33:30.310Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8bfcffab-35c3-40cc-96d8-1549e587fe89",
+    "dataset_name": "Dataset 51",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-16T11:33:30.310Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8bfcffab-35c3-40cc-96d8-1549e587fe89",
+    "dataset_name": "Dataset 51",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 22,
+    "passed": true,
+    "@timestamp": "2025-06-16T11:33:30.310Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8bfcffab-35c3-40cc-96d8-1549e587fe89",
+    "dataset_name": "Dataset 51",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 27,
+    "passed": true,
+    "@timestamp": "2025-06-16T11:33:30.310Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8bfcffab-35c3-40cc-96d8-1549e587fe89",
+    "dataset_name": "Dataset 51",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 57,
+    "passed": false,
+    "@timestamp": "2025-06-16T11:33:30.310Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "fd6c226e-ebf3-42f0-b0ea-2e08317d3cc0",
+    "dataset_name": "Dataset 52",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-06T06:44:57.967Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "fd6c226e-ebf3-42f0-b0ea-2e08317d3cc0",
+    "dataset_name": "Dataset 52",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-06T06:44:57.967Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "fd6c226e-ebf3-42f0-b0ea-2e08317d3cc0",
+    "dataset_name": "Dataset 52",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-06T06:44:57.967Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "fd6c226e-ebf3-42f0-b0ea-2e08317d3cc0",
+    "dataset_name": "Dataset 52",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-06T06:44:57.967Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "fd6c226e-ebf3-42f0-b0ea-2e08317d3cc0",
+    "dataset_name": "Dataset 52",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-07-06T06:44:57.967Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "fd6c226e-ebf3-42f0-b0ea-2e08317d3cc0",
+    "dataset_name": "Dataset 52",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 34,
+    "passed": true,
+    "@timestamp": "2025-07-06T06:44:57.967Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "fd6c226e-ebf3-42f0-b0ea-2e08317d3cc0",
+    "dataset_name": "Dataset 52",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 20,
+    "passed": true,
+    "@timestamp": "2025-07-06T06:44:57.967Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "fd6c226e-ebf3-42f0-b0ea-2e08317d3cc0",
+    "dataset_name": "Dataset 52",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 51,
+    "passed": true,
+    "@timestamp": "2025-07-06T06:44:57.967Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "53ce9513-b081-47dd-8712-a10ca5d8e9b1",
+    "dataset_name": "Dataset 53",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-22T16:45:39.239Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "53ce9513-b081-47dd-8712-a10ca5d8e9b1",
+    "dataset_name": "Dataset 53",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-22T16:45:39.239Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "53ce9513-b081-47dd-8712-a10ca5d8e9b1",
+    "dataset_name": "Dataset 53",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-22T16:45:39.239Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "53ce9513-b081-47dd-8712-a10ca5d8e9b1",
+    "dataset_name": "Dataset 53",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-22T16:45:39.239Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "53ce9513-b081-47dd-8712-a10ca5d8e9b1",
+    "dataset_name": "Dataset 53",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-22T16:45:39.239Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "53ce9513-b081-47dd-8712-a10ca5d8e9b1",
+    "dataset_name": "Dataset 53",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 25,
+    "passed": true,
+    "@timestamp": "2025-06-22T16:45:39.239Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "53ce9513-b081-47dd-8712-a10ca5d8e9b1",
+    "dataset_name": "Dataset 53",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 22,
+    "passed": true,
+    "@timestamp": "2025-06-22T16:45:39.239Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "53ce9513-b081-47dd-8712-a10ca5d8e9b1",
+    "dataset_name": "Dataset 53",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 50,
+    "passed": true,
+    "@timestamp": "2025-06-22T16:45:39.239Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e806c50c-7487-4cde-ba4e-b20efeca92f5",
+    "dataset_name": "Dataset 54",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-15T10:09:24.347Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e806c50c-7487-4cde-ba4e-b20efeca92f5",
+    "dataset_name": "Dataset 54",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-15T10:09:24.347Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e806c50c-7487-4cde-ba4e-b20efeca92f5",
+    "dataset_name": "Dataset 54",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-15T10:09:24.347Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e806c50c-7487-4cde-ba4e-b20efeca92f5",
+    "dataset_name": "Dataset 54",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-15T10:09:24.347Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e806c50c-7487-4cde-ba4e-b20efeca92f5",
+    "dataset_name": "Dataset 54",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-07-15T10:09:24.347Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e806c50c-7487-4cde-ba4e-b20efeca92f5",
+    "dataset_name": "Dataset 54",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 37,
+    "passed": true,
+    "@timestamp": "2025-07-15T10:09:24.347Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e806c50c-7487-4cde-ba4e-b20efeca92f5",
+    "dataset_name": "Dataset 54",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 36,
+    "passed": false,
+    "@timestamp": "2025-07-15T10:09:24.347Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e806c50c-7487-4cde-ba4e-b20efeca92f5",
+    "dataset_name": "Dataset 54",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 50,
+    "passed": true,
+    "@timestamp": "2025-07-15T10:09:24.347Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "1c98363a-cdfa-4804-a9f8-8a3e1844ab5f",
+    "dataset_name": "Dataset 55",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-15T20:14:58.782Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "1c98363a-cdfa-4804-a9f8-8a3e1844ab5f",
+    "dataset_name": "Dataset 55",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-15T20:14:58.782Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "1c98363a-cdfa-4804-a9f8-8a3e1844ab5f",
+    "dataset_name": "Dataset 55",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 96,
+    "passed": false,
+    "@timestamp": "2025-06-15T20:14:58.782Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "1c98363a-cdfa-4804-a9f8-8a3e1844ab5f",
+    "dataset_name": "Dataset 55",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-15T20:14:58.782Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "1c98363a-cdfa-4804-a9f8-8a3e1844ab5f",
+    "dataset_name": "Dataset 55",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-15T20:14:58.782Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "1c98363a-cdfa-4804-a9f8-8a3e1844ab5f",
+    "dataset_name": "Dataset 55",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 40,
+    "passed": true,
+    "@timestamp": "2025-06-15T20:14:58.782Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "1c98363a-cdfa-4804-a9f8-8a3e1844ab5f",
+    "dataset_name": "Dataset 55",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 28,
+    "passed": true,
+    "@timestamp": "2025-06-15T20:14:58.782Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "1c98363a-cdfa-4804-a9f8-8a3e1844ab5f",
+    "dataset_name": "Dataset 55",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 58,
+    "passed": false,
+    "@timestamp": "2025-06-15T20:14:58.782Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c99ab21d-e3d1-4fb6-8627-279260e77284",
+    "dataset_name": "Dataset 56",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-19T23:08:48.072Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c99ab21d-e3d1-4fb6-8627-279260e77284",
+    "dataset_name": "Dataset 56",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-19T23:08:48.072Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c99ab21d-e3d1-4fb6-8627-279260e77284",
+    "dataset_name": "Dataset 56",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 96,
+    "passed": false,
+    "@timestamp": "2025-05-19T23:08:48.072Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c99ab21d-e3d1-4fb6-8627-279260e77284",
+    "dataset_name": "Dataset 56",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-05-19T23:08:48.072Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c99ab21d-e3d1-4fb6-8627-279260e77284",
+    "dataset_name": "Dataset 56",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 2,
+    "passed": false,
+    "@timestamp": "2025-05-19T23:08:48.072Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c99ab21d-e3d1-4fb6-8627-279260e77284",
+    "dataset_name": "Dataset 56",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 27,
+    "passed": true,
+    "@timestamp": "2025-05-19T23:08:48.072Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c99ab21d-e3d1-4fb6-8627-279260e77284",
+    "dataset_name": "Dataset 56",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 20,
+    "passed": true,
+    "@timestamp": "2025-05-19T23:08:48.072Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c99ab21d-e3d1-4fb6-8627-279260e77284",
+    "dataset_name": "Dataset 56",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 50,
+    "passed": true,
+    "@timestamp": "2025-05-19T23:08:48.072Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b386e909-f4b1-46ce-8881-24501f278327",
+    "dataset_name": "Dataset 57",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-13T18:33:26.463Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b386e909-f4b1-46ce-8881-24501f278327",
+    "dataset_name": "Dataset 57",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-13T18:33:26.463Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b386e909-f4b1-46ce-8881-24501f278327",
+    "dataset_name": "Dataset 57",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-13T18:33:26.463Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b386e909-f4b1-46ce-8881-24501f278327",
+    "dataset_name": "Dataset 57",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-13T18:33:26.463Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b386e909-f4b1-46ce-8881-24501f278327",
+    "dataset_name": "Dataset 57",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-13T18:33:26.463Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b386e909-f4b1-46ce-8881-24501f278327",
+    "dataset_name": "Dataset 57",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 40,
+    "passed": true,
+    "@timestamp": "2025-06-13T18:33:26.463Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b386e909-f4b1-46ce-8881-24501f278327",
+    "dataset_name": "Dataset 57",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 23,
+    "passed": true,
+    "@timestamp": "2025-06-13T18:33:26.463Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b386e909-f4b1-46ce-8881-24501f278327",
+    "dataset_name": "Dataset 57",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -11734,13 +7350,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 55,
     "value": 59,
     "passed": false,
-    "@timestamp": "2025-04-05T05:49:26.007Z"
+    "@timestamp": "2025-06-13T18:33:26.463Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "479aa487-9da3-495e-8a19-bc35af26c355",
+    "dataset_id": "9082a0a2-6cbc-4aa8-8440-94300c48f9b8",
+    "dataset_name": "Dataset 58",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -11749,13 +7366,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-25T09:19:25.350Z"
+    "@timestamp": "2025-08-12T12:09:14.481Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "479aa487-9da3-495e-8a19-bc35af26c355",
+    "dataset_id": "9082a0a2-6cbc-4aa8-8440-94300c48f9b8",
+    "dataset_name": "Dataset 58",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -11764,13 +7382,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-25T09:19:25.350Z"
+    "@timestamp": "2025-08-12T12:09:14.481Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "479aa487-9da3-495e-8a19-bc35af26c355",
+    "dataset_id": "9082a0a2-6cbc-4aa8-8440-94300c48f9b8",
+    "dataset_name": "Dataset 58",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -11779,13 +7398,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-05-25T09:19:25.350Z"
+    "@timestamp": "2025-08-12T12:09:14.481Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "479aa487-9da3-495e-8a19-bc35af26c355",
+    "dataset_id": "9082a0a2-6cbc-4aa8-8440-94300c48f9b8",
+    "dataset_name": "Dataset 58",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -11794,13 +7414,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 2,
     "passed": true,
-    "@timestamp": "2025-05-25T09:19:25.350Z"
+    "@timestamp": "2025-08-12T12:09:14.481Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "479aa487-9da3-495e-8a19-bc35af26c355",
+    "dataset_id": "9082a0a2-6cbc-4aa8-8440-94300c48f9b8",
+    "dataset_name": "Dataset 58",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -11809,43 +7430,46 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-05-25T09:19:25.350Z"
+    "@timestamp": "2025-08-12T12:09:14.481Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "479aa487-9da3-495e-8a19-bc35af26c355",
+    "dataset_id": "9082a0a2-6cbc-4aa8-8440-94300c48f9b8",
+    "dataset_name": "Dataset 58",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "low": 18,
-    "value": 27,
+    "value": 31,
     "passed": true,
-    "@timestamp": "2025-05-25T09:19:25.350Z"
+    "@timestamp": "2025-08-12T12:09:14.481Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "479aa487-9da3-495e-8a19-bc35af26c355",
+    "dataset_id": "9082a0a2-6cbc-4aa8-8440-94300c48f9b8",
+    "dataset_name": "Dataset 58",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "high": 30,
-    "value": 31,
+    "value": 38,
     "passed": false,
-    "@timestamp": "2025-05-25T09:19:25.350Z"
+    "@timestamp": "2025-08-12T12:09:14.481Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "479aa487-9da3-495e-8a19-bc35af26c355",
+    "dataset_id": "9082a0a2-6cbc-4aa8-8440-94300c48f9b8",
+    "dataset_name": "Dataset 58",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -11855,13 +7479,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 55,
     "value": 54,
     "passed": true,
-    "@timestamp": "2025-05-25T09:19:25.350Z"
+    "@timestamp": "2025-08-12T12:09:14.481Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e14f646a-4487-4855-a93c-63ae91de55f1",
+    "dataset_id": "2385907b-2f22-45fd-8bd3-b7153fccb05f",
+    "dataset_name": "Dataset 59",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
@@ -11870,13 +7495,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-04-16T19:08:35.164Z"
+    "@timestamp": "2025-07-28T18:53:08.888Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e14f646a-4487-4855-a93c-63ae91de55f1",
+    "dataset_id": "2385907b-2f22-45fd-8bd3-b7153fccb05f",
+    "dataset_name": "Dataset 59",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -11885,13 +7511,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-04-16T19:08:35.164Z"
+    "@timestamp": "2025-07-28T18:53:08.888Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e14f646a-4487-4855-a93c-63ae91de55f1",
+    "dataset_id": "2385907b-2f22-45fd-8bd3-b7153fccb05f",
+    "dataset_name": "Dataset 59",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -11900,13 +7527,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-04-16T19:08:35.164Z"
+    "@timestamp": "2025-07-28T18:53:08.888Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e14f646a-4487-4855-a93c-63ae91de55f1",
+    "dataset_id": "2385907b-2f22-45fd-8bd3-b7153fccb05f",
+    "dataset_name": "Dataset 59",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -11915,13 +7543,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 2,
     "passed": true,
-    "@timestamp": "2025-04-16T19:08:35.164Z"
+    "@timestamp": "2025-07-28T18:53:08.888Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e14f646a-4487-4855-a93c-63ae91de55f1",
+    "dataset_id": "2385907b-2f22-45fd-8bd3-b7153fccb05f",
+    "dataset_name": "Dataset 59",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -11930,28 +7559,159 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 4,
     "passed": true,
-    "@timestamp": "2025-04-16T19:08:35.164Z"
+    "@timestamp": "2025-07-28T18:53:08.888Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e14f646a-4487-4855-a93c-63ae91de55f1",
+    "dataset_id": "2385907b-2f22-45fd-8bd3-b7153fccb05f",
+    "dataset_name": "Dataset 59",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "low": 18,
-    "value": 27,
-    "passed": true,
-    "@timestamp": "2025-04-16T19:08:35.164Z"
+    "value": 16,
+    "passed": false,
+    "@timestamp": "2025-07-28T18:53:08.888Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e14f646a-4487-4855-a93c-63ae91de55f1",
+    "dataset_id": "2385907b-2f22-45fd-8bd3-b7153fccb05f",
+    "dataset_name": "Dataset 59",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 35,
+    "passed": false,
+    "@timestamp": "2025-07-28T18:53:08.888Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2385907b-2f22-45fd-8bd3-b7153fccb05f",
+    "dataset_name": "Dataset 59",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 56,
+    "passed": false,
+    "@timestamp": "2025-07-28T18:53:08.888Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "04fa8e9e-a3f5-4214-9b9f-bb5ad9137813",
+    "dataset_name": "Dataset 60",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-23T00:23:16.774Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "04fa8e9e-a3f5-4214-9b9f-bb5ad9137813",
+    "dataset_name": "Dataset 60",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-23T00:23:16.774Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "04fa8e9e-a3f5-4214-9b9f-bb5ad9137813",
+    "dataset_name": "Dataset 60",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-23T00:23:16.774Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "04fa8e9e-a3f5-4214-9b9f-bb5ad9137813",
+    "dataset_name": "Dataset 60",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-05-23T00:23:16.774Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "04fa8e9e-a3f5-4214-9b9f-bb5ad9137813",
+    "dataset_name": "Dataset 60",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 2,
+    "passed": false,
+    "@timestamp": "2025-05-23T00:23:16.774Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "04fa8e9e-a3f5-4214-9b9f-bb5ad9137813",
+    "dataset_name": "Dataset 60",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 21,
+    "passed": true,
+    "@timestamp": "2025-05-23T00:23:16.774Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "04fa8e9e-a3f5-4214-9b9f-bb5ad9137813",
+    "dataset_name": "Dataset 60",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
@@ -11960,13 +7720,272 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 30,
     "value": 34,
     "passed": false,
-    "@timestamp": "2025-04-16T19:08:35.164Z"
+    "@timestamp": "2025-05-23T00:23:16.774Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e14f646a-4487-4855-a93c-63ae91de55f1",
+    "dataset_id": "04fa8e9e-a3f5-4214-9b9f-bb5ad9137813",
+    "dataset_name": "Dataset 60",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 56,
+    "passed": false,
+    "@timestamp": "2025-05-23T00:23:16.774Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4a90bb9b-bced-4d49-87b0-719e2ead9527",
+    "dataset_name": "Dataset 61",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-08T02:43:15.703Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4a90bb9b-bced-4d49-87b0-719e2ead9527",
+    "dataset_name": "Dataset 61",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-08T02:43:15.703Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4a90bb9b-bced-4d49-87b0-719e2ead9527",
+    "dataset_name": "Dataset 61",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 96,
+    "passed": false,
+    "@timestamp": "2025-06-08T02:43:15.703Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4a90bb9b-bced-4d49-87b0-719e2ead9527",
+    "dataset_name": "Dataset 61",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-08T02:43:15.703Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4a90bb9b-bced-4d49-87b0-719e2ead9527",
+    "dataset_name": "Dataset 61",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-08T02:43:15.703Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4a90bb9b-bced-4d49-87b0-719e2ead9527",
+    "dataset_name": "Dataset 61",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 26,
+    "passed": true,
+    "@timestamp": "2025-06-08T02:43:15.703Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4a90bb9b-bced-4d49-87b0-719e2ead9527",
+    "dataset_name": "Dataset 61",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 32,
+    "passed": false,
+    "@timestamp": "2025-06-08T02:43:15.703Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4a90bb9b-bced-4d49-87b0-719e2ead9527",
+    "dataset_name": "Dataset 61",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 51,
+    "passed": true,
+    "@timestamp": "2025-06-08T02:43:15.703Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "89ac55c8-a9b1-4590-84dc-0bbaafc64e74",
+    "dataset_name": "Dataset 62",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-09T14:01:34.879Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "89ac55c8-a9b1-4590-84dc-0bbaafc64e74",
+    "dataset_name": "Dataset 62",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-09T14:01:34.879Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "89ac55c8-a9b1-4590-84dc-0bbaafc64e74",
+    "dataset_name": "Dataset 62",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-09T14:01:34.879Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "89ac55c8-a9b1-4590-84dc-0bbaafc64e74",
+    "dataset_name": "Dataset 62",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 0,
+    "passed": false,
+    "@timestamp": "2025-06-09T14:01:34.879Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "89ac55c8-a9b1-4590-84dc-0bbaafc64e74",
+    "dataset_name": "Dataset 62",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-09T14:01:34.879Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "89ac55c8-a9b1-4590-84dc-0bbaafc64e74",
+    "dataset_name": "Dataset 62",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 33,
+    "passed": true,
+    "@timestamp": "2025-06-09T14:01:34.879Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "89ac55c8-a9b1-4590-84dc-0bbaafc64e74",
+    "dataset_name": "Dataset 62",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 16,
+    "passed": true,
+    "@timestamp": "2025-06-09T14:01:34.879Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "89ac55c8-a9b1-4590-84dc-0bbaafc64e74",
+    "dataset_name": "Dataset 62",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -11976,28 +7995,30 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 55,
     "value": 60,
     "passed": false,
-    "@timestamp": "2025-04-16T19:08:35.164Z"
+    "@timestamp": "2025-06-09T14:01:34.879Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e5d94829-4e04-42fd-a604-6e536b3289e1",
+    "dataset_id": "e836cf84-cb12-4898-b2bc-44214b7452a3",
+    "dataset_name": "Dataset 63",
     "name": "conceptConformanceSmokingStatus",
     "category": {
       "context": "validation",
       "category": "conformance"
     },
     "low": 100,
-    "value": 97,
-    "passed": false,
-    "@timestamp": "2025-04-10T04:37:46.965Z"
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-18T02:14:01.536Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e5d94829-4e04-42fd-a604-6e536b3289e1",
+    "dataset_id": "e836cf84-cb12-4898-b2bc-44214b7452a3",
+    "dataset_name": "Dataset 63",
     "name": "conceptConformanceDateTime",
     "category": {
       "context": "verification",
@@ -12006,13 +8027,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-04-10T04:37:46.965Z"
+    "@timestamp": "2025-05-18T02:14:01.536Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e5d94829-4e04-42fd-a604-6e536b3289e1",
+    "dataset_id": "e836cf84-cb12-4898-b2bc-44214b7452a3",
+    "dataset_name": "Dataset 63",
     "name": "validLVEF",
     "category": {
       "context": "verification",
@@ -12021,13 +8043,14 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 100,
     "value": 100,
     "passed": true,
-    "@timestamp": "2025-04-10T04:37:46.965Z"
+    "@timestamp": "2025-05-18T02:14:01.536Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e5d94829-4e04-42fd-a604-6e536b3289e1",
+    "dataset_id": "e836cf84-cb12-4898-b2bc-44214b7452a3",
+    "dataset_name": "Dataset 63",
     "name": "smokingStatusCardinality",
     "category": {
       "context": "verification",
@@ -12036,13 +8059,272 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 2,
     "value": 2,
     "passed": true,
-    "@timestamp": "2025-04-10T04:37:46.965Z"
+    "@timestamp": "2025-05-18T02:14:01.536Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e5d94829-4e04-42fd-a604-6e536b3289e1",
+    "dataset_id": "e836cf84-cb12-4898-b2bc-44214b7452a3",
+    "dataset_name": "Dataset 63",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-05-18T02:14:01.536Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e836cf84-cb12-4898-b2bc-44214b7452a3",
+    "dataset_name": "Dataset 63",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 17,
+    "passed": false,
+    "@timestamp": "2025-05-18T02:14:01.536Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e836cf84-cb12-4898-b2bc-44214b7452a3",
+    "dataset_name": "Dataset 63",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 34,
+    "passed": false,
+    "@timestamp": "2025-05-18T02:14:01.536Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "e836cf84-cb12-4898-b2bc-44214b7452a3",
+    "dataset_name": "Dataset 63",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 55,
+    "passed": true,
+    "@timestamp": "2025-05-18T02:14:01.536Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f1193a15-e460-491c-9ef7-c1f1aea29c54",
+    "dataset_name": "Dataset 64",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-09T10:35:26.154Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f1193a15-e460-491c-9ef7-c1f1aea29c54",
+    "dataset_name": "Dataset 64",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-09T10:35:26.154Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f1193a15-e460-491c-9ef7-c1f1aea29c54",
+    "dataset_name": "Dataset 64",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 96,
+    "passed": false,
+    "@timestamp": "2025-08-09T10:35:26.154Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f1193a15-e460-491c-9ef7-c1f1aea29c54",
+    "dataset_name": "Dataset 64",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 0,
+    "passed": false,
+    "@timestamp": "2025-08-09T10:35:26.154Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f1193a15-e460-491c-9ef7-c1f1aea29c54",
+    "dataset_name": "Dataset 64",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-08-09T10:35:26.154Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f1193a15-e460-491c-9ef7-c1f1aea29c54",
+    "dataset_name": "Dataset 64",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 23,
+    "passed": true,
+    "@timestamp": "2025-08-09T10:35:26.154Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f1193a15-e460-491c-9ef7-c1f1aea29c54",
+    "dataset_name": "Dataset 64",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 39,
+    "passed": false,
+    "@timestamp": "2025-08-09T10:35:26.154Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f1193a15-e460-491c-9ef7-c1f1aea29c54",
+    "dataset_name": "Dataset 64",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 55,
+    "passed": true,
+    "@timestamp": "2025-08-09T10:35:26.154Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "80321884-a659-49f2-869e-76af93f8fe8a",
+    "dataset_name": "Dataset 65",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-17T11:28:31.124Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "80321884-a659-49f2-869e-76af93f8fe8a",
+    "dataset_name": "Dataset 65",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-17T11:28:31.124Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "80321884-a659-49f2-869e-76af93f8fe8a",
+    "dataset_name": "Dataset 65",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-17T11:28:31.124Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "80321884-a659-49f2-869e-76af93f8fe8a",
+    "dataset_name": "Dataset 65",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-17T11:28:31.124Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "80321884-a659-49f2-869e-76af93f8fe8a",
+    "dataset_name": "Dataset 65",
     "name": "nyhaCardinality",
     "category": {
       "context": "verification",
@@ -12051,43 +8333,2755 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "low": 4,
     "value": 2,
     "passed": false,
-    "@timestamp": "2025-04-10T04:37:46.965Z"
+    "@timestamp": "2025-07-17T11:28:31.124Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e5d94829-4e04-42fd-a604-6e536b3289e1",
+    "dataset_id": "80321884-a659-49f2-869e-76af93f8fe8a",
+    "dataset_name": "Dataset 65",
     "name": "bmiBelowThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "low": 18,
-    "value": 40,
+    "value": 39,
     "passed": true,
-    "@timestamp": "2025-04-10T04:37:46.965Z"
+    "@timestamp": "2025-07-17T11:28:31.124Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e5d94829-4e04-42fd-a604-6e536b3289e1",
+    "dataset_id": "80321884-a659-49f2-869e-76af93f8fe8a",
+    "dataset_name": "Dataset 65",
     "name": "bmiAboveThreshold",
     "category": {
       "context": "validation",
       "category": "plausibility"
     },
     "high": 30,
-    "value": 40,
-    "passed": false,
-    "@timestamp": "2025-04-10T04:37:46.965Z"
+    "value": 25,
+    "passed": true,
+    "@timestamp": "2025-07-17T11:28:31.124Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "quality_check",
-    "dataset_id": "e5d94829-4e04-42fd-a604-6e536b3289e1",
+    "dataset_id": "80321884-a659-49f2-869e-76af93f8fe8a",
+    "dataset_name": "Dataset 65",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 57,
+    "passed": false,
+    "@timestamp": "2025-07-17T11:28:31.124Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b852ee86-a2dd-4cf2-9a8b-15baf09ca235",
+    "dataset_name": "Dataset 66",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-01T04:52:27.956Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b852ee86-a2dd-4cf2-9a8b-15baf09ca235",
+    "dataset_name": "Dataset 66",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 98,
+    "passed": false,
+    "@timestamp": "2025-06-01T04:52:27.956Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b852ee86-a2dd-4cf2-9a8b-15baf09ca235",
+    "dataset_name": "Dataset 66",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 96,
+    "passed": false,
+    "@timestamp": "2025-06-01T04:52:27.956Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b852ee86-a2dd-4cf2-9a8b-15baf09ca235",
+    "dataset_name": "Dataset 66",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-01T04:52:27.956Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b852ee86-a2dd-4cf2-9a8b-15baf09ca235",
+    "dataset_name": "Dataset 66",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-01T04:52:27.956Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b852ee86-a2dd-4cf2-9a8b-15baf09ca235",
+    "dataset_name": "Dataset 66",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 35,
+    "passed": true,
+    "@timestamp": "2025-06-01T04:52:27.956Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b852ee86-a2dd-4cf2-9a8b-15baf09ca235",
+    "dataset_name": "Dataset 66",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 21,
+    "passed": true,
+    "@timestamp": "2025-06-01T04:52:27.956Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b852ee86-a2dd-4cf2-9a8b-15baf09ca235",
+    "dataset_name": "Dataset 66",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 54,
+    "passed": true,
+    "@timestamp": "2025-06-01T04:52:27.956Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8c9ed041-0df4-4701-a7c0-7d5450515512",
+    "dataset_name": "Dataset 67",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-27T10:59:50.687Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8c9ed041-0df4-4701-a7c0-7d5450515512",
+    "dataset_name": "Dataset 67",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-27T10:59:50.687Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8c9ed041-0df4-4701-a7c0-7d5450515512",
+    "dataset_name": "Dataset 67",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-27T10:59:50.687Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8c9ed041-0df4-4701-a7c0-7d5450515512",
+    "dataset_name": "Dataset 67",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-05-27T10:59:50.687Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8c9ed041-0df4-4701-a7c0-7d5450515512",
+    "dataset_name": "Dataset 67",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-05-27T10:59:50.687Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8c9ed041-0df4-4701-a7c0-7d5450515512",
+    "dataset_name": "Dataset 67",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 26,
+    "passed": true,
+    "@timestamp": "2025-05-27T10:59:50.687Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8c9ed041-0df4-4701-a7c0-7d5450515512",
+    "dataset_name": "Dataset 67",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 35,
+    "passed": false,
+    "@timestamp": "2025-05-27T10:59:50.687Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8c9ed041-0df4-4701-a7c0-7d5450515512",
+    "dataset_name": "Dataset 67",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 60,
+    "passed": false,
+    "@timestamp": "2025-05-27T10:59:50.687Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b43a984d-12ee-4564-bc9b-a8b2923060e7",
+    "dataset_name": "Dataset 68",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-05T18:46:25.842Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b43a984d-12ee-4564-bc9b-a8b2923060e7",
+    "dataset_name": "Dataset 68",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-05T18:46:25.842Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b43a984d-12ee-4564-bc9b-a8b2923060e7",
+    "dataset_name": "Dataset 68",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-05T18:46:25.842Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b43a984d-12ee-4564-bc9b-a8b2923060e7",
+    "dataset_name": "Dataset 68",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-08-05T18:46:25.842Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b43a984d-12ee-4564-bc9b-a8b2923060e7",
+    "dataset_name": "Dataset 68",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 2,
+    "passed": false,
+    "@timestamp": "2025-08-05T18:46:25.842Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b43a984d-12ee-4564-bc9b-a8b2923060e7",
+    "dataset_name": "Dataset 68",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 29,
+    "passed": true,
+    "@timestamp": "2025-08-05T18:46:25.842Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b43a984d-12ee-4564-bc9b-a8b2923060e7",
+    "dataset_name": "Dataset 68",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 32,
+    "passed": false,
+    "@timestamp": "2025-08-05T18:46:25.842Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b43a984d-12ee-4564-bc9b-a8b2923060e7",
+    "dataset_name": "Dataset 68",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 56,
+    "passed": false,
+    "@timestamp": "2025-08-05T18:46:25.842Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a2e9a0fb-03cd-4bf0-81b6-f121927c3a3e",
+    "dataset_name": "Dataset 69",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-21T01:38:06.611Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a2e9a0fb-03cd-4bf0-81b6-f121927c3a3e",
+    "dataset_name": "Dataset 69",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 98,
+    "passed": false,
+    "@timestamp": "2025-07-21T01:38:06.611Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a2e9a0fb-03cd-4bf0-81b6-f121927c3a3e",
+    "dataset_name": "Dataset 69",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-21T01:38:06.611Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a2e9a0fb-03cd-4bf0-81b6-f121927c3a3e",
+    "dataset_name": "Dataset 69",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-21T01:38:06.611Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a2e9a0fb-03cd-4bf0-81b6-f121927c3a3e",
+    "dataset_name": "Dataset 69",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-07-21T01:38:06.611Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a2e9a0fb-03cd-4bf0-81b6-f121927c3a3e",
+    "dataset_name": "Dataset 69",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 25,
+    "passed": true,
+    "@timestamp": "2025-07-21T01:38:06.611Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a2e9a0fb-03cd-4bf0-81b6-f121927c3a3e",
+    "dataset_name": "Dataset 69",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 29,
+    "passed": true,
+    "@timestamp": "2025-07-21T01:38:06.611Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a2e9a0fb-03cd-4bf0-81b6-f121927c3a3e",
+    "dataset_name": "Dataset 69",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 56,
+    "passed": false,
+    "@timestamp": "2025-07-21T01:38:06.611Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "80271d25-fafe-4b5d-a38b-4a35a366f91a",
+    "dataset_name": "Dataset 70",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-25T01:59:50.829Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "80271d25-fafe-4b5d-a38b-4a35a366f91a",
+    "dataset_name": "Dataset 70",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-25T01:59:50.829Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "80271d25-fafe-4b5d-a38b-4a35a366f91a",
+    "dataset_name": "Dataset 70",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-25T01:59:50.829Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "80271d25-fafe-4b5d-a38b-4a35a366f91a",
+    "dataset_name": "Dataset 70",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-05-25T01:59:50.829Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "80271d25-fafe-4b5d-a38b-4a35a366f91a",
+    "dataset_name": "Dataset 70",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-05-25T01:59:50.829Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "80271d25-fafe-4b5d-a38b-4a35a366f91a",
+    "dataset_name": "Dataset 70",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 19,
+    "passed": true,
+    "@timestamp": "2025-05-25T01:59:50.829Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "80271d25-fafe-4b5d-a38b-4a35a366f91a",
+    "dataset_name": "Dataset 70",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 16,
+    "passed": true,
+    "@timestamp": "2025-05-25T01:59:50.829Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "80271d25-fafe-4b5d-a38b-4a35a366f91a",
+    "dataset_name": "Dataset 70",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 55,
+    "passed": true,
+    "@timestamp": "2025-05-25T01:59:50.829Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c6e18ec9-e03a-4cd5-8d7e-94f0d36ae125",
+    "dataset_name": "Dataset 71",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-13T09:26:42.221Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c6e18ec9-e03a-4cd5-8d7e-94f0d36ae125",
+    "dataset_name": "Dataset 71",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-13T09:26:42.221Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c6e18ec9-e03a-4cd5-8d7e-94f0d36ae125",
+    "dataset_name": "Dataset 71",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-13T09:26:42.221Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c6e18ec9-e03a-4cd5-8d7e-94f0d36ae125",
+    "dataset_name": "Dataset 71",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-13T09:26:42.221Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c6e18ec9-e03a-4cd5-8d7e-94f0d36ae125",
+    "dataset_name": "Dataset 71",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-13T09:26:42.221Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c6e18ec9-e03a-4cd5-8d7e-94f0d36ae125",
+    "dataset_name": "Dataset 71",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 30,
+    "passed": true,
+    "@timestamp": "2025-06-13T09:26:42.221Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c6e18ec9-e03a-4cd5-8d7e-94f0d36ae125",
+    "dataset_name": "Dataset 71",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 20,
+    "passed": true,
+    "@timestamp": "2025-06-13T09:26:42.221Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c6e18ec9-e03a-4cd5-8d7e-94f0d36ae125",
+    "dataset_name": "Dataset 71",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 57,
+    "passed": false,
+    "@timestamp": "2025-06-13T09:26:42.221Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f34812ad-3634-44c4-8bbe-74ce27b24a2f",
+    "dataset_name": "Dataset 72",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-23T21:00:46.474Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f34812ad-3634-44c4-8bbe-74ce27b24a2f",
+    "dataset_name": "Dataset 72",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-23T21:00:46.474Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f34812ad-3634-44c4-8bbe-74ce27b24a2f",
+    "dataset_name": "Dataset 72",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-23T21:00:46.474Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f34812ad-3634-44c4-8bbe-74ce27b24a2f",
+    "dataset_name": "Dataset 72",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-05-23T21:00:46.474Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f34812ad-3634-44c4-8bbe-74ce27b24a2f",
+    "dataset_name": "Dataset 72",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 2,
+    "passed": false,
+    "@timestamp": "2025-05-23T21:00:46.474Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f34812ad-3634-44c4-8bbe-74ce27b24a2f",
+    "dataset_name": "Dataset 72",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 20,
+    "passed": true,
+    "@timestamp": "2025-05-23T21:00:46.474Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f34812ad-3634-44c4-8bbe-74ce27b24a2f",
+    "dataset_name": "Dataset 72",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 19,
+    "passed": true,
+    "@timestamp": "2025-05-23T21:00:46.474Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "f34812ad-3634-44c4-8bbe-74ce27b24a2f",
+    "dataset_name": "Dataset 72",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 55,
+    "passed": true,
+    "@timestamp": "2025-05-23T21:00:46.474Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "14c0ab90-3e3f-4cd8-8ddd-7ae1f7244619",
+    "dataset_name": "Dataset 73",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-21T05:00:14.625Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "14c0ab90-3e3f-4cd8-8ddd-7ae1f7244619",
+    "dataset_name": "Dataset 73",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-21T05:00:14.625Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "14c0ab90-3e3f-4cd8-8ddd-7ae1f7244619",
+    "dataset_name": "Dataset 73",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-21T05:00:14.625Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "14c0ab90-3e3f-4cd8-8ddd-7ae1f7244619",
+    "dataset_name": "Dataset 73",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-21T05:00:14.625Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "14c0ab90-3e3f-4cd8-8ddd-7ae1f7244619",
+    "dataset_name": "Dataset 73",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-07-21T05:00:14.625Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "14c0ab90-3e3f-4cd8-8ddd-7ae1f7244619",
+    "dataset_name": "Dataset 73",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 15,
+    "passed": false,
+    "@timestamp": "2025-07-21T05:00:14.625Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "14c0ab90-3e3f-4cd8-8ddd-7ae1f7244619",
+    "dataset_name": "Dataset 73",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 39,
+    "passed": false,
+    "@timestamp": "2025-07-21T05:00:14.625Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "14c0ab90-3e3f-4cd8-8ddd-7ae1f7244619",
+    "dataset_name": "Dataset 73",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 59,
+    "passed": false,
+    "@timestamp": "2025-07-21T05:00:14.625Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "78121c38-f4e0-4faf-9670-35e90514d876",
+    "dataset_name": "Dataset 74",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 97,
+    "passed": false,
+    "@timestamp": "2025-06-11T17:56:36.423Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "78121c38-f4e0-4faf-9670-35e90514d876",
+    "dataset_name": "Dataset 74",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-11T17:56:36.423Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "78121c38-f4e0-4faf-9670-35e90514d876",
+    "dataset_name": "Dataset 74",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-11T17:56:36.423Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "78121c38-f4e0-4faf-9670-35e90514d876",
+    "dataset_name": "Dataset 74",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-11T17:56:36.423Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "78121c38-f4e0-4faf-9670-35e90514d876",
+    "dataset_name": "Dataset 74",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-11T17:56:36.423Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "78121c38-f4e0-4faf-9670-35e90514d876",
+    "dataset_name": "Dataset 74",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 35,
+    "passed": true,
+    "@timestamp": "2025-06-11T17:56:36.423Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "78121c38-f4e0-4faf-9670-35e90514d876",
+    "dataset_name": "Dataset 74",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 38,
+    "passed": false,
+    "@timestamp": "2025-06-11T17:56:36.423Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "78121c38-f4e0-4faf-9670-35e90514d876",
+    "dataset_name": "Dataset 74",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 51,
+    "passed": true,
+    "@timestamp": "2025-06-11T17:56:36.423Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "85e76c8f-cfec-4322-a6a6-41b23e1965c4",
+    "dataset_name": "Dataset 75",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-15T21:39:50.128Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "85e76c8f-cfec-4322-a6a6-41b23e1965c4",
+    "dataset_name": "Dataset 75",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-15T21:39:50.128Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "85e76c8f-cfec-4322-a6a6-41b23e1965c4",
+    "dataset_name": "Dataset 75",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-15T21:39:50.128Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "85e76c8f-cfec-4322-a6a6-41b23e1965c4",
+    "dataset_name": "Dataset 75",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-15T21:39:50.128Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "85e76c8f-cfec-4322-a6a6-41b23e1965c4",
+    "dataset_name": "Dataset 75",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-07-15T21:39:50.128Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "85e76c8f-cfec-4322-a6a6-41b23e1965c4",
+    "dataset_name": "Dataset 75",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 26,
+    "passed": true,
+    "@timestamp": "2025-07-15T21:39:50.128Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "85e76c8f-cfec-4322-a6a6-41b23e1965c4",
+    "dataset_name": "Dataset 75",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 33,
+    "passed": false,
+    "@timestamp": "2025-07-15T21:39:50.128Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "85e76c8f-cfec-4322-a6a6-41b23e1965c4",
+    "dataset_name": "Dataset 75",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 53,
+    "passed": true,
+    "@timestamp": "2025-07-15T21:39:50.128Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7781fbfb-b6f2-41d0-9cab-063fcf56b8e2",
+    "dataset_name": "Dataset 76",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 97,
+    "passed": false,
+    "@timestamp": "2025-06-14T11:06:36.844Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7781fbfb-b6f2-41d0-9cab-063fcf56b8e2",
+    "dataset_name": "Dataset 76",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-14T11:06:36.844Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7781fbfb-b6f2-41d0-9cab-063fcf56b8e2",
+    "dataset_name": "Dataset 76",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-14T11:06:36.844Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7781fbfb-b6f2-41d0-9cab-063fcf56b8e2",
+    "dataset_name": "Dataset 76",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-14T11:06:36.844Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7781fbfb-b6f2-41d0-9cab-063fcf56b8e2",
+    "dataset_name": "Dataset 76",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-14T11:06:36.844Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7781fbfb-b6f2-41d0-9cab-063fcf56b8e2",
+    "dataset_name": "Dataset 76",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 27,
+    "passed": true,
+    "@timestamp": "2025-06-14T11:06:36.844Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7781fbfb-b6f2-41d0-9cab-063fcf56b8e2",
+    "dataset_name": "Dataset 76",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 32,
+    "passed": false,
+    "@timestamp": "2025-06-14T11:06:36.844Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7781fbfb-b6f2-41d0-9cab-063fcf56b8e2",
+    "dataset_name": "Dataset 76",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 52,
+    "passed": true,
+    "@timestamp": "2025-06-14T11:06:36.844Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2aa30df4-5e85-4322-b4c2-4e214440c98a",
+    "dataset_name": "Dataset 77",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-12T19:10:15.189Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2aa30df4-5e85-4322-b4c2-4e214440c98a",
+    "dataset_name": "Dataset 77",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-12T19:10:15.189Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2aa30df4-5e85-4322-b4c2-4e214440c98a",
+    "dataset_name": "Dataset 77",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-12T19:10:15.189Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2aa30df4-5e85-4322-b4c2-4e214440c98a",
+    "dataset_name": "Dataset 77",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-12T19:10:15.189Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2aa30df4-5e85-4322-b4c2-4e214440c98a",
+    "dataset_name": "Dataset 77",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-12T19:10:15.189Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2aa30df4-5e85-4322-b4c2-4e214440c98a",
+    "dataset_name": "Dataset 77",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 16,
+    "passed": false,
+    "@timestamp": "2025-06-12T19:10:15.189Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2aa30df4-5e85-4322-b4c2-4e214440c98a",
+    "dataset_name": "Dataset 77",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 27,
+    "passed": true,
+    "@timestamp": "2025-06-12T19:10:15.189Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2aa30df4-5e85-4322-b4c2-4e214440c98a",
+    "dataset_name": "Dataset 77",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 53,
+    "passed": true,
+    "@timestamp": "2025-06-12T19:10:15.189Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8197bb24-e828-49b6-a837-a0aea1638b63",
+    "dataset_name": "Dataset 78",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-22T13:12:42.499Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8197bb24-e828-49b6-a837-a0aea1638b63",
+    "dataset_name": "Dataset 78",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-22T13:12:42.499Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8197bb24-e828-49b6-a837-a0aea1638b63",
+    "dataset_name": "Dataset 78",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-22T13:12:42.499Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8197bb24-e828-49b6-a837-a0aea1638b63",
+    "dataset_name": "Dataset 78",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 0,
+    "passed": false,
+    "@timestamp": "2025-06-22T13:12:42.499Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8197bb24-e828-49b6-a837-a0aea1638b63",
+    "dataset_name": "Dataset 78",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-22T13:12:42.499Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8197bb24-e828-49b6-a837-a0aea1638b63",
+    "dataset_name": "Dataset 78",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 21,
+    "passed": true,
+    "@timestamp": "2025-06-22T13:12:42.499Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8197bb24-e828-49b6-a837-a0aea1638b63",
+    "dataset_name": "Dataset 78",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 39,
+    "passed": false,
+    "@timestamp": "2025-06-22T13:12:42.499Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8197bb24-e828-49b6-a837-a0aea1638b63",
+    "dataset_name": "Dataset 78",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 60,
+    "passed": false,
+    "@timestamp": "2025-06-22T13:12:42.499Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7a4a940c-17a6-48e0-bd51-81f29b329353",
+    "dataset_name": "Dataset 79",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-04T12:59:47.582Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7a4a940c-17a6-48e0-bd51-81f29b329353",
+    "dataset_name": "Dataset 79",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-04T12:59:47.582Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7a4a940c-17a6-48e0-bd51-81f29b329353",
+    "dataset_name": "Dataset 79",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-04T12:59:47.582Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7a4a940c-17a6-48e0-bd51-81f29b329353",
+    "dataset_name": "Dataset 79",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-08-04T12:59:47.582Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7a4a940c-17a6-48e0-bd51-81f29b329353",
+    "dataset_name": "Dataset 79",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-08-04T12:59:47.582Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7a4a940c-17a6-48e0-bd51-81f29b329353",
+    "dataset_name": "Dataset 79",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 18,
+    "passed": true,
+    "@timestamp": "2025-08-04T12:59:47.582Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7a4a940c-17a6-48e0-bd51-81f29b329353",
+    "dataset_name": "Dataset 79",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 15,
+    "passed": true,
+    "@timestamp": "2025-08-04T12:59:47.582Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7a4a940c-17a6-48e0-bd51-81f29b329353",
+    "dataset_name": "Dataset 79",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 51,
+    "passed": true,
+    "@timestamp": "2025-08-04T12:59:47.582Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4f139ce5-bcc5-4d86-ae9b-24296c10c5e7",
+    "dataset_name": "Dataset 80",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-19T17:15:14.251Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4f139ce5-bcc5-4d86-ae9b-24296c10c5e7",
+    "dataset_name": "Dataset 80",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 98,
+    "passed": false,
+    "@timestamp": "2025-05-19T17:15:14.251Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4f139ce5-bcc5-4d86-ae9b-24296c10c5e7",
+    "dataset_name": "Dataset 80",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-19T17:15:14.251Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4f139ce5-bcc5-4d86-ae9b-24296c10c5e7",
+    "dataset_name": "Dataset 80",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-05-19T17:15:14.251Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4f139ce5-bcc5-4d86-ae9b-24296c10c5e7",
+    "dataset_name": "Dataset 80",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-05-19T17:15:14.251Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4f139ce5-bcc5-4d86-ae9b-24296c10c5e7",
+    "dataset_name": "Dataset 80",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 32,
+    "passed": true,
+    "@timestamp": "2025-05-19T17:15:14.251Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4f139ce5-bcc5-4d86-ae9b-24296c10c5e7",
+    "dataset_name": "Dataset 80",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 18,
+    "passed": true,
+    "@timestamp": "2025-05-19T17:15:14.251Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "4f139ce5-bcc5-4d86-ae9b-24296c10c5e7",
+    "dataset_name": "Dataset 80",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 54,
+    "passed": true,
+    "@timestamp": "2025-05-19T17:15:14.251Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8df0517b-a87a-41d6-bcfd-66dd39d28287",
+    "dataset_name": "Dataset 81",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-08T03:29:48.990Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8df0517b-a87a-41d6-bcfd-66dd39d28287",
+    "dataset_name": "Dataset 81",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-08T03:29:48.990Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8df0517b-a87a-41d6-bcfd-66dd39d28287",
+    "dataset_name": "Dataset 81",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 96,
+    "passed": false,
+    "@timestamp": "2025-08-08T03:29:48.990Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8df0517b-a87a-41d6-bcfd-66dd39d28287",
+    "dataset_name": "Dataset 81",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-08-08T03:29:48.990Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8df0517b-a87a-41d6-bcfd-66dd39d28287",
+    "dataset_name": "Dataset 81",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-08-08T03:29:48.990Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8df0517b-a87a-41d6-bcfd-66dd39d28287",
+    "dataset_name": "Dataset 81",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 30,
+    "passed": true,
+    "@timestamp": "2025-08-08T03:29:48.990Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8df0517b-a87a-41d6-bcfd-66dd39d28287",
+    "dataset_name": "Dataset 81",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 18,
+    "passed": true,
+    "@timestamp": "2025-08-08T03:29:48.990Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "8df0517b-a87a-41d6-bcfd-66dd39d28287",
+    "dataset_name": "Dataset 81",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 50,
+    "passed": true,
+    "@timestamp": "2025-08-08T03:29:48.990Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "89de46ac-434c-485d-8ae5-fee6e8b1636a",
+    "dataset_name": "Dataset 82",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-20T09:55:26.463Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "89de46ac-434c-485d-8ae5-fee6e8b1636a",
+    "dataset_name": "Dataset 82",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-20T09:55:26.463Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "89de46ac-434c-485d-8ae5-fee6e8b1636a",
+    "dataset_name": "Dataset 82",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-20T09:55:26.463Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "89de46ac-434c-485d-8ae5-fee6e8b1636a",
+    "dataset_name": "Dataset 82",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-20T09:55:26.463Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "89de46ac-434c-485d-8ae5-fee6e8b1636a",
+    "dataset_name": "Dataset 82",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 2,
+    "passed": false,
+    "@timestamp": "2025-06-20T09:55:26.463Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "89de46ac-434c-485d-8ae5-fee6e8b1636a",
+    "dataset_name": "Dataset 82",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 20,
+    "passed": true,
+    "@timestamp": "2025-06-20T09:55:26.463Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "89de46ac-434c-485d-8ae5-fee6e8b1636a",
+    "dataset_name": "Dataset 82",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 32,
+    "passed": false,
+    "@timestamp": "2025-06-20T09:55:26.463Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "89de46ac-434c-485d-8ae5-fee6e8b1636a",
+    "dataset_name": "Dataset 82",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 56,
+    "passed": false,
+    "@timestamp": "2025-06-20T09:55:26.463Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "d5d343a7-bc6d-49e0-9317-18487490e720",
+    "dataset_name": "Dataset 83",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-10T02:13:30.291Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "d5d343a7-bc6d-49e0-9317-18487490e720",
+    "dataset_name": "Dataset 83",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-10T02:13:30.291Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "d5d343a7-bc6d-49e0-9317-18487490e720",
+    "dataset_name": "Dataset 83",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-10T02:13:30.291Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "d5d343a7-bc6d-49e0-9317-18487490e720",
+    "dataset_name": "Dataset 83",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-10T02:13:30.291Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "d5d343a7-bc6d-49e0-9317-18487490e720",
+    "dataset_name": "Dataset 83",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-10T02:13:30.291Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "d5d343a7-bc6d-49e0-9317-18487490e720",
+    "dataset_name": "Dataset 83",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 36,
+    "passed": true,
+    "@timestamp": "2025-06-10T02:13:30.291Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "d5d343a7-bc6d-49e0-9317-18487490e720",
+    "dataset_name": "Dataset 83",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 27,
+    "passed": true,
+    "@timestamp": "2025-06-10T02:13:30.291Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "d5d343a7-bc6d-49e0-9317-18487490e720",
+    "dataset_name": "Dataset 83",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 55,
+    "passed": true,
+    "@timestamp": "2025-06-10T02:13:30.291Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "9d4d8d92-f34b-40e5-bcc9-ff80e99a0115",
+    "dataset_name": "Dataset 84",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-25T11:31:06.121Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "9d4d8d92-f34b-40e5-bcc9-ff80e99a0115",
+    "dataset_name": "Dataset 84",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-25T11:31:06.121Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "9d4d8d92-f34b-40e5-bcc9-ff80e99a0115",
+    "dataset_name": "Dataset 84",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-25T11:31:06.121Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "9d4d8d92-f34b-40e5-bcc9-ff80e99a0115",
+    "dataset_name": "Dataset 84",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-05-25T11:31:06.121Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "9d4d8d92-f34b-40e5-bcc9-ff80e99a0115",
+    "dataset_name": "Dataset 84",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 2,
+    "passed": false,
+    "@timestamp": "2025-05-25T11:31:06.121Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "9d4d8d92-f34b-40e5-bcc9-ff80e99a0115",
+    "dataset_name": "Dataset 84",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 31,
+    "passed": true,
+    "@timestamp": "2025-05-25T11:31:06.121Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "9d4d8d92-f34b-40e5-bcc9-ff80e99a0115",
+    "dataset_name": "Dataset 84",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 29,
+    "passed": true,
+    "@timestamp": "2025-05-25T11:31:06.121Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "9d4d8d92-f34b-40e5-bcc9-ff80e99a0115",
+    "dataset_name": "Dataset 84",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 51,
+    "passed": true,
+    "@timestamp": "2025-05-25T11:31:06.121Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5d9c1ae6-2715-4d47-831f-db0d362e2812",
+    "dataset_name": "Dataset 85",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-08T01:28:16.574Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5d9c1ae6-2715-4d47-831f-db0d362e2812",
+    "dataset_name": "Dataset 85",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 98,
+    "passed": false,
+    "@timestamp": "2025-08-08T01:28:16.574Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5d9c1ae6-2715-4d47-831f-db0d362e2812",
+    "dataset_name": "Dataset 85",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 96,
+    "passed": false,
+    "@timestamp": "2025-08-08T01:28:16.574Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5d9c1ae6-2715-4d47-831f-db0d362e2812",
+    "dataset_name": "Dataset 85",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-08-08T01:28:16.574Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5d9c1ae6-2715-4d47-831f-db0d362e2812",
+    "dataset_name": "Dataset 85",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-08-08T01:28:16.574Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5d9c1ae6-2715-4d47-831f-db0d362e2812",
+    "dataset_name": "Dataset 85",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 17,
+    "passed": false,
+    "@timestamp": "2025-08-08T01:28:16.574Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5d9c1ae6-2715-4d47-831f-db0d362e2812",
+    "dataset_name": "Dataset 85",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 39,
+    "passed": false,
+    "@timestamp": "2025-08-08T01:28:16.574Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5d9c1ae6-2715-4d47-831f-db0d362e2812",
+    "dataset_name": "Dataset 85",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 59,
+    "passed": false,
+    "@timestamp": "2025-08-08T01:28:16.574Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "51a195c4-9c35-41e2-bdb0-6be48ed46ec9",
+    "dataset_name": "Dataset 86",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-09T13:33:47.770Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "51a195c4-9c35-41e2-bdb0-6be48ed46ec9",
+    "dataset_name": "Dataset 86",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 98,
+    "passed": false,
+    "@timestamp": "2025-06-09T13:33:47.770Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "51a195c4-9c35-41e2-bdb0-6be48ed46ec9",
+    "dataset_name": "Dataset 86",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-09T13:33:47.770Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "51a195c4-9c35-41e2-bdb0-6be48ed46ec9",
+    "dataset_name": "Dataset 86",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-09T13:33:47.770Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "51a195c4-9c35-41e2-bdb0-6be48ed46ec9",
+    "dataset_name": "Dataset 86",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-09T13:33:47.770Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "51a195c4-9c35-41e2-bdb0-6be48ed46ec9",
+    "dataset_name": "Dataset 86",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 21,
+    "passed": true,
+    "@timestamp": "2025-06-09T13:33:47.770Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "51a195c4-9c35-41e2-bdb0-6be48ed46ec9",
+    "dataset_name": "Dataset 86",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 21,
+    "passed": true,
+    "@timestamp": "2025-06-09T13:33:47.770Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "51a195c4-9c35-41e2-bdb0-6be48ed46ec9",
+    "dataset_name": "Dataset 86",
     "name": "plausibleBalancedGender",
     "category": {
       "context": "validation",
@@ -12097,5 +11091,1811 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "high": 55,
     "value": 58,
     "passed": false,
-    "@timestamp": "2025-04-10T04:37:46.965Z"
+    "@timestamp": "2025-06-09T13:33:47.770Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "9ba98587-c80b-46fa-ad3a-52069f99e940",
+    "dataset_name": "Dataset 87",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-28T10:49:09.517Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "9ba98587-c80b-46fa-ad3a-52069f99e940",
+    "dataset_name": "Dataset 87",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-28T10:49:09.517Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "9ba98587-c80b-46fa-ad3a-52069f99e940",
+    "dataset_name": "Dataset 87",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-28T10:49:09.517Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "9ba98587-c80b-46fa-ad3a-52069f99e940",
+    "dataset_name": "Dataset 87",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-28T10:49:09.517Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "9ba98587-c80b-46fa-ad3a-52069f99e940",
+    "dataset_name": "Dataset 87",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-07-28T10:49:09.517Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "9ba98587-c80b-46fa-ad3a-52069f99e940",
+    "dataset_name": "Dataset 87",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 23,
+    "passed": true,
+    "@timestamp": "2025-07-28T10:49:09.517Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "9ba98587-c80b-46fa-ad3a-52069f99e940",
+    "dataset_name": "Dataset 87",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 37,
+    "passed": false,
+    "@timestamp": "2025-07-28T10:49:09.517Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "9ba98587-c80b-46fa-ad3a-52069f99e940",
+    "dataset_name": "Dataset 87",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 53,
+    "passed": true,
+    "@timestamp": "2025-07-28T10:49:09.517Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b015f6d3-df8f-4fb1-8e23-a787d89b711c",
+    "dataset_name": "Dataset 88",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-30T01:20:08.514Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b015f6d3-df8f-4fb1-8e23-a787d89b711c",
+    "dataset_name": "Dataset 88",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-30T01:20:08.514Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b015f6d3-df8f-4fb1-8e23-a787d89b711c",
+    "dataset_name": "Dataset 88",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-30T01:20:08.514Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b015f6d3-df8f-4fb1-8e23-a787d89b711c",
+    "dataset_name": "Dataset 88",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-30T01:20:08.514Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b015f6d3-df8f-4fb1-8e23-a787d89b711c",
+    "dataset_name": "Dataset 88",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-30T01:20:08.514Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b015f6d3-df8f-4fb1-8e23-a787d89b711c",
+    "dataset_name": "Dataset 88",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 22,
+    "passed": true,
+    "@timestamp": "2025-06-30T01:20:08.514Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b015f6d3-df8f-4fb1-8e23-a787d89b711c",
+    "dataset_name": "Dataset 88",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 38,
+    "passed": false,
+    "@timestamp": "2025-06-30T01:20:08.514Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b015f6d3-df8f-4fb1-8e23-a787d89b711c",
+    "dataset_name": "Dataset 88",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 52,
+    "passed": true,
+    "@timestamp": "2025-06-30T01:20:08.514Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c31a6f55-50f7-475f-bca2-764a056a80b7",
+    "dataset_name": "Dataset 89",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-05T17:46:44.555Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c31a6f55-50f7-475f-bca2-764a056a80b7",
+    "dataset_name": "Dataset 89",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-05T17:46:44.555Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c31a6f55-50f7-475f-bca2-764a056a80b7",
+    "dataset_name": "Dataset 89",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 96,
+    "passed": false,
+    "@timestamp": "2025-07-05T17:46:44.555Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c31a6f55-50f7-475f-bca2-764a056a80b7",
+    "dataset_name": "Dataset 89",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-05T17:46:44.555Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c31a6f55-50f7-475f-bca2-764a056a80b7",
+    "dataset_name": "Dataset 89",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-07-05T17:46:44.555Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c31a6f55-50f7-475f-bca2-764a056a80b7",
+    "dataset_name": "Dataset 89",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 38,
+    "passed": true,
+    "@timestamp": "2025-07-05T17:46:44.555Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c31a6f55-50f7-475f-bca2-764a056a80b7",
+    "dataset_name": "Dataset 89",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 32,
+    "passed": false,
+    "@timestamp": "2025-07-05T17:46:44.555Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c31a6f55-50f7-475f-bca2-764a056a80b7",
+    "dataset_name": "Dataset 89",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 54,
+    "passed": true,
+    "@timestamp": "2025-07-05T17:46:44.555Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5f8c13d9-a2a0-46d2-a49a-620a26cd7e52",
+    "dataset_name": "Dataset 90",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-16T12:36:40.381Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5f8c13d9-a2a0-46d2-a49a-620a26cd7e52",
+    "dataset_name": "Dataset 90",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-16T12:36:40.381Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5f8c13d9-a2a0-46d2-a49a-620a26cd7e52",
+    "dataset_name": "Dataset 90",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-16T12:36:40.381Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5f8c13d9-a2a0-46d2-a49a-620a26cd7e52",
+    "dataset_name": "Dataset 90",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-05-16T12:36:40.381Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5f8c13d9-a2a0-46d2-a49a-620a26cd7e52",
+    "dataset_name": "Dataset 90",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-05-16T12:36:40.381Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5f8c13d9-a2a0-46d2-a49a-620a26cd7e52",
+    "dataset_name": "Dataset 90",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 21,
+    "passed": true,
+    "@timestamp": "2025-05-16T12:36:40.381Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5f8c13d9-a2a0-46d2-a49a-620a26cd7e52",
+    "dataset_name": "Dataset 90",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 35,
+    "passed": false,
+    "@timestamp": "2025-05-16T12:36:40.381Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "5f8c13d9-a2a0-46d2-a49a-620a26cd7e52",
+    "dataset_name": "Dataset 90",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 58,
+    "passed": false,
+    "@timestamp": "2025-05-16T12:36:40.381Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a4ad3db9-3694-46f0-b9e4-8cbfb0d46d4c",
+    "dataset_name": "Dataset 91",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-18T04:37:30.352Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a4ad3db9-3694-46f0-b9e4-8cbfb0d46d4c",
+    "dataset_name": "Dataset 91",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-18T04:37:30.352Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a4ad3db9-3694-46f0-b9e4-8cbfb0d46d4c",
+    "dataset_name": "Dataset 91",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-18T04:37:30.352Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a4ad3db9-3694-46f0-b9e4-8cbfb0d46d4c",
+    "dataset_name": "Dataset 91",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-18T04:37:30.352Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a4ad3db9-3694-46f0-b9e4-8cbfb0d46d4c",
+    "dataset_name": "Dataset 91",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-07-18T04:37:30.352Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a4ad3db9-3694-46f0-b9e4-8cbfb0d46d4c",
+    "dataset_name": "Dataset 91",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 37,
+    "passed": true,
+    "@timestamp": "2025-07-18T04:37:30.352Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a4ad3db9-3694-46f0-b9e4-8cbfb0d46d4c",
+    "dataset_name": "Dataset 91",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 17,
+    "passed": true,
+    "@timestamp": "2025-07-18T04:37:30.352Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "a4ad3db9-3694-46f0-b9e4-8cbfb0d46d4c",
+    "dataset_name": "Dataset 91",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 58,
+    "passed": false,
+    "@timestamp": "2025-07-18T04:37:30.352Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c865f238-984f-4577-8a1a-f5fbf8d953bd",
+    "dataset_name": "Dataset 92",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-09T11:57:26.769Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c865f238-984f-4577-8a1a-f5fbf8d953bd",
+    "dataset_name": "Dataset 92",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-09T11:57:26.769Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c865f238-984f-4577-8a1a-f5fbf8d953bd",
+    "dataset_name": "Dataset 92",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-09T11:57:26.769Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c865f238-984f-4577-8a1a-f5fbf8d953bd",
+    "dataset_name": "Dataset 92",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-08-09T11:57:26.769Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c865f238-984f-4577-8a1a-f5fbf8d953bd",
+    "dataset_name": "Dataset 92",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-08-09T11:57:26.769Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c865f238-984f-4577-8a1a-f5fbf8d953bd",
+    "dataset_name": "Dataset 92",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 35,
+    "passed": true,
+    "@timestamp": "2025-08-09T11:57:26.769Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c865f238-984f-4577-8a1a-f5fbf8d953bd",
+    "dataset_name": "Dataset 92",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 18,
+    "passed": true,
+    "@timestamp": "2025-08-09T11:57:26.769Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "c865f238-984f-4577-8a1a-f5fbf8d953bd",
+    "dataset_name": "Dataset 92",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 53,
+    "passed": true,
+    "@timestamp": "2025-08-09T11:57:26.769Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b86c802b-680f-4ba6-81dd-53fe3c40cdf7",
+    "dataset_name": "Dataset 93",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 97,
+    "passed": false,
+    "@timestamp": "2025-07-14T05:58:02.315Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b86c802b-680f-4ba6-81dd-53fe3c40cdf7",
+    "dataset_name": "Dataset 93",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 98,
+    "passed": false,
+    "@timestamp": "2025-07-14T05:58:02.315Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b86c802b-680f-4ba6-81dd-53fe3c40cdf7",
+    "dataset_name": "Dataset 93",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-14T05:58:02.315Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b86c802b-680f-4ba6-81dd-53fe3c40cdf7",
+    "dataset_name": "Dataset 93",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-14T05:58:02.315Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b86c802b-680f-4ba6-81dd-53fe3c40cdf7",
+    "dataset_name": "Dataset 93",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 2,
+    "passed": false,
+    "@timestamp": "2025-07-14T05:58:02.315Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b86c802b-680f-4ba6-81dd-53fe3c40cdf7",
+    "dataset_name": "Dataset 93",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 30,
+    "passed": true,
+    "@timestamp": "2025-07-14T05:58:02.315Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b86c802b-680f-4ba6-81dd-53fe3c40cdf7",
+    "dataset_name": "Dataset 93",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 17,
+    "passed": true,
+    "@timestamp": "2025-07-14T05:58:02.315Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "b86c802b-680f-4ba6-81dd-53fe3c40cdf7",
+    "dataset_name": "Dataset 93",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 51,
+    "passed": true,
+    "@timestamp": "2025-07-14T05:58:02.315Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "efffe0e9-523d-476c-a52f-2067706174ae",
+    "dataset_name": "Dataset 94",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-10T21:50:47.736Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "efffe0e9-523d-476c-a52f-2067706174ae",
+    "dataset_name": "Dataset 94",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-10T21:50:47.736Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "efffe0e9-523d-476c-a52f-2067706174ae",
+    "dataset_name": "Dataset 94",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-10T21:50:47.736Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "efffe0e9-523d-476c-a52f-2067706174ae",
+    "dataset_name": "Dataset 94",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-10T21:50:47.736Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "efffe0e9-523d-476c-a52f-2067706174ae",
+    "dataset_name": "Dataset 94",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-07-10T21:50:47.736Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "efffe0e9-523d-476c-a52f-2067706174ae",
+    "dataset_name": "Dataset 94",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 18,
+    "passed": true,
+    "@timestamp": "2025-07-10T21:50:47.736Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "efffe0e9-523d-476c-a52f-2067706174ae",
+    "dataset_name": "Dataset 94",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 20,
+    "passed": true,
+    "@timestamp": "2025-07-10T21:50:47.736Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "efffe0e9-523d-476c-a52f-2067706174ae",
+    "dataset_name": "Dataset 94",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 55,
+    "passed": true,
+    "@timestamp": "2025-07-10T21:50:47.736Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "ed3c45b0-d5d6-4bb5-ad0f-b84440eae034",
+    "dataset_name": "Dataset 95",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-20T20:49:35.496Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "ed3c45b0-d5d6-4bb5-ad0f-b84440eae034",
+    "dataset_name": "Dataset 95",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-20T20:49:35.496Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "ed3c45b0-d5d6-4bb5-ad0f-b84440eae034",
+    "dataset_name": "Dataset 95",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-20T20:49:35.496Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "ed3c45b0-d5d6-4bb5-ad0f-b84440eae034",
+    "dataset_name": "Dataset 95",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-20T20:49:35.496Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "ed3c45b0-d5d6-4bb5-ad0f-b84440eae034",
+    "dataset_name": "Dataset 95",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-06-20T20:49:35.496Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "ed3c45b0-d5d6-4bb5-ad0f-b84440eae034",
+    "dataset_name": "Dataset 95",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 29,
+    "passed": true,
+    "@timestamp": "2025-06-20T20:49:35.496Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "ed3c45b0-d5d6-4bb5-ad0f-b84440eae034",
+    "dataset_name": "Dataset 95",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 22,
+    "passed": true,
+    "@timestamp": "2025-06-20T20:49:35.496Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "ed3c45b0-d5d6-4bb5-ad0f-b84440eae034",
+    "dataset_name": "Dataset 95",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 60,
+    "passed": false,
+    "@timestamp": "2025-06-20T20:49:35.496Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "3d25c4f9-16ba-4923-b3ee-506e539bde93",
+    "dataset_name": "Dataset 96",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-06-14T13:23:46.887Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "3d25c4f9-16ba-4923-b3ee-506e539bde93",
+    "dataset_name": "Dataset 96",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 98,
+    "passed": false,
+    "@timestamp": "2025-06-14T13:23:46.887Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "3d25c4f9-16ba-4923-b3ee-506e539bde93",
+    "dataset_name": "Dataset 96",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 96,
+    "passed": false,
+    "@timestamp": "2025-06-14T13:23:46.887Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "3d25c4f9-16ba-4923-b3ee-506e539bde93",
+    "dataset_name": "Dataset 96",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-06-14T13:23:46.887Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "3d25c4f9-16ba-4923-b3ee-506e539bde93",
+    "dataset_name": "Dataset 96",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 2,
+    "passed": false,
+    "@timestamp": "2025-06-14T13:23:46.887Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "3d25c4f9-16ba-4923-b3ee-506e539bde93",
+    "dataset_name": "Dataset 96",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 35,
+    "passed": true,
+    "@timestamp": "2025-06-14T13:23:46.887Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "3d25c4f9-16ba-4923-b3ee-506e539bde93",
+    "dataset_name": "Dataset 96",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 15,
+    "passed": true,
+    "@timestamp": "2025-06-14T13:23:46.887Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "3d25c4f9-16ba-4923-b3ee-506e539bde93",
+    "dataset_name": "Dataset 96",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 52,
+    "passed": true,
+    "@timestamp": "2025-06-14T13:23:46.887Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2a65823b-bdef-4727-974b-584eedd70d38",
+    "dataset_name": "Dataset 97",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 97,
+    "passed": false,
+    "@timestamp": "2025-05-19T07:27:13.453Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2a65823b-bdef-4727-974b-584eedd70d38",
+    "dataset_name": "Dataset 97",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-19T07:27:13.453Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2a65823b-bdef-4727-974b-584eedd70d38",
+    "dataset_name": "Dataset 97",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 96,
+    "passed": false,
+    "@timestamp": "2025-05-19T07:27:13.453Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2a65823b-bdef-4727-974b-584eedd70d38",
+    "dataset_name": "Dataset 97",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-05-19T07:27:13.453Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2a65823b-bdef-4727-974b-584eedd70d38",
+    "dataset_name": "Dataset 97",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-05-19T07:27:13.453Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2a65823b-bdef-4727-974b-584eedd70d38",
+    "dataset_name": "Dataset 97",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 20,
+    "passed": true,
+    "@timestamp": "2025-05-19T07:27:13.453Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2a65823b-bdef-4727-974b-584eedd70d38",
+    "dataset_name": "Dataset 97",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 26,
+    "passed": true,
+    "@timestamp": "2025-05-19T07:27:13.453Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "2a65823b-bdef-4727-974b-584eedd70d38",
+    "dataset_name": "Dataset 97",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 56,
+    "passed": false,
+    "@timestamp": "2025-05-19T07:27:13.453Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "6f40c390-74f5-4e74-8076-fbd47b13b1bb",
+    "dataset_name": "Dataset 98",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-19T05:03:46.768Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "6f40c390-74f5-4e74-8076-fbd47b13b1bb",
+    "dataset_name": "Dataset 98",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-19T05:03:46.768Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "6f40c390-74f5-4e74-8076-fbd47b13b1bb",
+    "dataset_name": "Dataset 98",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-05-19T05:03:46.768Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "6f40c390-74f5-4e74-8076-fbd47b13b1bb",
+    "dataset_name": "Dataset 98",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-05-19T05:03:46.768Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "6f40c390-74f5-4e74-8076-fbd47b13b1bb",
+    "dataset_name": "Dataset 98",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-05-19T05:03:46.768Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "6f40c390-74f5-4e74-8076-fbd47b13b1bb",
+    "dataset_name": "Dataset 98",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 18,
+    "passed": true,
+    "@timestamp": "2025-05-19T05:03:46.768Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "6f40c390-74f5-4e74-8076-fbd47b13b1bb",
+    "dataset_name": "Dataset 98",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 22,
+    "passed": true,
+    "@timestamp": "2025-05-19T05:03:46.768Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "6f40c390-74f5-4e74-8076-fbd47b13b1bb",
+    "dataset_name": "Dataset 98",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 50,
+    "passed": true,
+    "@timestamp": "2025-05-19T05:03:46.768Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7735be33-35a2-4871-af51-169172275a95",
+    "dataset_name": "Dataset 99",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-09T03:22:51.958Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7735be33-35a2-4871-af51-169172275a95",
+    "dataset_name": "Dataset 99",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-09T03:22:51.958Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7735be33-35a2-4871-af51-169172275a95",
+    "dataset_name": "Dataset 99",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-08-09T03:22:51.958Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7735be33-35a2-4871-af51-169172275a95",
+    "dataset_name": "Dataset 99",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-08-09T03:22:51.958Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7735be33-35a2-4871-af51-169172275a95",
+    "dataset_name": "Dataset 99",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-08-09T03:22:51.958Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7735be33-35a2-4871-af51-169172275a95",
+    "dataset_name": "Dataset 99",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 36,
+    "passed": true,
+    "@timestamp": "2025-08-09T03:22:51.958Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7735be33-35a2-4871-af51-169172275a95",
+    "dataset_name": "Dataset 99",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 32,
+    "passed": false,
+    "@timestamp": "2025-08-09T03:22:51.958Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "7735be33-35a2-4871-af51-169172275a95",
+    "dataset_name": "Dataset 99",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 56,
+    "passed": false,
+    "@timestamp": "2025-08-09T03:22:51.958Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "30278b0e-cfa7-43b1-9bd3-ec2fa9ed552b",
+    "dataset_name": "Dataset 100",
+    "name": "conceptConformanceSmokingStatus",
+    "category": {
+      "context": "validation",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-21T03:42:19.100Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "30278b0e-cfa7-43b1-9bd3-ec2fa9ed552b",
+    "dataset_name": "Dataset 100",
+    "name": "conceptConformanceDateTime",
+    "category": {
+      "context": "verification",
+      "category": "conformance"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-21T03:42:19.100Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "30278b0e-cfa7-43b1-9bd3-ec2fa9ed552b",
+    "dataset_name": "Dataset 100",
+    "name": "validLVEF",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 100,
+    "value": 100,
+    "passed": true,
+    "@timestamp": "2025-07-21T03:42:19.100Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "30278b0e-cfa7-43b1-9bd3-ec2fa9ed552b",
+    "dataset_name": "Dataset 100",
+    "name": "smokingStatusCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 2,
+    "value": 2,
+    "passed": true,
+    "@timestamp": "2025-07-21T03:42:19.100Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "30278b0e-cfa7-43b1-9bd3-ec2fa9ed552b",
+    "dataset_name": "Dataset 100",
+    "name": "nyhaCardinality",
+    "category": {
+      "context": "verification",
+      "category": "completeness"
+    },
+    "low": 4,
+    "value": 4,
+    "passed": true,
+    "@timestamp": "2025-07-21T03:42:19.100Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "30278b0e-cfa7-43b1-9bd3-ec2fa9ed552b",
+    "dataset_name": "Dataset 100",
+    "name": "bmiBelowThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 18,
+    "value": 33,
+    "passed": true,
+    "@timestamp": "2025-07-21T03:42:19.100Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "30278b0e-cfa7-43b1-9bd3-ec2fa9ed552b",
+    "dataset_name": "Dataset 100",
+    "name": "bmiAboveThreshold",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "high": 30,
+    "value": 16,
+    "passed": true,
+    "@timestamp": "2025-07-21T03:42:19.100Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "quality_check",
+    "dataset_id": "30278b0e-cfa7-43b1-9bd3-ec2fa9ed552b",
+    "dataset_name": "Dataset 100",
+    "name": "plausibleBalancedGender",
+    "category": {
+      "context": "validation",
+      "category": "plausibility"
+    },
+    "low": 45,
+    "high": 55,
+    "value": 53,
+    "passed": true,
+    "@timestamp": "2025-07-21T03:42:19.100Z"
 }'
