@@ -3,24 +3,8 @@
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "cab746ab-84be-4957-a4da-3475fcde76ec",
+    "model_id": "32b29f4f-12a1-403d-b141-c9d04905a20a",
     "model_name": "Model 1",
-    "version": "1",
-    "evaluation_metrics": {
-      "accuracy": 0.9834257728412765,
-      "precision": 0.7,
-      "recall": 0.7,
-      "f1": 0.7681594736448281
-    },
-    "description": "Model v1",
-    "@timestamp": "2025-07-05T23:06:04.175Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "model",
-    "model_id": "579a61e6-4a5b-4a6a-9fd5-da41d7d5c9a2",
-    "model_name": "Model 2",
     "version": "1",
     "evaluation_metrics": {
       "accuracy": 0.7,
@@ -29,29 +13,45 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
       "f1": 0.7
     },
     "description": "Model v1",
-    "@timestamp": "2025-06-29T04:33:35.980Z"
+    "@timestamp": "2025-08-19T19:40:56.297Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "e6ac728d-5789-43a7-8129-1f234f844ba7",
+    "model_id": "d898b419-edc1-4b79-be0c-904987bc1af8",
+    "model_name": "Model 2",
+    "version": "1",
+    "evaluation_metrics": {
+      "accuracy": 0.8575249091584836,
+      "precision": 0.7,
+      "recall": 0.7,
+      "f1": 0.7
+    },
+    "description": "Model v1",
+    "@timestamp": "2025-10-22T04:40:08.844Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "model",
+    "model_id": "d3e5639a-d2b7-4ee7-9a40-826d23ba0a49",
     "model_name": "Model 3",
     "version": "1",
     "evaluation_metrics": {
-      "accuracy": 0.7,
-      "precision": 0.8169004332673799,
-      "recall": 0.7,
-      "f1": 0.976218759369097
+      "accuracy": 0.7537377031586809,
+      "precision": 0.978727901039798,
+      "recall": 0.9105473549000287,
+      "f1": 0.788442594121296
     },
     "description": "Model v1",
-    "@timestamp": "2025-08-12T03:45:25.343Z"
+    "@timestamp": "2025-10-18T14:05:48.020Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "8442602d-2aab-425f-8c2e-148d2cf70946",
+    "model_id": "83e500f6-bc94-475b-807a-c9b6bd9f5f9b",
     "model_name": "Model 4",
     "version": "1",
     "evaluation_metrics": {
@@ -61,421 +61,421 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
       "f1": 0.7
     },
     "description": "Model v1",
-    "@timestamp": "2025-06-06T02:14:00.134Z"
+    "@timestamp": "2025-10-09T15:50:46.360Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "cf12e808-c5fa-4e53-b2a6-202b3b2c7f04",
+    "model_id": "c021e8ff-8909-4c99-9241-2b924f19632e",
     "model_name": "Model 5",
     "version": "1",
     "evaluation_metrics": {
-      "accuracy": 0.8019496121185237,
-      "precision": 0.7175454204122822,
+      "accuracy": 0.7,
+      "precision": 0.7,
       "recall": 0.7,
-      "f1": 0.7
+      "f1": 0.9268321593936051
     },
     "description": "Model v1",
-    "@timestamp": "2025-07-18T11:40:56.698Z"
+    "@timestamp": "2025-08-11T15:45:41.244Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "9cf9c0ec-74ae-4e1f-a0f4-7f95fbe8666b",
+    "model_id": "b0d78b7b-cc50-4aa2-80e6-8e9a0babecb4",
     "model_name": "Model 6",
     "version": "1",
     "evaluation_metrics": {
       "accuracy": 0.7,
-      "precision": 0.7,
-      "recall": 0.7,
-      "f1": 0.7340279454357306
+      "precision": 0.8183144571849477,
+      "recall": 0.7866261115388116,
+      "f1": 0.7
     },
     "description": "Model v1",
-    "@timestamp": "2025-07-28T11:12:08.500Z"
+    "@timestamp": "2025-08-16T01:12:24.315Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "9f084bcd-19c7-49da-b874-1c15d91eec5b",
+    "model_id": "a454dfb7-d2ef-4c7b-9447-85a1d0589fe6",
     "model_name": "Model 7",
     "version": "1",
     "evaluation_metrics": {
       "accuracy": 0.7,
-      "precision": 0.7094188407688462,
-      "recall": 0.7,
-      "f1": 0.7863128604677894
+      "precision": 0.7,
+      "recall": 0.7278762301043535,
+      "f1": 0.7
     },
     "description": "Model v1",
-    "@timestamp": "2025-06-27T11:42:57.824Z"
+    "@timestamp": "2025-09-17T12:04:50.811Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "dcf29983-06b6-4ed9-b487-81d008aa5e55",
+    "model_id": "3f9e24a2-d9b8-4422-b5da-67b8f7a6828c",
     "model_name": "Model 8",
     "version": "1",
     "evaluation_metrics": {
       "accuracy": 0.7,
-      "precision": 0.8322104333457179,
-      "recall": 0.7,
-      "f1": 0.9120294001778071
+      "precision": 0.7,
+      "recall": 0.7721403765127022,
+      "f1": 0.7
     },
     "description": "Model v1",
-    "@timestamp": "2025-07-18T17:37:48.928Z"
+    "@timestamp": "2025-08-19T08:57:57.854Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "ae549571-bf8c-4311-95ed-ef9821ee9c10",
+    "model_id": "ebb38d44-ca91-4c04-ad5e-197debeb8a1c",
     "model_name": "Model 9",
     "version": "1",
     "evaluation_metrics": {
       "accuracy": 0.7,
-      "precision": 0.7,
+      "precision": 0.9958771406981701,
       "recall": 0.7,
       "f1": 0.7
     },
     "description": "Model v1",
-    "@timestamp": "2025-06-05T22:48:07.284Z"
+    "@timestamp": "2025-09-29T16:37:15.375Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "c24d3a68-b2f5-4612-bebc-481d9562dbe9",
+    "model_id": "cffd9da2-a4e8-4ead-8c38-b92af01f6df9",
     "model_name": "Model 10",
     "version": "1",
     "evaluation_metrics": {
-      "accuracy": 0.7,
-      "precision": 0.7,
-      "recall": 0.7,
-      "f1": 0.9282660234962776
-    },
-    "description": "Model v1",
-    "@timestamp": "2025-07-26T07:04:23.695Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "model",
-    "model_id": "f2c4dc98-1ae6-4ce6-b692-c5800570b481",
-    "model_name": "Model 11",
-    "version": "1",
-    "evaluation_metrics": {
-      "accuracy": 0.7,
-      "precision": 0.8806392403522287,
+      "accuracy": 0.7297519867741351,
+      "precision": 0.8411569708298792,
       "recall": 0.7,
       "f1": 0.7
     },
     "description": "Model v1",
-    "@timestamp": "2025-07-01T13:25:28.929Z"
+    "@timestamp": "2025-08-15T20:22:13.943Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "54b1e505-973b-4e43-9e3e-2e1d4d109de3",
+    "model_id": "6e32a40f-f493-47cc-bd97-deef419346d0",
+    "model_name": "Model 11",
+    "version": "1",
+    "evaluation_metrics": {
+      "accuracy": 0.8281912113101555,
+      "precision": 0.9392972134795161,
+      "recall": 0.7359668724709525,
+      "f1": 0.7
+    },
+    "description": "Model v1",
+    "@timestamp": "2025-10-14T17:39:13.316Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "model",
+    "model_id": "45bde402-323d-4498-83c4-7aaf1e4839f5",
     "model_name": "Model 12",
     "version": "1",
     "evaluation_metrics": {
       "accuracy": 0.7,
-      "precision": 0.8928215267247319,
+      "precision": 0.7,
       "recall": 0.7,
-      "f1": 0.7
+      "f1": 0.9180919856656196
     },
     "description": "Model v1",
-    "@timestamp": "2025-06-03T11:35:10.245Z"
+    "@timestamp": "2025-10-05T08:39:49.316Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "88de9cd4-d78f-4bf6-a072-defbf010c910",
+    "model_id": "7e251fbe-f19c-4f04-adae-131539143c24",
     "model_name": "Model 13",
     "version": "1",
     "evaluation_metrics": {
-      "accuracy": 0.7704974631928179,
+      "accuracy": 0.7,
       "precision": 0.7,
-      "recall": 0.7,
-      "f1": 0.9988030013566707
+      "recall": 0.8695092300823504,
+      "f1": 0.7
     },
     "description": "Model v1",
-    "@timestamp": "2025-07-30T01:07:58.681Z"
+    "@timestamp": "2025-09-29T01:18:17.157Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "6c57eaa8-b2cc-4fc2-8ec7-90217f198ba6",
+    "model_id": "066966bb-be7d-4626-932e-362b118f5e6e",
     "model_name": "Model 14",
     "version": "1",
     "evaluation_metrics": {
       "accuracy": 0.7,
       "precision": 0.7,
       "recall": 0.7,
-      "f1": 0.8214747699576808
+      "f1": 0.7
     },
     "description": "Model v1",
-    "@timestamp": "2025-07-23T12:08:27.251Z"
+    "@timestamp": "2025-10-31T02:02:22.310Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "626bd86c-862f-4f0e-b932-e5192d2fc69b",
+    "model_id": "28400bd9-684d-46aa-b6ae-ff01c0c33062",
     "model_name": "Model 15",
     "version": "1",
     "evaluation_metrics": {
-      "accuracy": 0.8469035864815129,
-      "precision": 0.7,
-      "recall": 0.7,
-      "f1": 0.9555531761650498
-    },
-    "description": "Model v1",
-    "@timestamp": "2025-05-28T04:12:27.712Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "model",
-    "model_id": "15da8602-bfb0-4f98-899c-28c51ed3fa21",
-    "model_name": "Model 16",
-    "version": "1",
-    "evaluation_metrics": {
-      "accuracy": 0.7978622102170476,
+      "accuracy": 0.7,
       "precision": 0.7,
       "recall": 0.7,
       "f1": 0.7
     },
     "description": "Model v1",
-    "@timestamp": "2025-07-14T20:28:06.391Z"
+    "@timestamp": "2025-08-09T18:30:05.578Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "c57fadcc-5006-4cff-88f6-83e5c2d57eb2",
+    "model_id": "04274a59-55b6-4351-93e8-0d6042be48db",
+    "model_name": "Model 16",
+    "version": "1",
+    "evaluation_metrics": {
+      "accuracy": 0.7,
+      "precision": 0.7,
+      "recall": 0.7,
+      "f1": 0.7
+    },
+    "description": "Model v1",
+    "@timestamp": "2025-10-29T17:26:45.708Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "model",
+    "model_id": "a1bd0bfb-77ad-430d-9f5d-4145e82130d2",
     "model_name": "Model 17",
     "version": "1",
     "evaluation_metrics": {
       "accuracy": 0.7,
       "precision": 0.7,
-      "recall": 0.7,
+      "recall": 0.8913358380737562,
       "f1": 0.7
     },
     "description": "Model v1",
-    "@timestamp": "2025-07-16T23:13:18.274Z"
+    "@timestamp": "2025-10-28T00:31:44.841Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "da105216-93ed-464e-a289-806ef5c50381",
+    "model_id": "abc9ac0d-105c-4b9a-a32d-8a9fecc77b87",
     "model_name": "Model 18",
     "version": "1",
     "evaluation_metrics": {
       "accuracy": 0.7,
       "precision": 0.7,
-      "recall": 0.9204782670402987,
-      "f1": 0.8100712373165149
-    },
-    "description": "Model v1",
-    "@timestamp": "2025-07-21T21:11:45.509Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "model",
-    "model_id": "ef5fb7c3-7d0e-4539-830f-8d9eee063334",
-    "model_name": "Model 19",
-    "version": "1",
-    "evaluation_metrics": {
-      "accuracy": 0.741696548232339,
-      "precision": 0.7,
       "recall": 0.7,
       "f1": 0.7
     },
     "description": "Model v1",
-    "@timestamp": "2025-06-30T20:57:15.018Z"
+    "@timestamp": "2025-10-02T07:08:30.002Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "bb7679e9-4c8c-417e-a4c6-c241aacb85ee",
-    "model_name": "Model 20",
+    "model_id": "0700e13d-ddef-40d8-90fc-62520ba903d2",
+    "model_name": "Model 19",
     "version": "1",
     "evaluation_metrics": {
       "accuracy": 0.7,
-      "precision": 0.7837508085259464,
-      "recall": 0.7741716061042729,
-      "f1": 0.7
+      "precision": 0.7,
+      "recall": 0.7,
+      "f1": 0.7531154257920611
     },
     "description": "Model v1",
-    "@timestamp": "2025-08-09T21:47:49.505Z"
+    "@timestamp": "2025-09-29T09:44:00.253Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "5984f778-a7e1-4569-b461-3d7ea9ed5fa6",
+    "model_id": "205e07f1-171d-42b8-aa1f-c5c8beee3c96",
+    "model_name": "Model 20",
+    "version": "1",
+    "evaluation_metrics": {
+      "accuracy": 0.8325936029317529,
+      "precision": 0.7,
+      "recall": 0.7,
+      "f1": 0.7566847671123373
+    },
+    "description": "Model v1",
+    "@timestamp": "2025-09-02T19:46:49.360Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "model",
+    "model_id": "98e2c78d-73d2-46eb-98d4-60c56c2c2981",
     "model_name": "Model 21",
     "version": "1",
     "evaluation_metrics": {
       "accuracy": 0.7,
       "precision": 0.7,
-      "recall": 0.8320821946434456,
+      "recall": 0.7,
       "f1": 0.7
     },
     "description": "Model v1",
-    "@timestamp": "2025-07-14T00:57:33.373Z"
+    "@timestamp": "2025-08-29T16:57:25.960Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "2d483c10-0ba7-40c9-8249-7aa536fc8349",
+    "model_id": "0518444a-3295-46aa-b1f8-1300b56a4a02",
     "model_name": "Model 22",
     "version": "1",
     "evaluation_metrics": {
       "accuracy": 0.7,
       "precision": 0.7,
       "recall": 0.7,
-      "f1": 0.7567803918859439
+      "f1": 0.9832906708416778
     },
     "description": "Model v1",
-    "@timestamp": "2025-07-21T03:23:27.452Z"
+    "@timestamp": "2025-09-19T16:12:48.029Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "2e199766-253c-4717-acf2-a7f68ae2324b",
+    "model_id": "1fb821eb-ee38-4b79-8e54-8b4978528718",
     "model_name": "Model 23",
     "version": "1",
     "evaluation_metrics": {
-      "accuracy": 0.8780470766828901,
-      "precision": 0.7821849478763754,
-      "recall": 0.7,
-      "f1": 0.7
+      "accuracy": 0.7,
+      "precision": 0.9580509699900044,
+      "recall": 0.7571211095988855,
+      "f1": 0.7861282814697996
     },
     "description": "Model v1",
-    "@timestamp": "2025-05-24T14:02:30.400Z"
+    "@timestamp": "2025-08-27T21:02:20.742Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "fa46605d-d0ba-4e97-8cd7-fd5e198df7c8",
+    "model_id": "42718fe1-1044-4cf4-8f87-083a6d2ef6a6",
     "model_name": "Model 24",
     "version": "1",
     "evaluation_metrics": {
       "accuracy": 0.7,
-      "precision": 0.7,
+      "precision": 0.9443433755943571,
       "recall": 0.7,
       "f1": 0.7
     },
     "description": "Model v1",
-    "@timestamp": "2025-07-09T18:05:20.135Z"
+    "@timestamp": "2025-09-03T10:27:38.893Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "b2e69606-ad25-495b-822b-a546e5ccc2ac",
+    "model_id": "8367dbce-a92a-4497-8013-3ea7653d2c4b",
     "model_name": "Model 25",
     "version": "1",
     "evaluation_metrics": {
       "accuracy": 0.7,
-      "precision": 0.7,
-      "recall": 0.7,
-      "f1": 0.7459879146066022
+      "precision": 0.7921055238196903,
+      "recall": 0.9789978783771334,
+      "f1": 0.7
     },
     "description": "Model v1",
-    "@timestamp": "2025-07-02T04:24:56.687Z"
+    "@timestamp": "2025-08-28T22:56:48.265Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "5861fde8-fb80-4a20-9976-812813029a33",
+    "model_id": "6746793e-9113-49e2-9e4d-82ef7105b33e",
     "model_name": "Model 26",
     "version": "1",
     "evaluation_metrics": {
       "accuracy": 0.7,
-      "precision": 0.8754089036925543,
-      "recall": 0.7816640544266475,
-      "f1": 0.7
+      "precision": 0.7,
+      "recall": 0.7265352660439484,
+      "f1": 0.9598045357252476
     },
     "description": "Model v1",
-    "@timestamp": "2025-05-27T23:38:17.145Z"
+    "@timestamp": "2025-08-20T18:20:59.826Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "432709d9-c386-4e33-ba34-0ec4aae88166",
+    "model_id": "d67e40a4-fbf6-44a6-8154-37e567b12f8d",
     "model_name": "Model 27",
     "version": "1",
     "evaluation_metrics": {
       "accuracy": 0.7,
-      "precision": 0.9454147911731055,
-      "recall": 0.7,
-      "f1": 0.7127465293391233
+      "precision": 0.7,
+      "recall": 0.7550927632261475,
+      "f1": 0.7
     },
     "description": "Model v1",
-    "@timestamp": "2025-07-08T00:45:03.034Z"
+    "@timestamp": "2025-10-08T08:58:40.103Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "f2ee96ea-01f3-46e9-a1d5-28668a476545",
+    "model_id": "fbb6c633-2ddf-4640-a9db-1c0386820cd4",
     "model_name": "Model 28",
     "version": "1",
     "evaluation_metrics": {
-      "accuracy": 0.7,
-      "precision": 0.9608760444890065,
-      "recall": 0.9220121070790908,
-      "f1": 0.7991882364232328
+      "accuracy": 0.7514171690792424,
+      "precision": 0.7,
+      "recall": 0.897262541831306,
+      "f1": 0.8370751936996819
     },
     "description": "Model v1",
-    "@timestamp": "2025-08-08T04:36:50.220Z"
+    "@timestamp": "2025-09-06T22:54:21.935Z"
 }'
 
 curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
 {
     "event_type": "model",
-    "model_id": "ce94bbe0-7167-46d2-ac82-363f95481541",
+    "model_id": "386ce85f-d9a5-4004-b8bb-ea4d37aac07e",
     "model_name": "Model 29",
     "version": "1",
     "evaluation_metrics": {
-      "accuracy": 0.8922105752728562,
-      "precision": 0.7,
-      "recall": 0.8032406534632577,
-      "f1": 0.7
-    },
-    "description": "Model v1",
-    "@timestamp": "2025-05-19T22:26:07.514Z"
-}'
-
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
-{
-    "event_type": "model",
-    "model_id": "a6220164-a7f8-48b3-89b1-1d521726980d",
-    "model_name": "Model 30",
-    "version": "1",
-    "evaluation_metrics": {
-      "accuracy": 0.8798414979844478,
+      "accuracy": 0.7,
       "precision": 0.7,
       "recall": 0.7,
       "f1": 0.7
     },
     "description": "Model v1",
-    "@timestamp": "2025-05-28T08:47:27.420Z"
+    "@timestamp": "2025-08-14T17:35:00.151Z"
+}'
+
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+{
+    "event_type": "model",
+    "model_id": "65172abe-4842-4587-a2c0-22966cf963e2",
+    "model_name": "Model 30",
+    "version": "1",
+    "evaluation_metrics": {
+      "accuracy": 0.7,
+      "precision": 0.7,
+      "recall": 0.7,
+      "f1": 0.7
+    },
+    "description": "Model v1",
+    "@timestamp": "2025-09-05T11:30:31.460Z"
 }'
