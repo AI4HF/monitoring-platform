@@ -53,6 +53,8 @@ curl -X PUT -u elastic:2sgQdH0KrHa5c2lS0LGg "http://elasticsearch:9200/_index_te
         "ai_prediction": { "type": "float" },
         "confidence_score": { "type": "float" },
         "response_received": { "type": "boolean" },
+        "platform": { "type": "keyword" },
+        "device": { "type": "keyword" },
         "accepted": { "type": "boolean" },
         "timestamp": { "type": "date" },
         "response_timestamp": { "type": "date" }
@@ -76,6 +78,27 @@ curl -X PUT -u elastic:2sgQdH0KrHa5c2lS0LGg "http://elasticsearch:9200/_index_te
         "value": {"type": "float"},
         "round": {"type": "integer"},
         "dataType": { "type": "text" },
+        "timestamp": { "type": "date" }
+      }
+    }
+  }
+}'
+
+# Setup Elasticsearch index templates for chatbot sessions
+curl -X PUT -u elastic:2sgQdH0KrHa5c2lS0LGg "http://elasticsearch:9200/_index_template/chatbot_sessions_template" -H 'Content-Type: application/json' -d'
+{
+  "index_patterns": ["chatbot-sessions-*"],
+  "template": {
+    "mappings": {
+      "properties": {
+        "event_type": { "type": "keyword" },
+        "session_id": { "type": "keyword" },
+        "platform": { "type": "keyword" },
+        "device": { "type": "keyword" },
+        "number_of_session_thumbs_up": { "type": "integer" },
+        "number_of_session_thumbs_down": {"type": "integer"},
+        "number_of_session_edits": {"type": "integer"},
+        "duration": {"type": "integer"},
         "timestamp": { "type": "date" }
       }
     }

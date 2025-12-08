@@ -33,3 +33,12 @@ curl -X POST -u elastic:2sgQdH0KrHa5c2lS0LGg "http://kibana:5601/api/saved_objec
     "timeFieldName": "timestamp"
   }
 }'
+
+# Setup Kibana index patterns for chatbot sessions
+curl -X POST -u elastic:2sgQdH0KrHa5c2lS0LGg "http://kibana:5601/api/saved_objects/index-pattern" -H 'Content-Type: application/json' -H 'kbn-xsrf: true' -d'
+{
+  "attributes": {
+    "title": "chatbot-sessions-*",
+    "timeFieldName": "timestamp"
+  }
+}'
