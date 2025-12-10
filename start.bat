@@ -36,7 +36,7 @@ docker exec ai4hf-monitoring-elasticsearch bin/elasticsearch-users useradd logst
 
 echo 👤 Step 4.5: Creating kibana_reader role and ai4hf_test user...
 
-curl -X PUT -u elastic:2sgQdH0KrHa5c2lS0LGg http://localhost:9200/_security/role/kibana_reader -H "Content-Type: application/json" -d "{\"cluster\": [\"monitor\", \"manage_index_templates\", \"manage\"], \"indices\": [{\"names\": [\"logstash-*\", \"users-*\", \"models-*\", \"predictions-*\", \"quality-checks-*\", \"evaluation-measures-*\", \"unsorted_logs-*\", \".kibana*\"], \"privileges\": [\"read\", \"view_index_metadata\"]}], \"applications\": [{\"application\": \"kibana-.kibana\", \"privileges\": [\"read\"], \"resources\": [\"*\"]}]}"
+curl -X PUT -u elastic:2sgQdH0KrHa5c2lS0LGg http://localhost:9200/_security/role/kibana_reader -H "Content-Type: application/json" -d "{\"cluster\": [\"monitor\", \"manage_index_templates\", \"manage\"], \"indices\": [{\"names\": [\"logstash-*\", \"users-*\", \"models-*\", \"predictions-*\", \"quality-checks-*\", \"evaluation-measures-*\", \"chatbot-sessions-*\", \"unsorted_logs-*\", \".kibana*\"], \"privileges\": [\"read\", \"view_index_metadata\"]}], \"applications\": [{\"application\": \"kibana-.kibana\", \"privileges\": [\"read\"], \"resources\": [\"*\"]}]}"
 
 curl -X POST -u elastic:2sgQdH0KrHa5c2lS0LGg http://localhost:9200/_security/user/ai4hf_test -H "Content-Type: application/json" -d "{\"password\" : \"ai4hf_test\", \"roles\" : [\"kibana_reader\"], \"full_name\" : \"AI4HF Test User\"}"
 

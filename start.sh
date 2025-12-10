@@ -41,6 +41,7 @@ curl -s -X PUT -u elastic:2sgQdH0KrHa5c2lS0LGg http://localhost:9200/_security/r
         "predictions-*",
         "quality-checks-*",
         "evaluation-measures-*",
+        "chatbot-sessions-*",
         "unsorted_logs-*",
         ".kibana*"
       ],
