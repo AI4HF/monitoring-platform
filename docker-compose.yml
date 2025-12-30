@@ -39,6 +39,7 @@ services:
       #- "5044:5044" # Beats input
       #- "9600:9600" # Monitoring API
       - "5000:5000"
+      - "5001:5001"
     volumes:
       - ./logstash/pipeline:/usr/share/logstash/pipeline
       - ./logstash/logstash.yml:/usr/share/logstash/config/logstash.yml
