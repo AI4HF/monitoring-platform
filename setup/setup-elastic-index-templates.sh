@@ -104,3 +104,30 @@ curl -X PUT -u elastic:2sgQdH0KrHa5c2lS0LGg "http://elasticsearch:9200/_index_te
     }
   }
 }'
+
+# Setup Elasticsearch index templates for data drift
+curl -X PUT -u elastic:2sgQdH0KrHa5c2lS0LGg "http://elasticsearch:9200/_index_template/data_drift_template" -H 'Content-Type: application/json' -d'
+{
+  "index_patterns": ["data-drift-*"],
+  "template": {
+    "mappings": {
+      "properties": {
+        "event_type": { "type": "keyword" },
+        "dataset_name": { "type": "keyword" },
+        "model_name": { "type": "keyword" },
+        "site": { "type": "keyword" },
+        "feature_name": { "type": "keyword" },
+        "feature_type": { "type": "keyword" },
+        "drift": { "type": "integer" },
+        "drift_label": { "type": "keyword" },
+        "drift_description": { "type": "text" },
+        "p_value": { "type": "float" },
+        "effect_size": { "type": "float" },
+        "effect_size_metric": { "type": "keyword" },
+        "baseline_stats": { "type": "object", "dynamic": true },
+        "current_stats": { "type": "object", "dynamic": true },
+        "timestamp": { "type": "date" }
+      }
+    }
+  }
+}'

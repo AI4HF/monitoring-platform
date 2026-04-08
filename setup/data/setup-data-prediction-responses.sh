@@ -18073,7 +18073,7 @@ curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H
     "@timestamp": "2025-09-30T21:24:49.801Z"
 }' &&
 
-curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "http://logstash:5000" -H 'Content-Type: application/json' -d'
+curl -X POST -u logstash_internal:2sgQdH0KrHa5c2lS0LGg "https://matrix.srdc.com.tr/ai4hf/logstash" -H 'Content-Type: application/json' -d'
 {
     "event_type": "prediction_response",
     "prediction_id": "33a45fed-28fe-4107-95d4-1c5b090675c4",

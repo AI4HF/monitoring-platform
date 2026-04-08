@@ -1,6 +1,6 @@
 #Run: docker exec -i ai4hf-monitoring-logstash bash < setup-data-chatbot-sessions.sh
 
-curl -X POST http://logstash:5001 -H 'Content-Type: application/json' -d'
+curl -X POST https://matrix.srdc.com.tr/ai4hf/logstash-beacon -H 'Content-Type: application/json' -d'
 {
     "event_type": "chatbot_session",
     "session_id": "e7594287-8e77-41cc-adc1-419903e6ecc3",
